@@ -10,8 +10,7 @@ clear @a lingering_potion
 kill @e[type=falling_block]
 kill @e[type=splash_potion]
 kill @e[type=lingering_potion]
-execute @e[type=npc,tag=!legal] ~~~ tag @p[r=10,m=!c] add hban
-kill @e[type=npc]
+function modules/npc
 execute @e[type=command_block_minecart] ~~~ tag @p[r=10,m=!c] add hban
 kill @e[type=command_block_minecart]
 kill @e[type=villager,tag=!legal]
