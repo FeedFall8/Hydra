@@ -1,0 +1,18 @@
+{
+    "format_version": 1,
+    "header": {
+        "description": "function example",
+        "name": "§cHydra Anti-Cheat distribution Function",
+        "uuid": "1416f6c4-f21c-11ea-82d2-84a93e37eb32",
+        "version": [1, 2, 6],
+        "min_engine_version": [1, 2, 6]
+    },
+    "modules": [
+        {
+            "description": "§cHydra is a open source anti cheat for mcbe! §bhttps://github.com/FeedFall8/Hydra (made with MCADD-ON DEV 1.8 !)",
+            "type": "data",
+            "uuid": "1417ba27-f21c-11ea-95a6-000000000001",
+            "version": [1, 2, 6]
+        }
+    ]
+}

@@ -1,0 +1,29 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.walk": {
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"zooming": "(1.0)"
+						}
+					],
+					"on_entry": [
+						"/function HydraMain"
+					]
+				},
+				"zooming": {
+					"transitions": [
+						{
+							"default": "(1.0)"
+						}
+					],
+					"on_entry": [
+						"/function HydraMain"
+					]
+				}
+			}
+		}
+	}
+}
