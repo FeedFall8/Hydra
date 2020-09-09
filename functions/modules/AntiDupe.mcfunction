@@ -1,0 +1,9 @@
+clear @a shulker_box
+clear @a undyed_shulker_box
+clear @a diamond_block
+clear @a gold_block
+clear @a beacon
+clear @a iron_block
+clear @a emerald_block
+clear @a dispenser
+clear @a dropper
