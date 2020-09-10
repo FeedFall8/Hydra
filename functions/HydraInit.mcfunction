@@ -7,4 +7,5 @@ scoreboard objectives add ShutdownKick dummy
 scoreboard objectives add itemsaround dummy
 scoreboard objectives add ping dummy
 scoreboard objectives add time dummy
+scoreboard objectives add EntitiesAround dummy
 tellraw @a {"rawtext":[{"text":"§asuccesfully initialized!"}]}

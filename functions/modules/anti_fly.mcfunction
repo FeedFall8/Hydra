@@ -1,5 +1,5 @@
 //made by SkulllDrugsGD
-tag @a[tag=!antifly.mayfly] add inAir
+tag @a[tag=!antifly] add inAir
 
 execute @a[tag=inAir] ~~~ detect ~~-1~ air 0 tag @s remove inAir
 scoreboard players add @a[tag=inAir] airtime 1
