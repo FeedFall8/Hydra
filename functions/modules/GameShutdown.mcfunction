@@ -1,1 +1,1 @@
-kill @e[type=ender_crystal]
+//WIP

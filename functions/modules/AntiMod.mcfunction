@@ -4,7 +4,7 @@ clear @a bucket 1 3
 clear @a bucket 1 4
 clear @a crossbow
 clear @a bucket 1 5
-gamemode a @a[m=c,tag=!legit]
+gamemode a @a[m=c,tag=!staff]
 clear @a splash_potion
 clear @a lingering_potion
 kill @e[type=falling_block]
