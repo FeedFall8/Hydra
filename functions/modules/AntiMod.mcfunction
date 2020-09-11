@@ -1,9 +1,8 @@
-clear @a[tag=!legal] bucket
-clear @a bucket 1 2
-clear @a bucket 1 3
-clear @a bucket 1 4
+clear @a bucket 2
+clear @a bucket 3
+clear @a bucket 4
 clear @a crossbow
-clear @a bucket 1 5
+clear @a bucket 5
 clear @a snowball
 clear @a egg
 gamemode a @a[m=c,tag=!staff]
