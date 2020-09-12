@@ -2,7 +2,7 @@ tellraw @a {"rawtext":[{"text":"§cinitializing hydra modules..."}]}
 scoreboard objectives add TempKick dummy
 scoreboard objectives add credit dummy
 scoreboard objectives add permkick dummy
-scoreboard objectives add npcwarn dummy
+scoreboard objectives add nbtwarn dummy
 scoreboard objectives add ShutdownKick dummy
 scoreboard objectives add itemsaround dummy
 scoreboard objectives add ping dummy
