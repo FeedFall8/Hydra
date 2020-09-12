@@ -1,4 +1,3 @@
-scoreboard objectives add nbtwarn dummy
 scoreboard players add @a nbtwarn 0
 scoreboard players set @a[scores={nbtwarn=..-1}] nbtwarn 3
 #command block minecart anti nbt
