@@ -11,4 +11,6 @@ scoreboard objectives add time dummy
 scoreboard objectives add jesuscount dummy
 scoreboard objectives add jesusreset dummy
 scoreboard objectives add EntitiesAround dummy
+scoreboard objectives add one dummy
+scoreboard objectivs add mob_density dummy
 tellraw @a {"rawtext":[{"text":"§asuccesfully initialized!"}]}
