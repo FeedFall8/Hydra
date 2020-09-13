@@ -1,1 +1,1 @@
-tellraw @s {"rawtext":[{"text":"§l§dV1.0.5"}]}
+tellraw @s {"rawtext":[{"text":"§l§dV1.0.7"}]}

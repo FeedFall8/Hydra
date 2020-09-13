@@ -1,3 +1,9 @@
+kill @e[type=arrow]
+kill @e[type=villager]
+kill @e[type=tnt]
+kill @e[type=splash_potion]
+clear @a splash_potion
+kill @e[type=ender_crystal]
 clear @a bucket
 clear @a firework_rocket
 clear @a crossbow

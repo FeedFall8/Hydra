@@ -1,18 +1,18 @@
 {
-    "format_version": 2,
+    "format_version": 1,
     "header": {
         "description": "§cHydra is a open source anti cheat for mcbe! §bhttps://github.com/FeedFall8/Hydra (made with MCADD-ON DEV 1.8 !)",
-        "name": "§cHydra Anti-Cheat distribution §cV.1.0.5 ",
-        "uuid": "1212f6c4-f21c-11ea-82d2-84a93e37eb31",
-        "version": [1, 0, 5],
-        "min_engine_version": [1, 16, 0]
+        "name": "§cHydra Anti-Cheat distribution <> §cV.1.0.7 ",
+        "uuid": "1252f6c4-f29c-11ea-82d2-84a92e37eb31",
+        "version": [1, 0, 7],
+        "min_engine_version": [1, 13, 0]
     },
     "modules": [
         {
             "description": "§cHydra is a open source anti cheat for mcbe! §bhttps://github.com/FeedFall8/Hydra (made with MCADD-ON DEV 1.8 !)",
             "type": "data",
-            "uuid": "2497ba47-f21c-11ea-95a6-000000000001",
-            "version": [1, 0, 5]
+            "uuid": "2417ba43-f21c-11ea-95a1-000000000001",
+            "version": [1, 0, 7]
         }
     ]
 }
