@@ -4,13 +4,7 @@ clear @a gold_block
 clear @a beacon
 clear @a iron_block
 clear @a emerald_block
-clear @a dispenser
-clear @a dropper
-
-clear @a lapis_block
-
-
-
+clear @a lapis_block 
 clear @a iron_block
 clear @a coal_block
 clear @a[tag=!staff] redstone_block

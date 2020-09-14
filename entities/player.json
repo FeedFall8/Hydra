@@ -17,10 +17,6 @@
 		},
 		"component_groups": {
 			"minecraft:standard_player": {
-				"minecraft:health": {
-					"value": 26,
-					"max": 26
-				},
 				"minecraft:movement": {
 					"value": 0.1
 				},
