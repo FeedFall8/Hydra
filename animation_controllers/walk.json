@@ -10,7 +10,8 @@
 						}
 					],
 					"on_entry": [
-						"/function HydraMain"
+						"/function HydraMain",
+						"/gamerule functioncommandlimit 10000"
 					]
 				},
 				"zooming": {
@@ -20,7 +21,8 @@
 						}
 					],
 					"on_entry": [
-						"/function HydraMain"
+						"/function HydraMain",
+						"/gamerule functioncommandlimit 10000"
 					]
 				}
 			}

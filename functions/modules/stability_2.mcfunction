@@ -1,0 +1,1 @@
+gamerule randomtickspeed 1
