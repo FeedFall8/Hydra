@@ -5,6 +5,8 @@ execute @e[type=arrow,tag=!keep] ~~~ tag @s add delete
 execute @e[type=egg,tag=!keep] ~~~ tellraw @p {"rawtext":[{"text":"§cthat item is not allowed here"}]}
 execute @e[type=egg,tag=!keep] ~~~ tag @s add delete
 execute @e[type=snowball,tag=!keep] ~~~ tellraw @p {"rawtext":[{"text":"§cthat item is not allowed here"}]}
-execute @e[type=snowball,tag=!keep] ~~~ tag @s add delete
-execute @e[type=area_effect_cloud,tag=!keep] ~~~ tellraw @p {"rawtext":[{"text":"§cthat item is not allowed here"}]}
-execute @e[type=area_effect_cloud,tag=!keep] ~~~ tag @s add delete
+execute @e[type=snowall,tag=!keep] ~~~ tag @s add delete
+execute @e[type=lingering_potion,tag=!keep] ~~~ tellraw @p {"rawtext":[{"text":"§cthat item is not allowed here"}]}
+execute @e[type=lingering_potion,tag=!keep] ~~~ tag @s add delete
+clear @a snowball
+clear @a egg
