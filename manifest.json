@@ -1,18 +1,30 @@
+//bridge-file-version: #22
 {
-    "format_version": 1,
-    "header": {
-        "description": "§cHydra is a open source anti cheat for mcbe! §bhttps://github.com/FeedFall8/Hydra (made with MCADD-ON DEV 1.8 !)",
-        "name": "§cHydra Anti-Cheat distribution <> §cV.1.0.7 ",
-        "uuid": "1252f6c4-f29c-11ea-82d2-84a92e37eb31",
-        "version": [1, 0, 7],
-        "min_engine_version": [1, 13, 0]
-    },
-    "modules": [
-        {
-            "description": "§cHydra is a open source anti cheat for mcbe! §bhttps://github.com/FeedFall8/Hydra (made with MCADD-ON DEV 1.8 !)",
-            "type": "data",
-            "uuid": "2417ba43-f21c-11ea-95a1-000000000001",
-            "version": [1, 0, 7]
-        }
-    ]
+	"format_version": 2,
+	"header": {
+		"name": "Â§cHydra Anti-Cheat distribution <> Â§cV.1.0.7 ",
+		"description": "Â§cHydra is a open source anti cheat for mcbe! Â§bhttps://github.com/FeedFall8/Hydra (made with MCADD-ON DEV 1.8 !)w",
+		"uuid": "e9263312-57fe-485a-929b-2c3aed5fed71",
+		"version": [
+			1,
+			0,
+			8
+		],
+		"min_engine_version": [
+			1,
+			13,
+			0
+		]
+	},
+	"modules": [
+		{
+			"type": "data",
+			"uuid": "84859ded-e7d4-4cc2-833b-c22c24f87bda",
+			"version": [
+				1,
+				0,
+				8
+			]
+		}
+	]
 }
