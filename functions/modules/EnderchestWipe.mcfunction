@@ -25,4 +25,4 @@ replaceitem entity @s slot.enderchest 23 air 0
 replaceitem entity @s slot.enderchest 24 air 0
 replaceitem entity @s slot.enderchest 25 air 0
 replaceitem entity @s slot.enderchest 26 air 0
-execute @s ~~~ tell @a[tag=staff] §cusers inventory chest was wiped by staff
+execute @s ~~~ tell @a[tag=staff] §cusers inventory chest was wiped by admin
