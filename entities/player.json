@@ -16,17 +16,18 @@
 			}
 		},
 		"component_groups": {
+
+			},
 			"minecraft:standard_player": {
-				"minecraft:health": {
-					"value": 26,
-					"max": 26
-				},
 				"minecraft:movement": {
 					"value": 0.1
 				},
 				"minecraft:attack": {
 					"damage": 1
-				}
+				},
+				"minecraft:health": {
+				    "value": 26,
+			     	"max": 26
 			},
 			"minecraft:stone_pickaxe": {
 				"minecraft:is_saddled": {}
