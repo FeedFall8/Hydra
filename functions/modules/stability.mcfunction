@@ -22,4 +22,4 @@ kill @e[type=snowball]
 kill @e[type=ender_crystal]
 execute @a[scores={itemsaround=50..}] ~~~ tp @e[type=item,c=1] @s
 execute @a[scores={itemsaround=50..}] ~~~ kill @r[type=item,c=5,rm=4]
-execute @a[scores={itemsaround=250..}] ~~~ scoreboard players set @s TempKick 1 
+execute @a[scores={itemsaround=250..}] ~~~ scoreboard players set @s TempKick 1
