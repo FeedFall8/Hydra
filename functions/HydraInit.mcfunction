@@ -14,7 +14,9 @@ scoreboard objectives add EntitiesAround dummy
 scoreboard objectives add one dummy
 scoreboard objectives add connected dummy
 scoreboard objectives add packet dummy
-scoreboard objectivs add mob_density dummy
+scoreboard objectives add mob_density dummy
+scoreboard objectives add flycounter dummy
+scoreboard objectives add flyreset dummy
 tellraw @a {"rawtext":[{"text":"§asuccesfully initialized!"}]}
 tellraw @a {"rawtext":[{"text":"§cneed more help? run §d/function HydraHelp"}]}
 
