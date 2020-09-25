@@ -1,0 +1,1 @@
+tag @e[type=!armor_stand,type=!player,tag=!keep] add delete

@@ -4,34 +4,33 @@ clear @a bucket 4
 clear @a dispenser
 clear @a crossbow
 clear @a bucket 5
+clear @a command_block
+clear @a repeating_command_block
+clear @a chain_command_block
 clear @a command_block_minecart
 gamemode a @a[m=c,tag=!staff]
-kill @e[type=moving_block]
+tag @e[type=moving_block] add delete
 clear @a lingering_potion
-kill @e[type=falling_block]
-kill @e[type=leash_knot]
-kill @e[type=lingering_potion]
+tag @e[type=falling_block] add delete
+tag @e[type=leash_knot] add delete
+tag @e[type=lingering_potion] add delete
 function modules/npc
 execute @e[type=command_block_minecart] ~~~ tag @p[r=10,m=!c] add hban
-kill @e[type=command_block_minecart]
-kill @e[type=villager,tag=!legal]
-kill @e[type=boat]
+tag @e[type=command_block_minecart] add delete
+tag @e[type=villager,tag=!legal] add delete
+tag @e[type=boat] add delete
 tag @e[type=ender_dragon] add delete
 tag @e[type=wither] add delete
-kill @e[type=elder_guardian]
-kill @e[type=lightning_bolt]
-kill @e[type=slime]
-kill @e[type=minecart]
-kill @e[type=chest_minecart]
-kill @e[type=hopper_minecart]
-kill @e[type=tnt_minecart]
-
-kill @e[type=elder_guardian_ghost]
-
-
-kill @e[type=leash_knot]
-kill @e[type=shulker]
-kill @e[type=bee]
-kill @e[type=magma_cube]
-kill @e[type=snowball]
-kill @e[type=ender_crystal]
+tag @e[type=elder_guardian] add delete
+tag @e[type=lightning_bolt] add delete
+tag @e[type=slime] add delete
+tag @e[type=minecart] add delete
+tag @e[type=chest_minecart] add delete
+tag @e[type=hopper_minecart] add delete
+tag @e[type=tnt_minecart] add delete
+tag @e[type=elder_guardian_ghost] add delete
+tag @e[type=leash_knot] add deletr
+tag @e[type=shulker] add delete
+tag @e[type=bee] add delete
+tag @e[type=magma_cube] add delete
+tag @e[type=ender_crystal]

@@ -1,5 +1,5 @@
-clear @a shulker_box -1
-clear @a undyed_shulker_box -1
+clear @s shulker_box -1
+clear @s undyed_shulker_box -1
 fill ~15~15~15~-15~-15~-15 air 0 replace beehive -1
 fill ~15~15~15~-15~-15~-15 air 0 replace bee_nest -1
 fill ~15~15~15~-15~-15~-15 air 0 replace dispenser -1
