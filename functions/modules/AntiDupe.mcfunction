@@ -6,9 +6,10 @@ clear @a iron_block
 clear @a emerald_block
 clear @a dispenser
 clear @a dropper
-
+clear @a snowball
+clear @a egg
 clear @a lapis_block
-
+clear @a netherite_block
 
 
 clear @a lapis_block 
