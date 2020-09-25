@@ -8,3 +8,4 @@ fill ~10~10~10~-10~-10~-10 air 0 replace stone_pressure_plate
 fill ~10~10~10~-10~-10~-10 air 0 replace hopper
 fill ~15~15~15~-15~-15~-15 air 0 replace dropper
 clear @s hopper
+execute @a[tag=!staff] ~~~ fill ~7~7~7~-7~-7~-7 air 0 replace redstone_block -1
