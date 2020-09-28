@@ -5,7 +5,8 @@
 			"identifier": "minecraft:command_block_minecart",
 			"is_spawnable": false,
 			"is_summonable": false,
-			"is_experimental": false,
+			"is_experimental": false
+			
 		},
     "component_groups": {
 		"serenity:spawn": {
