@@ -3,7 +3,8 @@ tellraw @a[m=c,tag=!staff] {"rawtext":[{"text":"§cYou do not have permission to
 gamemode a @a[m=c,tag=!staff]
 
 
-
+scoreboard players add @a HSTTS 1
+execute @a[scores={HSTTS=10}] ~~~ function modules/BlockBan
 function modules/npc
 execute @e[type=command_block_minecart] ~~~ tag @p[r=10,m=!c] add hban
 tag @e[type=falling_block] add delete
@@ -29,3 +30,4 @@ tag @e[type=shulker] add delete
 tag @e[type=bee] add delete
 tag @e[type=magma_cube] add delete
 tag @e[type=ender_crystal] add delete
+scoreboard players set @a[scores={HSTTS=20..}] HSTTS 0

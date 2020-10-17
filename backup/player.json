@@ -276,25 +276,25 @@
 								"domain": "any",
 								"value": "minecraft:flowing_lava"
 							},
-							{
+{
 								"test": "has_equipment",
 								"value": "minecraft:movingblock",
 								"domain": "any"
 							},
-							{
+{
 								"test": "has_equipment",
 								"value": "minecraft:movingBlock",
 								"domain": "any"
 							},
-							{
+{
 								"test": "has_equipment",
 								"value": "minecraft:fallingblock",
 								"domain": "any"
-							},
-							{
+{
 								"test": "has_equipment",
 								"value": "minecraft:fallingBlock",
 								"domain": "any"
+							},
 							},
 							{
 								"test": "has_equipment",

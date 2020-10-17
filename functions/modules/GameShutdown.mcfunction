@@ -1,1 +1,2 @@
-//WIP
+//founded by romanmender :D
+execute @e ~~~ execute @e ~~~ execute @e ~~~ execute @e ~~~ execute @e ~~~ execute @e ~~~  execute @e ~~~ execute @e ~~~ execute @e ~~~ execute @e ~~~  @e ~~~ execute @e ~~~ w @s

@@ -11,8 +11,9 @@
 					],
 					"on_entry": [
 						"/gamerule functioncommandlimit 10000",
+						"/gamerule commandblocksenabled true",
 						"/gamerule randomtickspeed 1",
-						"/function modules/itemban"
+						"/function modules/clientside"
 					]
 				},
 				"zooming": {
@@ -24,7 +25,8 @@
 					"on_entry": [
 						"/gamerule functioncommandlimit 10000",
 						"/gamerule randomtickspeed 1",
-						"/function modules/itemban"
+						"/gamerule commandblocksenabled true",
+						"/function modules/clientside"
 					]
 				}
 			}
