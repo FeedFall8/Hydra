@@ -1,11 +1,82 @@
-clear @a bucket 2
-clear @a bucket 3
-clear @a bucket 4
-clear @a dispenser
-clear @a crossbow
-clear @a bucket 5
+// Miner#7493
+clear @a[tag=!staff] bucket 2
+clear @a[tag=!staff] bucket 3
+clear @a[tag=!staff] bucket 4
+clear @a[tag=!staff] dispenser
+clear @a[tag=!staff] crossbow
+clear @a[tag=!staff] bucket 5
 clear @a[tag=!staff] command_block
 clear @a[tag=!staff] repeating_command_block
 clear @a[tag=!staff] chain_command_block
 clear @a command_block_minecart
 clear @a lingering_potion
+clear @a[tag=!staff] command_block_minecart
+clear @a[tag=!staff] lingering_potion
+clear @a[tag=!staff] structure_void
+clear @a[tag=!staff] allow
+clear @a[tag=!staff] deny
+clear @a[tag=!staff] border_block	
+clear @a[tag=!staff] barrier
+clear @a[tag=!staff] stonecutter
+clear @a[tag=!staff] glowingobsidian
+clear @a[tag=!staff] netherreactor
+clear @a[tag=!staff] info_update	
+clear @a[tag=!staff] info_update2	
+clear @a[tag=!staff] movingblock
+clear @a[tag=!staff] structure_block
+clear @a[tag=!staff] pumpkin_stem
+clear @a[tag=!staff] melon_stem
+clear @a[tag=!staff] skull 3
+clear @a[tag=!staff] powered_comparator
+clear @a[tag=!staff] pistonarmcollision
+clear @a[tag=!staff] fire
+clear @a[tag=!staff] redstone_wire
+clear @a[tag=!staff] wheat
+clear @a[tag=!staff] lit_furnace
+clear @a[tag=!staff] flowing_water
+clear @a[tag=!staff] water
+clear @a[tag=!staff] lava
+clear @a[tag=!staff] flowing_lava
+clear @a[tag=!staff] double_stone_slab	
+clear @a[tag=!staff] farmland
+clear @a[tag=!staff] lit_furnace
+clear @a[tag=!staff] standing_sign
+clear @a[tag=!staff] wall_sign
+clear @a[tag=!staff] lit_redstone_ore
+clear @a[tag=!staff] unlit_redstone_torch
+clear @a[tag=!staff] reeds
+clear @a[tag=!staff] portal
+clear @a[tag=!staff] powered_repeater	
+clear @a[tag=!staff] invisiblebedrock
+clear @a[tag=!staff] monster_egg
+clear @a[tag=!staff] end_portal	
+clear @a[tag=!staff] lit_redstone_lamp	
+clear @a[tag=!staff] wall_banner
+clear @a[tag=!staff] daylight_detector_inverted
+clear @a[tag=!staff] standing_banner
+clear @a[tag=!staff] chalkboard
+clear @a[tag=!staff] spruce_standing_sign
+clear @a[tag=!staff] spruce_wall_sign
+clear @a[tag=!staff] birch_standing_sign
+clear @a[tag=!staff] birch_wall_sign
+clear @a[tag=!staff] jungle_standing_sign
+clear @a[tag=!staff] acacia_standing_sign
+clear @a[tag=!staff] jungle_wall_sign
+clear @a[tag=!staff] acacia_wall_sign
+clear @a[tag=!staff] darkoak_standing_sign	
+clear @a[tag=!staff] darkoak_wall_sign
+clear @a[tag=!staff] sweet_berry_bush	
+clear @a[tag=!staff] jigsaw
+clear @a[tag=!staff] light_block
+clear @a[tag=!staff] stickypistonarmcollision
+clear @a[tag=!staff] bee_nest
+clear @a[tag=!staff] beehive
+clear @a[tag=!staff] soul_fire
+clear @a[tag=!staff] crimson_standing_sign
+clear @a[tag=!staff] warped_standing_sign
+clear @a[tag=!staff] crimson_wall_sign
+clear @a[tag=!staff] warped_wall_sign
+clear @a[tag=!staff] blackstone_double_slab
+clear @a[tag=!staff] polished_blackstone_brick_double_slab
+clear @a[tag=!staff] polished_blackstone_double_slab
+clear @a[tag=!staff] spawn_egg
