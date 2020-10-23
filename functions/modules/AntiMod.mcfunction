@@ -1,6 +1,6 @@
 
-tellraw @a[m=c,tag=!staff] {"rawtext":[{"text":"§cYou do not have permission to be in that gamemode"}]}
-gamemode a @a[m=c,tag=!staff]
+tellraw @a[m=c,tag=!hstaff] {"rawtext":[{"text":"§cYou do not have permission to be in that gamemode"}]}
+gamemode a @a[m=c,tag=!hstaff]
 
 
 scoreboard players add @a HSTTS 1

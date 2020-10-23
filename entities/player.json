@@ -169,12 +169,12 @@
 							{
 								"test": "has_equipment",
 								"domain": "any",
-								"value": "minecraft:item.bed"
+								"value": "minecraft:bee_nest"
 							},
 							{
 								"test": "has_equipment",
 								"domain": "any",
-								"value": "minecraft:item.wheat"
+								"value": "minecraft:beehive"
 							},
 							{
 								"test": "has_equipment",
@@ -214,7 +214,7 @@
 							{
 								"test": "has_equipment",
 								"domain": "any",
-								"value": "minecraft:lit_furnace"
+								"value": "minecraft:movingBlock"
 							},
 							{
 								"test": "has_equipment",
@@ -254,13 +254,29 @@
 							{
 								"test": "has_equipment",
 								"domain": "any",
-								"value": "minecraft:sparkler"
+								"value": "minecraft:movingblock"
 							},
 							{
 								"test": "has_equipment",
 								"domain": "any",
-								"value": "minecraft:glow_stick"
+								"value": "minecraft:bucket:2"
 							},
+							{
+								"test": "has_equipment",
+								"domain": "any",
+								"value": "minecraft:bucket:3"
+							},
+							{
+								"test": "has_equipment",
+								"domain": "any",
+								"value": "minecraft:bucket:4"
+							},
+{
+								"test": "has_equipment",
+								"domain": "any",
+								"value": "minecraft:bucket:5"
+							},
+
 							{
 								"test": "has_equipment",
 								"domain": "any",
@@ -275,26 +291,6 @@
 								"test": "has_equipment",
 								"domain": "any",
 								"value": "minecraft:flowing_lava"
-							},
-							{
-								"test": "has_equipment",
-								"value": "minecraft:movingblock",
-								"domain": "any"
-							},
-							{
-								"test": "has_equipment",
-								"value": "minecraft:movingBlock",
-								"domain": "any"
-							},
-							{
-								"test": "has_equipment",
-								"value": "minecraft:fallingblock",
-								"domain": "any"
-							},
-							{
-								"test": "has_equipment",
-								"value": "minecraft:fallingBlock",
-								"domain": "any"
 							},
 							{
 								"test": "has_equipment",
