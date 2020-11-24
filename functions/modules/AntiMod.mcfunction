@@ -5,12 +5,13 @@ gamemode a @a[m=c,tag=!hstaff]
 
 scoreboard players add @a HSTTS 1
 execute @a[scores={HSTTS=10}] ~~~ function modules/BlockBan
-function modules/npc
+#function modules/npc
+tag @e[type=npc] add delete
 execute @e[type=command_block_minecart] ~~~ tag @p[r=10,m=!c] add hban
-tag @e[type=falling_block] add delete
+
 tag @e[type=leash_knot] add delete
 tag @e[type=lingering_potion] add delete
-tag @e[type=moving_block] add delete
+
 tag @e[type=command_block_minecart] add delete
 tag @e[type=villager,tag=!legal] add delete
 tag @e[type=boat] add delete

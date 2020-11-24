@@ -239,12 +239,12 @@
 							{
 								"test": "has_equipment",
 								"domain": "any",
-								"value": "minecraft:end_portal"
+								"value": " minecraft:movingblock"
 							},
 							{
 								"test": "has_equipment",
 								"domain": "any",
-								"value": "minecraft:bedrock"
+								"value": "minecraft:movingblock"
 							},
 							{
 								"test": "has_equipment",
