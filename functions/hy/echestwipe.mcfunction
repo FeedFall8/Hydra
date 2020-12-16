@@ -1,0 +1,29 @@
+#bridge-file-version: #3
+replaceitem entity @p[rm=1] slot.enderchest 0 air 0
+replaceitem entity @p[rm=1] slot.enderchest 1 air 0
+replaceitem entity @p[rm=1] slot.enderchest 2 air 0
+replaceitem entity @p[rm=1] slot.enderchest 3 air 0
+replaceitem entity @p[rm=1] slot.enderchest 4 air 0
+replaceitem entity @p[rm=1] slot.enderchest 5 air 0
+replaceitem entity @p[rm=1] slot.enderchest 6 air 0
+replaceitem entity @p[rm=1] slot.enderchest 7 air 0
+replaceitem entity @p[rm=1] slot.enderchest 8 air 0
+replaceitem entity @p[rm=1] slot.enderchest 9 air 0
+replaceitem entity @p[rm=1] slot.enderchest 10 air 0
+replaceitem entity @p[rm=1] slot.enderchest 11 air 0
+replaceitem entity @p[rm=1] slot.enderchest 12 air 0
+replaceitem entity @p[rm=1] slot.enderchest 13 air 0
+replaceitem entity @p[rm=1] slot.enderchest 14 air 0
+replaceitem entity @p[rm=1] slot.enderchest 15 air 0
+replaceitem entity @p[rm=1] slot.enderchest 16 air 0
+replaceitem entity @p[rm=1] slot.enderchest 17 air 0
+replaceitem entity @p[rm=1] slot.enderchest 18 air 0
+replaceitem entity @p[rm=1] slot.enderchest 19 air 0
+replaceitem entity @p[rm=1] slot.enderchest 20 air 0
+replaceitem entity @p[rm=1] slot.enderchest 21 air 0
+replaceitem entity @p[rm=1] slot.enderchest 22 air 0
+replaceitem entity @p[rm=1] slot.enderchest 23 air 0
+replaceitem entity @p[rm=1] slot.enderchest 24 air 0
+replaceitem entity @p[rm=1] slot.enderchest 25 air 0
+replaceitem entity @p[rm=1] slot.enderchest 26 air 0
+execute @a[rm=1] ~ ~ ~ tellraw @p[tag=staff,rm=1] {"rawtext":[{"text":"§¶§cHydra ► Cleared closest player echest"}]}
