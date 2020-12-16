@@ -1,1 +1,0 @@
-function begin/credit
