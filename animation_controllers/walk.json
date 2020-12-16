@@ -1,4 +1,3 @@
-//bridge-file-version: #5
 {
 	"format_version": "1.10.0",
 	"animation_controllers": {
@@ -12,8 +11,9 @@
 					],
 					"on_entry": [
 						"/gamerule functioncommandlimit 10000",
+						"/gamerule commandblocksenabled true",
 						"/gamerule randomtickspeed 1",
-						"/function hy/packages/antinbt"
+						"/function modules/clientside"
 					]
 				},
 				"zooming": {
@@ -25,7 +25,8 @@
 					"on_entry": [
 						"/gamerule functioncommandlimit 10000",
 						"/gamerule randomtickspeed 1",
-						"/function hy/packages/antinbt"
+						"/gamerule commandblocksenabled true",
+						"/function modules/clientside"
 					]
 				}
 			}

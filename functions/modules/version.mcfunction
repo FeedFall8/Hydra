@@ -1,0 +1,1 @@
+tellraw @s {"rawtext":[{"text":"§l§cV1.2.0 STABLE"}]}

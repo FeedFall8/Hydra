@@ -1,0 +1,18 @@
+{
+    "format_version": 1,
+    "header": {
+        "description": "§ca high preformance and secure AntiGreif AntiCheat for vanilla BDS servers",
+        "name": "§cHydra §gAnti-Cheat §aDistribution §dV1.1.7 ",
+        "uuid": "cd8e04ca-85b1-11ea-91d2-802bf5317410",
+        "version": [1, 1, 7],
+        "min_engine_version": [1, 8, 0]
+    },
+    "modules": [
+        {
+            "description": "§ca high preformance and secure anticheat for vanilla BDS servers",
+            "type": "data",
+            "uuid": "ce91e8f4-18b1-11ea-a31c-000000000001",
+            "version": [1, 1, 7]
+        }
+    ]
+}
