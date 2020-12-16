@@ -1,8 +1,7 @@
-//bridge-file-version: #5
 {
 	"format_version": "1.10.0",
 	"animation_controllers": {
-		"controller.animation.walk": {
+		"controller.animation.sui": {
 			"states": {
 				"default": {
 					"transitions": [
@@ -11,9 +10,8 @@
 						}
 					],
 					"on_entry": [
-						"/gamerule functioncommandlimit 10000",
-						"/gamerule randomtickspeed 1",
-						"/function hy/packages/antinbt"
+						"tell @a[tag=staff] command cart detected, spawned by @p",
+						"kill @s"
 					]
 				},
 				"zooming": {
@@ -23,9 +21,8 @@
 						}
 					],
 					"on_entry": [
-						"/gamerule functioncommandlimit 10000",
-						"/gamerule randomtickspeed 1",
-						"/function hy/packages/antinbt"
+						"tell @a[tag=staff] command cart detected, spawned by @p",
+						"kill @s"
 					]
 				}
 			}

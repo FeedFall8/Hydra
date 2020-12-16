@@ -1,3 +1,11 @@
+//bridge-file-version: #13
 {
-    "values": ["HydraMain"]
+	"values": [
+		"hy/packages/credit",
+		"hy/packages/scoreboards",
+		"hy/packages/bans",
+		"hy/packages/antinbt",
+		"hy/packages/tagscores",
+		"settings"
+	]
 }

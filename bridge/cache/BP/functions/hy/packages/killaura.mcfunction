@@ -1,0 +1,8 @@
+{
+	"file_path": "C:\\Users\\James\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\HydraAntiCheat Easy Mode\\functions\\hy\\packages\\killaura.mcfunction",
+	"file_type": "function",
+	"format_version": 0,
+	"file_uuid": "cd42ec9e_31b4_410c_9581_9c5d529430dc",
+	"file_version": 52,
+	"cache_content": "hide\nscoreboard players add @a katimer3 1\nscoreboard players reset @a[scores={katimer3=1200..}] katimer3\n\nscoreboard players add @a katimer2 1\nscoreboard players reset @a[scores={katimer2=3..}] katimer2\n \nscoreboard players add @a katimer 2\nscoreboard players reset @a[scores={katimer=201..}] katimer\n \nexecute @a[scores=katimer2=2..] ~ ~ ~ detect ~ ~7 ~ air 0 tp @e[name=\"40945834\",c=1,r=20] ~ ~7 ~\n \nexecute @a ~ ~ ~ execute @e[name=\"40945834\",rm=10,r=13] ~ ~ ~ tp @s 0 0 0\nexecute @a[scores={katimer=100}] ~ ~ ~ tp @e[name=\"40945834\"] 0 0 0\nkill @e[x=0,y=0,z=0,r=3,name=\"40945834\"]\n \nexecute @a[scores={katimer=50}] ~ ~ ~ detect ~ ~7 ~ air 0 summon minecraft:player ~ ~7 ~ minecraft:ka \"40945834\"\nexecute @a[scores={katimer=52}] ~ ~ ~ effect @e[name=\"40945834\",c=1,r=20] invisibility 1 1 true\n \n \nscoreboard players set @a[scores={killaura=3..}] tempkick 4\nscoreboard players reset @a[scores={killaura=3..}] killaura\n\nexecute @a[scores={killaura=0..}] ~ ~ ~ scoreboard players remove @a[scores={katimer3=1999}] killaura 1"
+}
