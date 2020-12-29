@@ -39,7 +39,6 @@
 				"minecraft:gain_bad_omen",
 				"minecraft:clear_add_bad_omen",
 				"minecraft:remove_raid_trigger",
-				"hydra:flying",
 				"hydra:item",
 				"minecraft:ka",
 				"minecraft:kadetected"
@@ -48,9 +47,7 @@
 			"identifiers": [
 				"minecraft:player"
 			],
-			"animation_references": [
-				"walk"
-			],
+			"animation_references": [],
 			"families": [
 				"player"
 			],
@@ -119,7 +116,8 @@
 				"katimer",
 				"katimer2",
 				"katimer3",
-				"player"
+				"player",
+				"bancount"
 			]
 		},
 		"BP/functions/hy/packages/stafftools.mcfunction": {
@@ -167,6 +165,40 @@
 			"custom_commands": []
 		},
 		"BP/functions/hy/packages/noplayerspawner.mcfunction": {
+			"custom_commands": []
+		},
+		"c846c736_f7c3_4fb0_88c5_aa4986e52cbf": {},
+		"c07541b2_7d76_4777_ae3f_01f23ce4820c": {},
+		"BP/functions/hy/packages/rollbackrealm.mcfunction": {
+			"custom_commands": []
+		}
+	},
+	"item": {},
+	"animation": {
+		"../Desktop/eeeee/animations/player.json": {
+			"ids": [
+				"animation.0",
+				"animation.1",
+				"animation.2",
+				"animation.3",
+				"animation.4",
+				"animation.5",
+				"animation.6",
+				"animation.7",
+				"animation.8",
+				"animation.9",
+				"animation.10",
+				"animation.11",
+				"animation.12",
+				"animation.13",
+				"animation.14",
+				"animation.15",
+				"animation.16",
+				"animation.17",
+				"animation.18",
+				"animation.19",
+				"animation.20"
+			],
 			"custom_commands": []
 		}
 	}

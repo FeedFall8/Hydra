@@ -1,9 +1,9 @@
-#bridge-file-version: #20
+#bridge-file-version: #40
 #----------------------------------------------------
 #
 #                   Hydra Settings
-#           To enable modules remove the X
-#              Next to the hy/packages/
+#          To enable modules remove the X
+#             Next to the hy/packages/
 #
 #           Dont change anything unless
 #              you know what your doing
@@ -46,7 +46,7 @@ function hy/packages/noplayerspawner
 # Ban Database
 # Has a list of varifyed hackers and common namespoofed names
  
-Xfunction hy/packages/bandatabase
+function hy/packages/bandatabase
 #----------------------------------------------------
  
  
@@ -58,6 +58,7 @@ Xfunction hy/packages/stafftools
 #----------------------------------------------------
  
  
+ 
 #----------------------------------------------------
 # GameMode Ban
 # Bans players who go into gamemode
@@ -67,7 +68,7 @@ function hy/packages/gamemodeban
  
  
 #----------------------------------------------------
-# Anti Nuker
+# Anti Nuker (BETA)
 # Bans players who use nuker, tnt may kick you when using
  
 Xfunction hy/packages/antinuker
@@ -75,10 +76,18 @@ Xfunction hy/packages/antinuker
  
  
 #----------------------------------------------------
-# Killaura Detection (BETA)
-# Bans players who use killaura
+# Killaura Detection (STABLE)
+# Bans players who use killaura 
  
 Xfunction hy/packages/killaura
+#----------------------------------------------------
+ 
+ 
+#----------------------------------------------------
+# On CBE successful rollbackrealm?
+# If players bypass hydra this should rollback the realm when it happens
+ 
+Xfunction hy/packages/rollbackrealm
 #----------------------------------------------------
  
 ©2020 HydraAntiCheat

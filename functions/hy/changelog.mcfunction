@@ -1,9 +1,6 @@
-#bridge-file-version: #16
-tellraw @p {"rawtext":[{"text":"§¶§cHydra ► v.2.0.1"}]}
-tellraw @p {"rawtext":[{"text":"§¶§c► Added Killaura detection"}]}
-tellraw @p {"rawtext":[{"text":"§¶§c► Added Nuker Detection"}]}
-tellraw @p {"rawtext":[{"text":"§¶§c► Added Easyer Options (change settings.mcfunction)"}]}
-tellraw @p {"rawtext":[{"text":"§¶§c► Added NBT protection on Npc's (to varify a npc tag it with server)"}]}
-tellraw @p {"rawtext":[{"text":"§¶§c► Changed kick message when a staff bans someone (new tag: hstaffban)"}]}
-tellraw @p {"rawtext":[{"text":"§¶§c► Removed Phase (false bans)"}]}
+#bridge-file-version: #28
+tellraw @p {"rawtext":[{"text":"§¶§cHydra ► v.2.0.2"}]}
+tellraw @p {"rawtext":[{"text":"§¶§c► Added crash realm on gamemode c (default disabled)"}]}
+tellraw @p {"rawtext":[{"text":"§¶§c► Fixed some bugs with killaura detection, now should no longer false ban"}]}
+tellraw @p {"rawtext":[{"text":"§¶§c► Redused lines of code"}]}
 tellraw @p {"rawtext":[{"text":"§¶§cHydra ► https://discord.gg/k8RptyX"}]}

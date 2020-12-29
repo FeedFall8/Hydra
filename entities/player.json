@@ -1,4 +1,4 @@
-//bridge-file-version: #33
+//bridge-file-version: #52
 {
 	"format_version": "1.16.0",
 	"minecraft:entity": {
@@ -9,12 +9,10 @@
 			"is_experimental": false,
 			"scripts": {
 				"animate": [
-					"walk",
 					"bridge_execute_commands"
 				]
 			},
 			"animations": {
-				"walk": "controller.animation.walk",
 				"bridge_execute_commands": "controller.animation.bridge_player.execute_commands"
 			}
 		},
@@ -62,7 +60,13 @@
 							"on_damage": {
 								"event": "minecraft:kadetected"
 							},
-							"cause": "entity_attack"
+							"cause": "entity_attack",
+							"deals_damage": false
+						},
+						{
+							"on_damage": {},
+							"deals_damage": false,
+							"cause": "suffocation"
 						}
 					]
 				},
@@ -80,6 +84,10 @@
 				},
 				"minecraft:push_through": {
 					"value": 999999999999
+				},
+				"minecraft:nameable": {
+					"always_show": false,
+					"allow_name_tag_renaming": true
 				}
 			},
 			"bridge:execute_command_id_1": {
@@ -95,11 +103,6 @@
 			"bridge:execute_command_id_2": {
 				"minecraft:skin_id": {
 					"value": 2
-				}
-			},
-			"bridge:execute_command_id_3": {
-				"minecraft:skin_id": {
-					"value": 3
 				}
 			}
 		},
@@ -204,49 +207,6 @@
 				]
 			},
 			"minecraft:scaffolding_climber": {},
-			"minecraft:environment_sensor": {
-				"triggers": [
-					{
-						"filters": {
-							"all_of": [
-								{
-									"test": "has_ability",
-									"subject": "self",
-									"value": "flying"
-								}
-							]
-						},
-						"event": "hydra:flying",
-						"target": "self"
-					},
-					{
-						"filters": {
-							"all_of": [
-								{
-									"test": "has_ability",
-									"subject": "self",
-									"value": "mayfly"
-								}
-							]
-						},
-						"event": "hydra:flying",
-						"target": "self"
-					},
-					{
-						"filters": {
-							"all_of": [
-								{
-									"test": "has_ability",
-									"subject": "self",
-									"value": "noclip"
-								}
-							]
-						},
-						"event": "hydra:flying",
-						"target": "self"
-					}
-				]
-			},
 			"minecraft:timer": {
 				"looping": true,
 				"time": 0.1,
@@ -371,11 +331,6 @@
 							{
 								"test": "has_equipment",
 								"domain": "any",
-								"value": "minecraft:bedrock"
-							},
-							{
-								"test": "has_equipment",
-								"domain": "any",
 								"value": "minecraft:invisiblebedrock"
 							},
 							{
@@ -456,17 +411,10 @@
 					]
 				}
 			},
-			"hydra:flying": {
-				"add": {
-					"component_groups": [
-						"bridge:execute_command_id_1"
-					]
-				}
-			},
 			"hydra:item": {
 				"add": {
 					"component_groups": [
-						"bridge:execute_command_id_2"
+						"bridge:execute_command_id_1"
 					]
 				}
 			},
@@ -480,7 +428,7 @@
 			"minecraft:kadetected": {
 				"add": {
 					"component_groups": [
-						"bridge:execute_command_id_3"
+						"bridge:execute_command_id_2"
 					]
 				}
 			},
@@ -505,18 +453,6 @@
 				"remove": {
 					"component_groups": [
 						"bridge:execute_command_id_2"
-					]
-				}
-			},
-			"bridge:remove_command_id_3": {
-				"add": {
-					"component_groups": [
-						"bridge:execute_no_command"
-					]
-				},
-				"remove": {
-					"component_groups": [
-						"bridge:execute_command_id_3"
 					]
 				}
 			}

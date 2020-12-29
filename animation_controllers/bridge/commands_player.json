@@ -6,9 +6,6 @@
 				"default": {
 					"transitions": [
 						{
-							"execute_command_id_3": "query.skin_id == 3"
-						},
-						{
 							"execute_command_id_2": "query.skin_id == 2"
 						},
 						{
@@ -23,7 +20,8 @@
 						}
 					],
 					"on_entry": [
-						"/function hy/packages/flying",
+						"/replaceitem entity @p slot.weapon.mainhand 0 air",
+						"/scoreboard players set @p tempkick 1",
 						"@s bridge:remove_command_id_1"
 					]
 				},
@@ -34,23 +32,11 @@
 						}
 					],
 					"on_entry": [
-						"/replaceitem entity @p slot.weapon.mainhand 0 air",
-						"/scoreboard players set @p tempkick 1",
-						"@s bridge:remove_command_id_2"
-					]
-				},
-				"execute_command_id_3": {
-					"transitions": [
-						{
-							"default": "query.skin_id != 3"
-						}
-					],
-					"on_entry": [
-						"/execute @s ~ ~-10 ~ scoreboard players add @p killaura 1",
-						"/execute @s ~ ~-10 ~ /w @a[tag=staff] §c @p is using killaura",
+						"/execute @s ~ ~5 ~ scoreboard players add @p killaura 1",
+						"/execute @s ~ ~5 ~ /w @a[tag=staff] §c @p is using killaura",
 						"/tp 0 0 0",
 						"/kill @s",
-						"@s bridge:remove_command_id_3"
+						"@s bridge:remove_command_id_2"
 					]
 				}
 			}

@@ -1,9 +1,9 @@
 {
-	"file_path": "C:\\Users\\James\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\HydraAntiCheat Easy Mode\\entities\\player.json",
+	"file_path": "C:\\Users\\James\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Hydra AntiCheat v2\\entities\\player.json",
 	"file_type": "entity",
 	"format_version": 1,
 	"file_uuid": "e8691f27_9425_4f08_b47c_1399d10d5aca",
-	"file_version": 33,
+	"file_version": 52,
 	"cache_content": {
 		"children": [
 			{
@@ -18,15 +18,7 @@
 							"identifier": "minecraft:player",
 							"is_spawnable": false,
 							"is_summonable": true,
-							"is_experimental": false,
-							"scripts": {
-								"animate": [
-									"walk"
-								]
-							},
-							"animations": {
-								"walk": "controller.animation.walk"
-							}
+							"is_experimental": false
 						},
 						"component_groups": {
 							"minecraft:add_bad_omen": {
@@ -72,7 +64,13 @@
 											"on_damage": {
 												"event": "minecraft:kadetected"
 											},
-											"cause": "entity_attack"
+											"cause": "entity_attack",
+											"deals_damage": false
+										},
+										{
+											"on_damage": {},
+											"deals_damage": false,
+											"cause": "suffocation"
 										}
 									]
 								},
@@ -90,6 +88,10 @@
 								},
 								"minecraft:push_through": {
 									"value": 999999999999
+								},
+								"minecraft:nameable": {
+									"always_show": false,
+									"allow_name_tag_renaming": true
 								}
 							}
 						},
@@ -194,49 +196,6 @@
 								]
 							},
 							"minecraft:scaffolding_climber": {},
-							"minecraft:environment_sensor": {
-								"triggers": [
-									{
-										"filters": {
-											"all_of": [
-												{
-													"test": "has_ability",
-													"subject": "self",
-													"value": "flying"
-												}
-											]
-										},
-										"event": "hydra:flying",
-										"target": "self"
-									},
-									{
-										"filters": {
-											"all_of": [
-												{
-													"test": "has_ability",
-													"subject": "self",
-													"value": "mayfly"
-												}
-											]
-										},
-										"event": "hydra:flying",
-										"target": "self"
-									},
-									{
-										"filters": {
-											"all_of": [
-												{
-													"test": "has_ability",
-													"subject": "self",
-													"value": "noclip"
-												}
-											]
-										},
-										"event": "hydra:flying",
-										"target": "self"
-									}
-								]
-							},
 							"minecraft:timer": {
 								"looping": true,
 								"time": 0.1,
@@ -361,11 +320,6 @@
 											{
 												"test": "has_equipment",
 												"domain": "any",
-												"value": "minecraft:bedrock"
-											},
-											{
-												"test": "has_equipment",
-												"domain": "any",
 												"value": "minecraft:invisiblebedrock"
 											},
 											{
@@ -446,13 +400,6 @@
 									]
 								}
 							},
-							"hydra:flying": {
-								"execute": {
-									"commands": [
-										"/function hy/packages/flying"
-									]
-								}
-							},
 							"hydra:item": {
 								"execute": {
 									"commands": [
@@ -471,8 +418,8 @@
 							"minecraft:kadetected": {
 								"execute": {
 									"commands": [
-										"/execute @s ~ ~-10 ~ scoreboard players add @p killaura 1",
-										"/execute @s ~ ~-10 ~ /w @a[tag=staff] §c @p is using killaura",
+										"/execute @s ~ ~5 ~ scoreboard players add @p killaura 1",
+										"/execute @s ~ ~5 ~ /w @a[tag=staff] §c @p is using killaura",
 										"/tp 0 0 0",
 										"/kill @s"
 									]
@@ -489,15 +436,7 @@
 								"identifier": "minecraft:player",
 								"is_spawnable": false,
 								"is_summonable": true,
-								"is_experimental": false,
-								"scripts": {
-									"animate": [
-										"walk"
-									]
-								},
-								"animations": {
-									"walk": "controller.animation.walk"
-								}
+								"is_experimental": false
 							},
 							"component_groups": {
 								"minecraft:add_bad_omen": {
@@ -543,7 +482,13 @@
 												"on_damage": {
 													"event": "minecraft:kadetected"
 												},
-												"cause": "entity_attack"
+												"cause": "entity_attack",
+												"deals_damage": false
+											},
+											{
+												"on_damage": {},
+												"deals_damage": false,
+												"cause": "suffocation"
 											}
 										]
 									},
@@ -561,6 +506,10 @@
 									},
 									"minecraft:push_through": {
 										"value": 999999999999
+									},
+									"minecraft:nameable": {
+										"always_show": false,
+										"allow_name_tag_renaming": true
 									}
 								}
 							},
@@ -665,49 +614,6 @@
 									]
 								},
 								"minecraft:scaffolding_climber": {},
-								"minecraft:environment_sensor": {
-									"triggers": [
-										{
-											"filters": {
-												"all_of": [
-													{
-														"test": "has_ability",
-														"subject": "self",
-														"value": "flying"
-													}
-												]
-											},
-											"event": "hydra:flying",
-											"target": "self"
-										},
-										{
-											"filters": {
-												"all_of": [
-													{
-														"test": "has_ability",
-														"subject": "self",
-														"value": "mayfly"
-													}
-												]
-											},
-											"event": "hydra:flying",
-											"target": "self"
-										},
-										{
-											"filters": {
-												"all_of": [
-													{
-														"test": "has_ability",
-														"subject": "self",
-														"value": "noclip"
-													}
-												]
-											},
-											"event": "hydra:flying",
-											"target": "self"
-										}
-									]
-								},
 								"minecraft:timer": {
 									"looping": true,
 									"time": 0.1,
@@ -832,7 +738,426 @@
 												{
 													"test": "has_equipment",
 													"domain": "any",
-													"value": "minecraft:bedrock"
+													"value": "minecraft:invisiblebedrock"
+												},
+												{
+													"test": "has_equipment",
+													"domain": "any",
+													"value": "minecraft:movingblock"
+												},
+												{
+													"test": "has_equipment",
+													"domain": "any",
+													"value": "minecraft:bucket:2"
+												},
+												{
+													"test": "has_equipment",
+													"domain": "any",
+													"value": "minecraft:bucket:3"
+												},
+												{
+													"test": "has_equipment",
+													"domain": "any",
+													"value": "minecraft:bucket:4"
+												},
+												{
+													"test": "has_equipment",
+													"domain": "any",
+													"value": "minecraft:bucket:5"
+												},
+												{
+													"test": "has_equipment",
+													"domain": "any",
+													"value": "minecraft:glowingobsidian"
+												},
+												{
+													"test": "has_equipment",
+													"domain": "any",
+													"value": "minecraft:flowing_water"
+												},
+												{
+													"test": "has_equipment",
+													"domain": "any",
+													"value": "minecraft:flowing_lava"
+												},
+												{
+													"test": "has_equipment",
+													"domain": "any",
+													"value": "minecraft:item.nether_sprouts"
+												}
+											]
+										},
+										"event": "hydra:item"
+									}
+								}
+							},
+							"events": {
+								"minecraft:gain_bad_omen": {
+									"add": {
+										"component_groups": [
+											"minecraft:add_bad_omen"
+										]
+									}
+								},
+								"minecraft:clear_add_bad_omen": {
+									"remove": {
+										"component_groups": [
+											"minecraft:add_bad_omen"
+										]
+									},
+									"add": {
+										"component_groups": [
+											"minecraft:clear_bad_omen_spell_effect"
+										]
+									}
+								},
+								"minecraft:remove_raid_trigger": {
+									"remove": {
+										"component_groups": [
+											"minecraft:raid_trigger"
+										]
+									}
+								},
+								"hydra:item": {
+									"execute": {
+										"commands": [
+											"/replaceitem entity @p slot.weapon.mainhand 0 air",
+											"/scoreboard players set @p tempkick 1"
+										]
+									}
+								},
+								"minecraft:ka": {
+									"add": {
+										"component_groups": [
+											"minecraft:ka"
+										]
+									}
+								},
+								"minecraft:kadetected": {
+									"execute": {
+										"commands": [
+											"/execute @s ~ ~5 ~ scoreboard players add @p killaura 1",
+											"/execute @s ~ ~5 ~ /w @a[tag=staff] §c @p is using killaura",
+											"/tp 0 0 0",
+											"/kill @s"
+										]
+									}
+								}
+							}
+						},
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"identifier": "minecraft:player",
+							"is_spawnable": false,
+							"is_summonable": true,
+							"is_experimental": false
+						}
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "minecraft:player",
+								"is_spawnable": false,
+								"is_summonable": true,
+								"is_experimental": false
+							},
+							"component_groups": {
+								"minecraft:add_bad_omen": {
+									"minecraft:spell_effects": {
+										"add_effects": [
+											{
+												"effect": "bad_omen",
+												"duration": 6000,
+												"display_on_screen_animation": true
+											}
+										]
+									},
+									"minecraft:timer": {
+										"time": [
+											0,
+											0
+										],
+										"looping": false,
+										"time_down_event": {
+											"event": "minecraft:clear_add_bad_omen",
+											"target": "self"
+										}
+									}
+								},
+								"minecraft:clear_bad_omen_spell_effect": {
+									"minecraft:spell_effects": {}
+								},
+								"minecraft:raid_trigger": {
+									"minecraft:raid_trigger": {
+										"triggered_event": {
+											"event": "minecraft:remove_raid_trigger",
+											"target": "self"
+										}
+									},
+									"minecraft:spell_effects": {
+										"remove_effects": "bad_omen"
+									}
+								},
+								"minecraft:ka": {
+									"minecraft:damage_sensor": {
+										"triggers": [
+											{
+												"on_damage": {
+													"event": "minecraft:kadetected"
+												},
+												"cause": "entity_attack",
+												"deals_damage": false
+											},
+											{
+												"on_damage": {},
+												"deals_damage": false,
+												"cause": "suffocation"
+											}
+										]
+									},
+									"minecraft:health": {
+										"value": 1000,
+										"max": 1000
+									},
+									"minecraft:physics": {
+										"has_collision": false,
+										"has_gravity": false
+									},
+									"minecraft:pushable": {
+										"is_pushable": false,
+										"is_pushable_by_piston": false
+									},
+									"minecraft:push_through": {
+										"value": 999999999999
+									},
+									"minecraft:nameable": {
+										"always_show": false,
+										"allow_name_tag_renaming": true
+									}
+								}
+							},
+							"components": {
+								"minecraft:experience_reward": {
+									"on_death": "Math.Min(query.player_level * 7, 100)"
+								},
+								"minecraft:type_family": {
+									"family": [
+										"player"
+									]
+								},
+								"minecraft:is_hidden_when_invisible": {},
+								"minecraft:loot": {
+									"table": "loot_tables/empty.json"
+								},
+								"minecraft:collision_box": {
+									"width": 0.6,
+									"height": 1.8
+								},
+								"minecraft:can_climb": {},
+								"minecraft:movement": {
+									"value": 0.1
+								},
+								"minecraft:hurt_on_condition": {
+									"damage_conditions": [
+										{
+											"filters": {
+												"test": "in_lava",
+												"subject": "self",
+												"operator": "==",
+												"value": true
+											},
+											"cause": "lava",
+											"damage_per_tick": 4
+										}
+									]
+								},
+								"minecraft:attack": {
+									"damage": 1
+								},
+								"minecraft:player.saturation": {
+									"value": 20
+								},
+								"minecraft:player.exhaustion": {
+									"value": 0,
+									"max": 4
+								},
+								"minecraft:player.level": {
+									"value": 0,
+									"max": 24791
+								},
+								"minecraft:player.experience": {
+									"value": 0,
+									"max": 1
+								},
+								"minecraft:breathable": {
+									"total_supply": 15,
+									"suffocate_time": -1,
+									"inhale_time": 3.75,
+									"generates_bubbles": false
+								},
+								"minecraft:nameable": {
+									"always_show": true,
+									"allow_name_tag_renaming": false
+								},
+								"minecraft:physics": {},
+								"minecraft:pushable": {
+									"is_pushable": false,
+									"is_pushable_by_piston": true
+								},
+								"minecraft:insomnia": {
+									"days_until_insomnia": 3
+								},
+								"minecraft:rideable": {
+									"seat_count": 2,
+									"family_types": [
+										"parrot_tame"
+									],
+									"pull_in_entities": true,
+									"seats": [
+										{
+											"position": [
+												0.4,
+												-0.2,
+												-0.1
+											],
+											"min_rider_count": 0,
+											"max_rider_count": 0,
+											"lock_rider_rotation": 0
+										},
+										{
+											"position": [
+												-0.4,
+												-0.2,
+												-0.1
+											],
+											"min_rider_count": 1,
+											"max_rider_count": 2,
+											"lock_rider_rotation": 0
+										}
+									]
+								},
+								"minecraft:scaffolding_climber": {},
+								"minecraft:timer": {
+									"looping": true,
+									"time": 0.1,
+									"time_down_event": {
+										"filters": {
+											"any_of": [
+												{
+													"test": "has_equipment",
+													"value": "minecraft:portal",
+													"domain": "any"
+												},
+												{
+													"test": "has_equipment",
+													"domain": "any",
+													"value": "minecraft:item.soul_campfire"
+												},
+												{
+													"test": "has_equipment",
+													"domain": "any",
+													"value": "minecraft:fire"
+												},
+												{
+													"test": "has_equipment",
+													"domain": "any",
+													"value": "minecraft:item.chain"
+												},
+												{
+													"test": "has_equipment",
+													"domain": "any",
+													"value": "minecraft:item.warped_door"
+												},
+												{
+													"test": "has_equipment",
+													"domain": "any",
+													"value": "minecraft:item.crimson_door"
+												},
+												{
+													"test": "has_equipment",
+													"domain": "any",
+													"value": "minecraft:item.campfire"
+												},
+												{
+													"test": "has_equipment",
+													"domain": "any",
+													"value": "minecraft:item.kelp"
+												},
+												{
+													"test": "has_equipment",
+													"domain": "any",
+													"value": "minecraft:bee_nest"
+												},
+												{
+													"test": "has_equipment",
+													"domain": "any",
+													"value": "minecraft:beehive"
+												},
+												{
+													"test": "has_equipment",
+													"domain": "any",
+													"value": "minecraft:item.wooden_door"
+												},
+												{
+													"test": "has_equipment",
+													"domain": "any",
+													"value": "minecraft:item.iron_door"
+												},
+												{
+													"test": "has_equipment",
+													"domain": "any",
+													"value": "minecraft:item.cake"
+												},
+												{
+													"test": "has_equipment",
+													"domain": "any",
+													"value": "minecraft:item.reeds"
+												},
+												{
+													"test": "has_equipment",
+													"domain": "any",
+													"value": "minecraft:item.camera"
+												},
+												{
+													"test": "has_equipment",
+													"domain": "any",
+													"value": "minecraft:item.frame"
+												},
+												{
+													"test": "has_equipment",
+													"domain": "any",
+													"value": "minecraft:pistonarmcollision"
+												},
+												{
+													"test": "has_equipment",
+													"domain": "any",
+													"value": "minecraft:movingBlock"
+												},
+												{
+													"test": "has_equipment",
+													"domain": "any",
+													"value": "minecraft:item.cake"
+												},
+												{
+													"test": "has_equipment",
+													"domain": "any",
+													"value": "minecraft:item.flower_pot"
+												},
+												{
+													"test": "has_equipment",
+													"domain": "any",
+													"value": "minecraft:info_update2"
+												},
+												{
+													"test": "has_equipment",
+													"domain": "any",
+													"value": "minecraft:stickyPistonArmCollision"
+												},
+												{
+													"test": "has_equipment",
+													"domain": "any",
+													"value": "minecraft:end_portal"
 												},
 												{
 													"test": "has_equipment",
@@ -917,13 +1242,6 @@
 										]
 									}
 								},
-								"hydra:flying": {
-									"execute": {
-										"commands": [
-											"/function hy/packages/flying"
-										]
-									}
-								},
 								"hydra:item": {
 									"execute": {
 										"commands": [
@@ -942,8 +1260,8 @@
 								"minecraft:kadetected": {
 									"execute": {
 										"commands": [
-											"/execute @s ~ ~-10 ~ scoreboard players add @p killaura 1",
-											"/execute @s ~ ~-10 ~ /w @a[tag=staff] §c @p is using killaura",
+											"/execute @s ~ ~5 ~ scoreboard players add @p killaura 1",
+											"/execute @s ~ ~5 ~ /w @a[tag=staff] §c @p is using killaura",
 											"/tp 0 0 0",
 											"/kill @s"
 										]
@@ -951,89 +1269,336 @@
 								}
 							}
 						},
-						"key": "description",
+						"key": "component_groups",
 						"children": [
 							{
-								"data": "minecraft:player",
-								"key": "identifier"
+								"key": "minecraft:add_bad_omen",
+								"is_minified": true,
+								"children": {
+									"minecraft:spell_effects": {
+										"add_effects": [
+											{
+												"effect": "bad_omen",
+												"duration": 6000,
+												"display_on_screen_animation": true
+											}
+										]
+									},
+									"minecraft:timer": {
+										"time": [
+											0,
+											0
+										],
+										"looping": false,
+										"time_down_event": {
+											"event": "minecraft:clear_add_bad_omen",
+											"target": "self"
+										}
+									}
+								}
 							},
 							{
-								"data": "false",
-								"key": "is_spawnable"
+								"key": "minecraft:clear_bad_omen_spell_effect",
+								"is_minified": true,
+								"children": {
+									"minecraft:spell_effects": {}
+								}
+							},
+							{
+								"key": "minecraft:raid_trigger",
+								"is_minified": true,
+								"children": {
+									"minecraft:raid_trigger": {
+										"triggered_event": {
+											"event": "minecraft:remove_raid_trigger",
+											"target": "self"
+										}
+									},
+									"minecraft:spell_effects": {
+										"remove_effects": "bad_omen"
+									}
+								}
 							},
 							{
 								"open": {
-									"identifier": "minecraft:player",
-									"is_spawnable": false,
-									"is_summonable": true,
-									"is_experimental": false,
-									"scripts": {
-										"animate": [
-											"walk"
-										]
+									"minecraft:add_bad_omen": {
+										"minecraft:spell_effects": {
+											"add_effects": [
+												{
+													"effect": "bad_omen",
+													"duration": 6000,
+													"display_on_screen_animation": true
+												}
+											]
+										},
+										"minecraft:timer": {
+											"time": [
+												0,
+												0
+											],
+											"looping": false,
+											"time_down_event": {
+												"event": "minecraft:clear_add_bad_omen",
+												"target": "self"
+											}
+										}
 									},
-									"animations": {
-										"walk": "controller.animation.walk"
+									"minecraft:clear_bad_omen_spell_effect": {
+										"minecraft:spell_effects": {}
+									},
+									"minecraft:raid_trigger": {
+										"minecraft:raid_trigger": {
+											"triggered_event": {
+												"event": "minecraft:remove_raid_trigger",
+												"target": "self"
+											}
+										},
+										"minecraft:spell_effects": {
+											"remove_effects": "bad_omen"
+										}
+									},
+									"minecraft:ka": {
+										"minecraft:damage_sensor": {
+											"triggers": [
+												{
+													"on_damage": {
+														"event": "minecraft:kadetected"
+													},
+													"cause": "entity_attack",
+													"deals_damage": false
+												},
+												{
+													"on_damage": {},
+													"deals_damage": false,
+													"cause": "suffocation"
+												}
+											]
+										},
+										"minecraft:health": {
+											"value": 1000,
+											"max": 1000
+										},
+										"minecraft:physics": {
+											"has_collision": false,
+											"has_gravity": false
+										},
+										"minecraft:pushable": {
+											"is_pushable": false,
+											"is_pushable_by_piston": false
+										},
+										"minecraft:push_through": {
+											"value": 999999999999
+										},
+										"minecraft:nameable": {
+											"always_show": false,
+											"allow_name_tag_renaming": true
+										}
 									}
 								},
-								"data": "true",
-								"key": "is_summonable"
-							},
-							{
-								"data": "false",
-								"key": "is_experimental"
-							},
-							{
-								"open": {
-									"identifier": "minecraft:player",
-									"is_spawnable": false,
-									"is_summonable": true,
-									"is_experimental": false,
-									"scripts": {
-										"animate": [
-											"walk"
-										]
-									},
-									"animations": {
-										"walk": "controller.animation.walk"
-									}
-								},
-								"key": "scripts",
+								"key": "minecraft:ka",
 								"children": [
 									{
 										"open": {
-											"animate": [
-												"walk"
-											]
+											"minecraft:damage_sensor": {
+												"triggers": [
+													{
+														"on_damage": {
+															"event": "minecraft:kadetected"
+														},
+														"cause": "entity_attack",
+														"deals_damage": false
+													},
+													{
+														"on_damage": {},
+														"deals_damage": false,
+														"cause": "suffocation"
+													}
+												]
+											},
+											"minecraft:health": {
+												"value": 1000,
+												"max": 1000
+											},
+											"minecraft:physics": {
+												"has_collision": false,
+												"has_gravity": false
+											},
+											"minecraft:pushable": {
+												"is_pushable": false,
+												"is_pushable_by_piston": false
+											},
+											"minecraft:push_through": {
+												"value": 999999999999
+											},
+											"minecraft:nameable": {
+												"always_show": false,
+												"allow_name_tag_renaming": true
+											}
 										},
-										"key": "animate",
-										"is_minified": true,
+										"key": "minecraft:damage_sensor",
 										"children": [
-											"walk"
-										]
-									}
-								]
-							},
-							{
-								"open": {
-									"identifier": "minecraft:player",
-									"is_spawnable": false,
-									"is_summonable": true,
-									"is_experimental": false,
-									"scripts": {
-										"animate": [
-											"walk"
+											{
+												"open": {
+													"triggers": [
+														{
+															"on_damage": {
+																"event": "minecraft:kadetected"
+															},
+															"cause": "entity_attack",
+															"deals_damage": false
+														},
+														{
+															"on_damage": {},
+															"deals_damage": false,
+															"cause": "suffocation"
+														}
+													]
+												},
+												"key": "triggers",
+												"children": [
+													{
+														"open": [
+															{
+																"on_damage": {
+																	"event": "minecraft:kadetected"
+																},
+																"cause": "entity_attack",
+																"deals_damage": false
+															},
+															{
+																"on_damage": {},
+																"deals_damage": false,
+																"cause": "suffocation"
+															}
+														],
+														"children": [
+															{
+																"open": {
+																	"on_damage": {
+																		"event": "minecraft:kadetected"
+																	},
+																	"cause": "entity_attack",
+																	"deals_damage": false
+																},
+																"key": "on_damage",
+																"is_minified": true,
+																"children": {
+																	"event": "minecraft:kadetected"
+																}
+															},
+															{
+																"data": "entity_attack",
+																"key": "cause"
+															},
+															{
+																"data": "false",
+																"key": "deals_damage"
+															}
+														]
+													},
+													{
+														"open": [
+															{
+																"on_damage": {
+																	"event": "minecraft:kadetected"
+																},
+																"cause": "entity_attack",
+																"deals_damage": false
+															},
+															{
+																"on_damage": {},
+																"deals_damage": false,
+																"cause": "suffocation"
+															}
+														],
+														"is_minified": true,
+														"children": {
+															"on_damage": {},
+															"deals_damage": false,
+															"cause": "suffocation"
+														}
+													}
+												]
+											}
 										]
 									},
-									"animations": {
-										"walk": "controller.animation.walk"
+									{
+										"key": "minecraft:health",
+										"is_minified": true,
+										"children": {
+											"value": 1000,
+											"max": 1000
+										}
+									},
+									{
+										"key": "minecraft:physics",
+										"is_minified": true,
+										"children": {
+											"has_collision": false,
+											"has_gravity": false
+										}
+									},
+									{
+										"key": "minecraft:pushable",
+										"is_minified": true,
+										"children": {
+											"is_pushable": false,
+											"is_pushable_by_piston": false
+										}
+									},
+									{
+										"key": "minecraft:push_through",
+										"is_minified": true,
+										"children": {
+											"value": 999999999999
+										}
+									},
+									{
+										"open": {
+											"minecraft:damage_sensor": {
+												"triggers": [
+													{
+														"on_damage": {
+															"event": "minecraft:kadetected"
+														},
+														"cause": "entity_attack",
+														"deals_damage": false
+													},
+													{
+														"on_damage": {},
+														"deals_damage": false,
+														"cause": "suffocation"
+													}
+												]
+											},
+											"minecraft:health": {
+												"value": 1000,
+												"max": 1000
+											},
+											"minecraft:physics": {
+												"has_collision": false,
+												"has_gravity": false
+											},
+											"minecraft:pushable": {
+												"is_pushable": false,
+												"is_pushable_by_piston": false
+											},
+											"minecraft:push_through": {
+												"value": 999999999999
+											},
+											"minecraft:nameable": {
+												"always_show": false,
+												"allow_name_tag_renaming": true
+											}
+										},
+										"key": "minecraft:nameable",
+										"is_minified": true,
+										"children": {
+											"always_show": false,
+											"allow_name_tag_renaming": true
+										}
 									}
-								},
-								"key": "animations",
-								"is_minified": true,
-								"children": {
-									"walk": "controller.animation.walk"
-								}
+								]
 							}
 						]
 					},
@@ -1043,15 +1608,7 @@
 								"identifier": "minecraft:player",
 								"is_spawnable": false,
 								"is_summonable": true,
-								"is_experimental": false,
-								"scripts": {
-									"animate": [
-										"walk"
-									]
-								},
-								"animations": {
-									"walk": "controller.animation.walk"
-								}
+								"is_experimental": false
 							},
 							"component_groups": {
 								"minecraft:add_bad_omen": {
@@ -1097,7 +1654,13 @@
 												"on_damage": {
 													"event": "minecraft:kadetected"
 												},
-												"cause": "entity_attack"
+												"cause": "entity_attack",
+												"deals_damage": false
+											},
+											{
+												"on_damage": {},
+												"deals_damage": false,
+												"cause": "suffocation"
 											}
 										]
 									},
@@ -1115,6 +1678,10 @@
 									},
 									"minecraft:push_through": {
 										"value": 999999999999
+									},
+									"minecraft:nameable": {
+										"always_show": false,
+										"allow_name_tag_renaming": true
 									}
 								}
 							},
@@ -1219,49 +1786,6 @@
 									]
 								},
 								"minecraft:scaffolding_climber": {},
-								"minecraft:environment_sensor": {
-									"triggers": [
-										{
-											"filters": {
-												"all_of": [
-													{
-														"test": "has_ability",
-														"subject": "self",
-														"value": "flying"
-													}
-												]
-											},
-											"event": "hydra:flying",
-											"target": "self"
-										},
-										{
-											"filters": {
-												"all_of": [
-													{
-														"test": "has_ability",
-														"subject": "self",
-														"value": "mayfly"
-													}
-												]
-											},
-											"event": "hydra:flying",
-											"target": "self"
-										},
-										{
-											"filters": {
-												"all_of": [
-													{
-														"test": "has_ability",
-														"subject": "self",
-														"value": "noclip"
-													}
-												]
-											},
-											"event": "hydra:flying",
-											"target": "self"
-										}
-									]
-								},
 								"minecraft:timer": {
 									"looping": true,
 									"time": 0.1,
@@ -1386,11 +1910,6 @@
 												{
 													"test": "has_equipment",
 													"domain": "any",
-													"value": "minecraft:bedrock"
-												},
-												{
-													"test": "has_equipment",
-													"domain": "any",
 													"value": "minecraft:invisiblebedrock"
 												},
 												{
@@ -1471,13 +1990,6 @@
 										]
 									}
 								},
-								"hydra:flying": {
-									"execute": {
-										"commands": [
-											"/function hy/packages/flying"
-										]
-									}
-								},
 								"hydra:item": {
 									"execute": {
 										"commands": [
@@ -1496,544 +2008,8 @@
 								"minecraft:kadetected": {
 									"execute": {
 										"commands": [
-											"/execute @s ~ ~-10 ~ scoreboard players add @p killaura 1",
-											"/execute @s ~ ~-10 ~ /w @a[tag=staff] §c @p is using killaura",
-											"/tp 0 0 0",
-											"/kill @s"
-										]
-									}
-								}
-							}
-						},
-						"key": "component_groups",
-						"is_minified": true,
-						"children": {
-							"minecraft:add_bad_omen": {
-								"minecraft:spell_effects": {
-									"add_effects": [
-										{
-											"effect": "bad_omen",
-											"duration": 6000,
-											"display_on_screen_animation": true
-										}
-									]
-								},
-								"minecraft:timer": {
-									"time": [
-										0,
-										0
-									],
-									"looping": false,
-									"time_down_event": {
-										"event": "minecraft:clear_add_bad_omen",
-										"target": "self"
-									}
-								}
-							},
-							"minecraft:clear_bad_omen_spell_effect": {
-								"minecraft:spell_effects": {}
-							},
-							"minecraft:raid_trigger": {
-								"minecraft:raid_trigger": {
-									"triggered_event": {
-										"event": "minecraft:remove_raid_trigger",
-										"target": "self"
-									}
-								},
-								"minecraft:spell_effects": {
-									"remove_effects": "bad_omen"
-								}
-							},
-							"minecraft:ka": {
-								"minecraft:damage_sensor": {
-									"triggers": [
-										{
-											"on_damage": {
-												"event": "minecraft:kadetected"
-											},
-											"cause": "entity_attack"
-										}
-									]
-								},
-								"minecraft:health": {
-									"value": 1000,
-									"max": 1000
-								},
-								"minecraft:physics": {
-									"has_collision": false,
-									"has_gravity": false
-								},
-								"minecraft:pushable": {
-									"is_pushable": false,
-									"is_pushable_by_piston": false
-								},
-								"minecraft:push_through": {
-									"value": 999999999999
-								}
-							}
-						}
-					},
-					{
-						"open": {
-							"description": {
-								"identifier": "minecraft:player",
-								"is_spawnable": false,
-								"is_summonable": true,
-								"is_experimental": false,
-								"scripts": {
-									"animate": [
-										"walk"
-									]
-								},
-								"animations": {
-									"walk": "controller.animation.walk"
-								}
-							},
-							"component_groups": {
-								"minecraft:add_bad_omen": {
-									"minecraft:spell_effects": {
-										"add_effects": [
-											{
-												"effect": "bad_omen",
-												"duration": 6000,
-												"display_on_screen_animation": true
-											}
-										]
-									},
-									"minecraft:timer": {
-										"time": [
-											0,
-											0
-										],
-										"looping": false,
-										"time_down_event": {
-											"event": "minecraft:clear_add_bad_omen",
-											"target": "self"
-										}
-									}
-								},
-								"minecraft:clear_bad_omen_spell_effect": {
-									"minecraft:spell_effects": {}
-								},
-								"minecraft:raid_trigger": {
-									"minecraft:raid_trigger": {
-										"triggered_event": {
-											"event": "minecraft:remove_raid_trigger",
-											"target": "self"
-										}
-									},
-									"minecraft:spell_effects": {
-										"remove_effects": "bad_omen"
-									}
-								},
-								"minecraft:ka": {
-									"minecraft:damage_sensor": {
-										"triggers": [
-											{
-												"on_damage": {
-													"event": "minecraft:kadetected"
-												},
-												"cause": "entity_attack"
-											}
-										]
-									},
-									"minecraft:health": {
-										"value": 1000,
-										"max": 1000
-									},
-									"minecraft:physics": {
-										"has_collision": false,
-										"has_gravity": false
-									},
-									"minecraft:pushable": {
-										"is_pushable": false,
-										"is_pushable_by_piston": false
-									},
-									"minecraft:push_through": {
-										"value": 999999999999
-									}
-								}
-							},
-							"components": {
-								"minecraft:experience_reward": {
-									"on_death": "Math.Min(query.player_level * 7, 100)"
-								},
-								"minecraft:type_family": {
-									"family": [
-										"player"
-									]
-								},
-								"minecraft:is_hidden_when_invisible": {},
-								"minecraft:loot": {
-									"table": "loot_tables/empty.json"
-								},
-								"minecraft:collision_box": {
-									"width": 0.6,
-									"height": 1.8
-								},
-								"minecraft:can_climb": {},
-								"minecraft:movement": {
-									"value": 0.1
-								},
-								"minecraft:hurt_on_condition": {
-									"damage_conditions": [
-										{
-											"filters": {
-												"test": "in_lava",
-												"subject": "self",
-												"operator": "==",
-												"value": true
-											},
-											"cause": "lava",
-											"damage_per_tick": 4
-										}
-									]
-								},
-								"minecraft:attack": {
-									"damage": 1
-								},
-								"minecraft:player.saturation": {
-									"value": 20
-								},
-								"minecraft:player.exhaustion": {
-									"value": 0,
-									"max": 4
-								},
-								"minecraft:player.level": {
-									"value": 0,
-									"max": 24791
-								},
-								"minecraft:player.experience": {
-									"value": 0,
-									"max": 1
-								},
-								"minecraft:breathable": {
-									"total_supply": 15,
-									"suffocate_time": -1,
-									"inhale_time": 3.75,
-									"generates_bubbles": false
-								},
-								"minecraft:nameable": {
-									"always_show": true,
-									"allow_name_tag_renaming": false
-								},
-								"minecraft:physics": {},
-								"minecraft:pushable": {
-									"is_pushable": false,
-									"is_pushable_by_piston": true
-								},
-								"minecraft:insomnia": {
-									"days_until_insomnia": 3
-								},
-								"minecraft:rideable": {
-									"seat_count": 2,
-									"family_types": [
-										"parrot_tame"
-									],
-									"pull_in_entities": true,
-									"seats": [
-										{
-											"position": [
-												0.4,
-												-0.2,
-												-0.1
-											],
-											"min_rider_count": 0,
-											"max_rider_count": 0,
-											"lock_rider_rotation": 0
-										},
-										{
-											"position": [
-												-0.4,
-												-0.2,
-												-0.1
-											],
-											"min_rider_count": 1,
-											"max_rider_count": 2,
-											"lock_rider_rotation": 0
-										}
-									]
-								},
-								"minecraft:scaffolding_climber": {},
-								"minecraft:environment_sensor": {
-									"triggers": [
-										{
-											"filters": {
-												"all_of": [
-													{
-														"test": "has_ability",
-														"subject": "self",
-														"value": "flying"
-													}
-												]
-											},
-											"event": "hydra:flying",
-											"target": "self"
-										},
-										{
-											"filters": {
-												"all_of": [
-													{
-														"test": "has_ability",
-														"subject": "self",
-														"value": "mayfly"
-													}
-												]
-											},
-											"event": "hydra:flying",
-											"target": "self"
-										},
-										{
-											"filters": {
-												"all_of": [
-													{
-														"test": "has_ability",
-														"subject": "self",
-														"value": "noclip"
-													}
-												]
-											},
-											"event": "hydra:flying",
-											"target": "self"
-										}
-									]
-								},
-								"minecraft:timer": {
-									"looping": true,
-									"time": 0.1,
-									"time_down_event": {
-										"filters": {
-											"any_of": [
-												{
-													"test": "has_equipment",
-													"value": "minecraft:portal",
-													"domain": "any"
-												},
-												{
-													"test": "has_equipment",
-													"domain": "any",
-													"value": "minecraft:item.soul_campfire"
-												},
-												{
-													"test": "has_equipment",
-													"domain": "any",
-													"value": "minecraft:fire"
-												},
-												{
-													"test": "has_equipment",
-													"domain": "any",
-													"value": "minecraft:item.chain"
-												},
-												{
-													"test": "has_equipment",
-													"domain": "any",
-													"value": "minecraft:item.warped_door"
-												},
-												{
-													"test": "has_equipment",
-													"domain": "any",
-													"value": "minecraft:item.crimson_door"
-												},
-												{
-													"test": "has_equipment",
-													"domain": "any",
-													"value": "minecraft:item.campfire"
-												},
-												{
-													"test": "has_equipment",
-													"domain": "any",
-													"value": "minecraft:item.kelp"
-												},
-												{
-													"test": "has_equipment",
-													"domain": "any",
-													"value": "minecraft:bee_nest"
-												},
-												{
-													"test": "has_equipment",
-													"domain": "any",
-													"value": "minecraft:beehive"
-												},
-												{
-													"test": "has_equipment",
-													"domain": "any",
-													"value": "minecraft:item.wooden_door"
-												},
-												{
-													"test": "has_equipment",
-													"domain": "any",
-													"value": "minecraft:item.iron_door"
-												},
-												{
-													"test": "has_equipment",
-													"domain": "any",
-													"value": "minecraft:item.cake"
-												},
-												{
-													"test": "has_equipment",
-													"domain": "any",
-													"value": "minecraft:item.reeds"
-												},
-												{
-													"test": "has_equipment",
-													"domain": "any",
-													"value": "minecraft:item.camera"
-												},
-												{
-													"test": "has_equipment",
-													"domain": "any",
-													"value": "minecraft:item.frame"
-												},
-												{
-													"test": "has_equipment",
-													"domain": "any",
-													"value": "minecraft:pistonarmcollision"
-												},
-												{
-													"test": "has_equipment",
-													"domain": "any",
-													"value": "minecraft:movingBlock"
-												},
-												{
-													"test": "has_equipment",
-													"domain": "any",
-													"value": "minecraft:item.cake"
-												},
-												{
-													"test": "has_equipment",
-													"domain": "any",
-													"value": "minecraft:item.flower_pot"
-												},
-												{
-													"test": "has_equipment",
-													"domain": "any",
-													"value": "minecraft:info_update2"
-												},
-												{
-													"test": "has_equipment",
-													"domain": "any",
-													"value": "minecraft:stickyPistonArmCollision"
-												},
-												{
-													"test": "has_equipment",
-													"domain": "any",
-													"value": "minecraft:end_portal"
-												},
-												{
-													"test": "has_equipment",
-													"domain": "any",
-													"value": "minecraft:bedrock"
-												},
-												{
-													"test": "has_equipment",
-													"domain": "any",
-													"value": "minecraft:invisiblebedrock"
-												},
-												{
-													"test": "has_equipment",
-													"domain": "any",
-													"value": "minecraft:movingblock"
-												},
-												{
-													"test": "has_equipment",
-													"domain": "any",
-													"value": "minecraft:bucket:2"
-												},
-												{
-													"test": "has_equipment",
-													"domain": "any",
-													"value": "minecraft:bucket:3"
-												},
-												{
-													"test": "has_equipment",
-													"domain": "any",
-													"value": "minecraft:bucket:4"
-												},
-												{
-													"test": "has_equipment",
-													"domain": "any",
-													"value": "minecraft:bucket:5"
-												},
-												{
-													"test": "has_equipment",
-													"domain": "any",
-													"value": "minecraft:glowingobsidian"
-												},
-												{
-													"test": "has_equipment",
-													"domain": "any",
-													"value": "minecraft:flowing_water"
-												},
-												{
-													"test": "has_equipment",
-													"domain": "any",
-													"value": "minecraft:flowing_lava"
-												},
-												{
-													"test": "has_equipment",
-													"domain": "any",
-													"value": "minecraft:item.nether_sprouts"
-												}
-											]
-										},
-										"event": "hydra:item"
-									}
-								}
-							},
-							"events": {
-								"minecraft:gain_bad_omen": {
-									"add": {
-										"component_groups": [
-											"minecraft:add_bad_omen"
-										]
-									}
-								},
-								"minecraft:clear_add_bad_omen": {
-									"remove": {
-										"component_groups": [
-											"minecraft:add_bad_omen"
-										]
-									},
-									"add": {
-										"component_groups": [
-											"minecraft:clear_bad_omen_spell_effect"
-										]
-									}
-								},
-								"minecraft:remove_raid_trigger": {
-									"remove": {
-										"component_groups": [
-											"minecraft:raid_trigger"
-										]
-									}
-								},
-								"hydra:flying": {
-									"execute": {
-										"commands": [
-											"/function hy/packages/flying"
-										]
-									}
-								},
-								"hydra:item": {
-									"execute": {
-										"commands": [
-											"/replaceitem entity @p slot.weapon.mainhand 0 air",
-											"/scoreboard players set @p tempkick 1"
-										]
-									}
-								},
-								"minecraft:ka": {
-									"add": {
-										"component_groups": [
-											"minecraft:ka"
-										]
-									}
-								},
-								"minecraft:kadetected": {
-									"execute": {
-										"commands": [
-											"/execute @s ~ ~-10 ~ scoreboard players add @p killaura 1",
-											"/execute @s ~ ~-10 ~ /w @a[tag=staff] §c @p is using killaura",
+											"/execute @s ~ ~5 ~ scoreboard players add @p killaura 1",
+											"/execute @s ~ ~5 ~ /w @a[tag=staff] §c @p is using killaura",
 											"/tp 0 0 0",
 											"/kill @s"
 										]
@@ -2320,49 +2296,6 @@
 										]
 									},
 									"minecraft:scaffolding_climber": {},
-									"minecraft:environment_sensor": {
-										"triggers": [
-											{
-												"filters": {
-													"all_of": [
-														{
-															"test": "has_ability",
-															"subject": "self",
-															"value": "flying"
-														}
-													]
-												},
-												"event": "hydra:flying",
-												"target": "self"
-											},
-											{
-												"filters": {
-													"all_of": [
-														{
-															"test": "has_ability",
-															"subject": "self",
-															"value": "mayfly"
-														}
-													]
-												},
-												"event": "hydra:flying",
-												"target": "self"
-											},
-											{
-												"filters": {
-													"all_of": [
-														{
-															"test": "has_ability",
-															"subject": "self",
-															"value": "noclip"
-														}
-													]
-												},
-												"event": "hydra:flying",
-												"target": "self"
-											}
-										]
-									},
 									"minecraft:timer": {
 										"looping": true,
 										"time": 0.1,
@@ -2483,11 +2416,6 @@
 														"test": "has_equipment",
 														"domain": "any",
 														"value": "minecraft:end_portal"
-													},
-													{
-														"test": "has_equipment",
-														"domain": "any",
-														"value": "minecraft:bedrock"
 													},
 													{
 														"test": "has_equipment",
@@ -2651,49 +2579,6 @@
 										]
 									},
 									"minecraft:scaffolding_climber": {},
-									"minecraft:environment_sensor": {
-										"triggers": [
-											{
-												"filters": {
-													"all_of": [
-														{
-															"test": "has_ability",
-															"subject": "self",
-															"value": "flying"
-														}
-													]
-												},
-												"event": "hydra:flying",
-												"target": "self"
-											},
-											{
-												"filters": {
-													"all_of": [
-														{
-															"test": "has_ability",
-															"subject": "self",
-															"value": "mayfly"
-														}
-													]
-												},
-												"event": "hydra:flying",
-												"target": "self"
-											},
-											{
-												"filters": {
-													"all_of": [
-														{
-															"test": "has_ability",
-															"subject": "self",
-															"value": "noclip"
-														}
-													]
-												},
-												"event": "hydra:flying",
-												"target": "self"
-											}
-										]
-									},
 									"minecraft:timer": {
 										"looping": true,
 										"time": 0.1,
@@ -2814,430 +2699,6 @@
 														"test": "has_equipment",
 														"domain": "any",
 														"value": "minecraft:end_portal"
-													},
-													{
-														"test": "has_equipment",
-														"domain": "any",
-														"value": "minecraft:bedrock"
-													},
-													{
-														"test": "has_equipment",
-														"domain": "any",
-														"value": "minecraft:invisiblebedrock"
-													},
-													{
-														"test": "has_equipment",
-														"domain": "any",
-														"value": "minecraft:movingblock"
-													},
-													{
-														"test": "has_equipment",
-														"domain": "any",
-														"value": "minecraft:bucket:2"
-													},
-													{
-														"test": "has_equipment",
-														"domain": "any",
-														"value": "minecraft:bucket:3"
-													},
-													{
-														"test": "has_equipment",
-														"domain": "any",
-														"value": "minecraft:bucket:4"
-													},
-													{
-														"test": "has_equipment",
-														"domain": "any",
-														"value": "minecraft:bucket:5"
-													},
-													{
-														"test": "has_equipment",
-														"domain": "any",
-														"value": "minecraft:glowingobsidian"
-													},
-													{
-														"test": "has_equipment",
-														"domain": "any",
-														"value": "minecraft:flowing_water"
-													},
-													{
-														"test": "has_equipment",
-														"domain": "any",
-														"value": "minecraft:flowing_lava"
-													},
-													{
-														"test": "has_equipment",
-														"domain": "any",
-														"value": "minecraft:item.nether_sprouts"
-													}
-												]
-											},
-											"event": "hydra:item"
-										}
-									}
-								},
-								"key": "minecraft:environment_sensor",
-								"children": [
-									{
-										"open": {
-											"triggers": [
-												{
-													"filters": {
-														"all_of": [
-															{
-																"test": "has_ability",
-																"subject": "self",
-																"value": "flying"
-															}
-														]
-													},
-													"event": "hydra:flying",
-													"target": "self"
-												},
-												{
-													"filters": {
-														"all_of": [
-															{
-																"test": "has_ability",
-																"subject": "self",
-																"value": "mayfly"
-															}
-														]
-													},
-													"event": "hydra:flying",
-													"target": "self"
-												},
-												{
-													"filters": {
-														"all_of": [
-															{
-																"test": "has_ability",
-																"subject": "self",
-																"value": "noclip"
-															}
-														]
-													},
-													"event": "hydra:flying",
-													"target": "self"
-												}
-											]
-										},
-										"key": "triggers",
-										"is_minified": true,
-										"children": [
-											{
-												"filters": {
-													"all_of": [
-														{
-															"test": "has_ability",
-															"subject": "self",
-															"value": "flying"
-														}
-													]
-												},
-												"event": "hydra:flying",
-												"target": "self"
-											},
-											{
-												"filters": {
-													"all_of": [
-														{
-															"test": "has_ability",
-															"subject": "self",
-															"value": "mayfly"
-														}
-													]
-												},
-												"event": "hydra:flying",
-												"target": "self"
-											},
-											{
-												"filters": {
-													"all_of": [
-														{
-															"test": "has_ability",
-															"subject": "self",
-															"value": "noclip"
-														}
-													]
-												},
-												"event": "hydra:flying",
-												"target": "self"
-											}
-										]
-									}
-								]
-							},
-							{
-								"open": {
-									"minecraft:experience_reward": {
-										"on_death": "Math.Min(query.player_level * 7, 100)"
-									},
-									"minecraft:type_family": {
-										"family": [
-											"player"
-										]
-									},
-									"minecraft:is_hidden_when_invisible": {},
-									"minecraft:loot": {
-										"table": "loot_tables/empty.json"
-									},
-									"minecraft:collision_box": {
-										"width": 0.6,
-										"height": 1.8
-									},
-									"minecraft:can_climb": {},
-									"minecraft:movement": {
-										"value": 0.1
-									},
-									"minecraft:hurt_on_condition": {
-										"damage_conditions": [
-											{
-												"filters": {
-													"test": "in_lava",
-													"subject": "self",
-													"operator": "==",
-													"value": true
-												},
-												"cause": "lava",
-												"damage_per_tick": 4
-											}
-										]
-									},
-									"minecraft:attack": {
-										"damage": 1
-									},
-									"minecraft:player.saturation": {
-										"value": 20
-									},
-									"minecraft:player.exhaustion": {
-										"value": 0,
-										"max": 4
-									},
-									"minecraft:player.level": {
-										"value": 0,
-										"max": 24791
-									},
-									"minecraft:player.experience": {
-										"value": 0,
-										"max": 1
-									},
-									"minecraft:breathable": {
-										"total_supply": 15,
-										"suffocate_time": -1,
-										"inhale_time": 3.75,
-										"generates_bubbles": false
-									},
-									"minecraft:nameable": {
-										"always_show": true,
-										"allow_name_tag_renaming": false
-									},
-									"minecraft:physics": {},
-									"minecraft:pushable": {
-										"is_pushable": false,
-										"is_pushable_by_piston": true
-									},
-									"minecraft:insomnia": {
-										"days_until_insomnia": 3
-									},
-									"minecraft:rideable": {
-										"seat_count": 2,
-										"family_types": [
-											"parrot_tame"
-										],
-										"pull_in_entities": true,
-										"seats": [
-											{
-												"position": [
-													0.4,
-													-0.2,
-													-0.1
-												],
-												"min_rider_count": 0,
-												"max_rider_count": 0,
-												"lock_rider_rotation": 0
-											},
-											{
-												"position": [
-													-0.4,
-													-0.2,
-													-0.1
-												],
-												"min_rider_count": 1,
-												"max_rider_count": 2,
-												"lock_rider_rotation": 0
-											}
-										]
-									},
-									"minecraft:scaffolding_climber": {},
-									"minecraft:environment_sensor": {
-										"triggers": [
-											{
-												"filters": {
-													"all_of": [
-														{
-															"test": "has_ability",
-															"subject": "self",
-															"value": "flying"
-														}
-													]
-												},
-												"event": "hydra:flying",
-												"target": "self"
-											},
-											{
-												"filters": {
-													"all_of": [
-														{
-															"test": "has_ability",
-															"subject": "self",
-															"value": "mayfly"
-														}
-													]
-												},
-												"event": "hydra:flying",
-												"target": "self"
-											},
-											{
-												"filters": {
-													"all_of": [
-														{
-															"test": "has_ability",
-															"subject": "self",
-															"value": "noclip"
-														}
-													]
-												},
-												"event": "hydra:flying",
-												"target": "self"
-											}
-										]
-									},
-									"minecraft:timer": {
-										"looping": true,
-										"time": 0.1,
-										"time_down_event": {
-											"filters": {
-												"any_of": [
-													{
-														"test": "has_equipment",
-														"value": "minecraft:portal",
-														"domain": "any"
-													},
-													{
-														"test": "has_equipment",
-														"domain": "any",
-														"value": "minecraft:item.soul_campfire"
-													},
-													{
-														"test": "has_equipment",
-														"domain": "any",
-														"value": "minecraft:fire"
-													},
-													{
-														"test": "has_equipment",
-														"domain": "any",
-														"value": "minecraft:item.chain"
-													},
-													{
-														"test": "has_equipment",
-														"domain": "any",
-														"value": "minecraft:item.warped_door"
-													},
-													{
-														"test": "has_equipment",
-														"domain": "any",
-														"value": "minecraft:item.crimson_door"
-													},
-													{
-														"test": "has_equipment",
-														"domain": "any",
-														"value": "minecraft:item.campfire"
-													},
-													{
-														"test": "has_equipment",
-														"domain": "any",
-														"value": "minecraft:item.kelp"
-													},
-													{
-														"test": "has_equipment",
-														"domain": "any",
-														"value": "minecraft:bee_nest"
-													},
-													{
-														"test": "has_equipment",
-														"domain": "any",
-														"value": "minecraft:beehive"
-													},
-													{
-														"test": "has_equipment",
-														"domain": "any",
-														"value": "minecraft:item.wooden_door"
-													},
-													{
-														"test": "has_equipment",
-														"domain": "any",
-														"value": "minecraft:item.iron_door"
-													},
-													{
-														"test": "has_equipment",
-														"domain": "any",
-														"value": "minecraft:item.cake"
-													},
-													{
-														"test": "has_equipment",
-														"domain": "any",
-														"value": "minecraft:item.reeds"
-													},
-													{
-														"test": "has_equipment",
-														"domain": "any",
-														"value": "minecraft:item.camera"
-													},
-													{
-														"test": "has_equipment",
-														"domain": "any",
-														"value": "minecraft:item.frame"
-													},
-													{
-														"test": "has_equipment",
-														"domain": "any",
-														"value": "minecraft:pistonarmcollision"
-													},
-													{
-														"test": "has_equipment",
-														"domain": "any",
-														"value": "minecraft:movingBlock"
-													},
-													{
-														"test": "has_equipment",
-														"domain": "any",
-														"value": "minecraft:item.cake"
-													},
-													{
-														"test": "has_equipment",
-														"domain": "any",
-														"value": "minecraft:item.flower_pot"
-													},
-													{
-														"test": "has_equipment",
-														"domain": "any",
-														"value": "minecraft:info_update2"
-													},
-													{
-														"test": "has_equipment",
-														"domain": "any",
-														"value": "minecraft:stickyPistonArmCollision"
-													},
-													{
-														"test": "has_equipment",
-														"domain": "any",
-														"value": "minecraft:end_portal"
-													},
-													{
-														"test": "has_equipment",
-														"domain": "any",
-														"value": "minecraft:bedrock"
 													},
 													{
 														"test": "has_equipment",
@@ -3430,11 +2891,6 @@
 														{
 															"test": "has_equipment",
 															"domain": "any",
-															"value": "minecraft:bedrock"
-														},
-														{
-															"test": "has_equipment",
-															"domain": "any",
 															"value": "minecraft:invisiblebedrock"
 														},
 														{
@@ -3488,184 +2944,529 @@
 											}
 										},
 										"key": "time_down_event",
-										"is_minified": true,
-										"children": {
-											"filters": {
-												"any_of": [
-													{
-														"test": "has_equipment",
-														"value": "minecraft:portal",
-														"domain": "any"
+										"children": [
+											{
+												"open": {
+													"filters": {
+														"any_of": [
+															{
+																"test": "has_equipment",
+																"value": "minecraft:portal",
+																"domain": "any"
+															},
+															{
+																"test": "has_equipment",
+																"domain": "any",
+																"value": "minecraft:item.soul_campfire"
+															},
+															{
+																"test": "has_equipment",
+																"domain": "any",
+																"value": "minecraft:fire"
+															},
+															{
+																"test": "has_equipment",
+																"domain": "any",
+																"value": "minecraft:item.chain"
+															},
+															{
+																"test": "has_equipment",
+																"domain": "any",
+																"value": "minecraft:item.warped_door"
+															},
+															{
+																"test": "has_equipment",
+																"domain": "any",
+																"value": "minecraft:item.crimson_door"
+															},
+															{
+																"test": "has_equipment",
+																"domain": "any",
+																"value": "minecraft:item.campfire"
+															},
+															{
+																"test": "has_equipment",
+																"domain": "any",
+																"value": "minecraft:item.kelp"
+															},
+															{
+																"test": "has_equipment",
+																"domain": "any",
+																"value": "minecraft:bee_nest"
+															},
+															{
+																"test": "has_equipment",
+																"domain": "any",
+																"value": "minecraft:beehive"
+															},
+															{
+																"test": "has_equipment",
+																"domain": "any",
+																"value": "minecraft:item.wooden_door"
+															},
+															{
+																"test": "has_equipment",
+																"domain": "any",
+																"value": "minecraft:item.iron_door"
+															},
+															{
+																"test": "has_equipment",
+																"domain": "any",
+																"value": "minecraft:item.cake"
+															},
+															{
+																"test": "has_equipment",
+																"domain": "any",
+																"value": "minecraft:item.reeds"
+															},
+															{
+																"test": "has_equipment",
+																"domain": "any",
+																"value": "minecraft:item.camera"
+															},
+															{
+																"test": "has_equipment",
+																"domain": "any",
+																"value": "minecraft:item.frame"
+															},
+															{
+																"test": "has_equipment",
+																"domain": "any",
+																"value": "minecraft:pistonarmcollision"
+															},
+															{
+																"test": "has_equipment",
+																"domain": "any",
+																"value": "minecraft:movingBlock"
+															},
+															{
+																"test": "has_equipment",
+																"domain": "any",
+																"value": "minecraft:item.cake"
+															},
+															{
+																"test": "has_equipment",
+																"domain": "any",
+																"value": "minecraft:item.flower_pot"
+															},
+															{
+																"test": "has_equipment",
+																"domain": "any",
+																"value": "minecraft:info_update2"
+															},
+															{
+																"test": "has_equipment",
+																"domain": "any",
+																"value": "minecraft:stickyPistonArmCollision"
+															},
+															{
+																"test": "has_equipment",
+																"domain": "any",
+																"value": "minecraft:end_portal"
+															},
+															{
+																"test": "has_equipment",
+																"domain": "any",
+																"value": "minecraft:invisiblebedrock"
+															},
+															{
+																"test": "has_equipment",
+																"domain": "any",
+																"value": "minecraft:movingblock"
+															},
+															{
+																"test": "has_equipment",
+																"domain": "any",
+																"value": "minecraft:bucket:2"
+															},
+															{
+																"test": "has_equipment",
+																"domain": "any",
+																"value": "minecraft:bucket:3"
+															},
+															{
+																"test": "has_equipment",
+																"domain": "any",
+																"value": "minecraft:bucket:4"
+															},
+															{
+																"test": "has_equipment",
+																"domain": "any",
+																"value": "minecraft:bucket:5"
+															},
+															{
+																"test": "has_equipment",
+																"domain": "any",
+																"value": "minecraft:glowingobsidian"
+															},
+															{
+																"test": "has_equipment",
+																"domain": "any",
+																"value": "minecraft:flowing_water"
+															},
+															{
+																"test": "has_equipment",
+																"domain": "any",
+																"value": "minecraft:flowing_lava"
+															},
+															{
+																"test": "has_equipment",
+																"domain": "any",
+																"value": "minecraft:item.nether_sprouts"
+															}
+														]
 													},
+													"event": "hydra:item"
+												},
+												"key": "filters",
+												"children": [
 													{
-														"test": "has_equipment",
-														"domain": "any",
-														"value": "minecraft:item.soul_campfire"
-													},
-													{
-														"test": "has_equipment",
-														"domain": "any",
-														"value": "minecraft:fire"
-													},
-													{
-														"test": "has_equipment",
-														"domain": "any",
-														"value": "minecraft:item.chain"
-													},
-													{
-														"test": "has_equipment",
-														"domain": "any",
-														"value": "minecraft:item.warped_door"
-													},
-													{
-														"test": "has_equipment",
-														"domain": "any",
-														"value": "minecraft:item.crimson_door"
-													},
-													{
-														"test": "has_equipment",
-														"domain": "any",
-														"value": "minecraft:item.campfire"
-													},
-													{
-														"test": "has_equipment",
-														"domain": "any",
-														"value": "minecraft:item.kelp"
-													},
-													{
-														"test": "has_equipment",
-														"domain": "any",
-														"value": "minecraft:bee_nest"
-													},
-													{
-														"test": "has_equipment",
-														"domain": "any",
-														"value": "minecraft:beehive"
-													},
-													{
-														"test": "has_equipment",
-														"domain": "any",
-														"value": "minecraft:item.wooden_door"
-													},
-													{
-														"test": "has_equipment",
-														"domain": "any",
-														"value": "minecraft:item.iron_door"
-													},
-													{
-														"test": "has_equipment",
-														"domain": "any",
-														"value": "minecraft:item.cake"
-													},
-													{
-														"test": "has_equipment",
-														"domain": "any",
-														"value": "minecraft:item.reeds"
-													},
-													{
-														"test": "has_equipment",
-														"domain": "any",
-														"value": "minecraft:item.camera"
-													},
-													{
-														"test": "has_equipment",
-														"domain": "any",
-														"value": "minecraft:item.frame"
-													},
-													{
-														"test": "has_equipment",
-														"domain": "any",
-														"value": "minecraft:pistonarmcollision"
-													},
-													{
-														"test": "has_equipment",
-														"domain": "any",
-														"value": "minecraft:movingBlock"
-													},
-													{
-														"test": "has_equipment",
-														"domain": "any",
-														"value": "minecraft:item.cake"
-													},
-													{
-														"test": "has_equipment",
-														"domain": "any",
-														"value": "minecraft:item.flower_pot"
-													},
-													{
-														"test": "has_equipment",
-														"domain": "any",
-														"value": "minecraft:info_update2"
-													},
-													{
-														"test": "has_equipment",
-														"domain": "any",
-														"value": "minecraft:stickyPistonArmCollision"
-													},
-													{
-														"test": "has_equipment",
-														"domain": "any",
-														"value": "minecraft:end_portal"
-													},
-													{
-														"test": "has_equipment",
-														"domain": "any",
-														"value": "minecraft:bedrock"
-													},
-													{
-														"test": "has_equipment",
-														"domain": "any",
-														"value": "minecraft:invisiblebedrock"
-													},
-													{
-														"test": "has_equipment",
-														"domain": "any",
-														"value": "minecraft:movingblock"
-													},
-													{
-														"test": "has_equipment",
-														"domain": "any",
-														"value": "minecraft:bucket:2"
-													},
-													{
-														"test": "has_equipment",
-														"domain": "any",
-														"value": "minecraft:bucket:3"
-													},
-													{
-														"test": "has_equipment",
-														"domain": "any",
-														"value": "minecraft:bucket:4"
-													},
-													{
-														"test": "has_equipment",
-														"domain": "any",
-														"value": "minecraft:bucket:5"
-													},
-													{
-														"test": "has_equipment",
-														"domain": "any",
-														"value": "minecraft:glowingobsidian"
-													},
-													{
-														"test": "has_equipment",
-														"domain": "any",
-														"value": "minecraft:flowing_water"
-													},
-													{
-														"test": "has_equipment",
-														"domain": "any",
-														"value": "minecraft:flowing_lava"
-													},
-													{
-														"test": "has_equipment",
-														"domain": "any",
-														"value": "minecraft:item.nether_sprouts"
+														"open": {
+															"any_of": [
+																{
+																	"test": "has_equipment",
+																	"value": "minecraft:portal",
+																	"domain": "any"
+																},
+																{
+																	"test": "has_equipment",
+																	"domain": "any",
+																	"value": "minecraft:item.soul_campfire"
+																},
+																{
+																	"test": "has_equipment",
+																	"domain": "any",
+																	"value": "minecraft:fire"
+																},
+																{
+																	"test": "has_equipment",
+																	"domain": "any",
+																	"value": "minecraft:item.chain"
+																},
+																{
+																	"test": "has_equipment",
+																	"domain": "any",
+																	"value": "minecraft:item.warped_door"
+																},
+																{
+																	"test": "has_equipment",
+																	"domain": "any",
+																	"value": "minecraft:item.crimson_door"
+																},
+																{
+																	"test": "has_equipment",
+																	"domain": "any",
+																	"value": "minecraft:item.campfire"
+																},
+																{
+																	"test": "has_equipment",
+																	"domain": "any",
+																	"value": "minecraft:item.kelp"
+																},
+																{
+																	"test": "has_equipment",
+																	"domain": "any",
+																	"value": "minecraft:bee_nest"
+																},
+																{
+																	"test": "has_equipment",
+																	"domain": "any",
+																	"value": "minecraft:beehive"
+																},
+																{
+																	"test": "has_equipment",
+																	"domain": "any",
+																	"value": "minecraft:item.wooden_door"
+																},
+																{
+																	"test": "has_equipment",
+																	"domain": "any",
+																	"value": "minecraft:item.iron_door"
+																},
+																{
+																	"test": "has_equipment",
+																	"domain": "any",
+																	"value": "minecraft:item.cake"
+																},
+																{
+																	"test": "has_equipment",
+																	"domain": "any",
+																	"value": "minecraft:item.reeds"
+																},
+																{
+																	"test": "has_equipment",
+																	"domain": "any",
+																	"value": "minecraft:item.camera"
+																},
+																{
+																	"test": "has_equipment",
+																	"domain": "any",
+																	"value": "minecraft:item.frame"
+																},
+																{
+																	"test": "has_equipment",
+																	"domain": "any",
+																	"value": "minecraft:pistonarmcollision"
+																},
+																{
+																	"test": "has_equipment",
+																	"domain": "any",
+																	"value": "minecraft:movingBlock"
+																},
+																{
+																	"test": "has_equipment",
+																	"domain": "any",
+																	"value": "minecraft:item.cake"
+																},
+																{
+																	"test": "has_equipment",
+																	"domain": "any",
+																	"value": "minecraft:item.flower_pot"
+																},
+																{
+																	"test": "has_equipment",
+																	"domain": "any",
+																	"value": "minecraft:info_update2"
+																},
+																{
+																	"test": "has_equipment",
+																	"domain": "any",
+																	"value": "minecraft:stickyPistonArmCollision"
+																},
+																{
+																	"test": "has_equipment",
+																	"domain": "any",
+																	"value": "minecraft:end_portal"
+																},
+																{
+																	"test": "has_equipment",
+																	"domain": "any",
+																	"value": "minecraft:invisiblebedrock"
+																},
+																{
+																	"test": "has_equipment",
+																	"domain": "any",
+																	"value": "minecraft:movingblock"
+																},
+																{
+																	"test": "has_equipment",
+																	"domain": "any",
+																	"value": "minecraft:bucket:2"
+																},
+																{
+																	"test": "has_equipment",
+																	"domain": "any",
+																	"value": "minecraft:bucket:3"
+																},
+																{
+																	"test": "has_equipment",
+																	"domain": "any",
+																	"value": "minecraft:bucket:4"
+																},
+																{
+																	"test": "has_equipment",
+																	"domain": "any",
+																	"value": "minecraft:bucket:5"
+																},
+																{
+																	"test": "has_equipment",
+																	"domain": "any",
+																	"value": "minecraft:glowingobsidian"
+																},
+																{
+																	"test": "has_equipment",
+																	"domain": "any",
+																	"value": "minecraft:flowing_water"
+																},
+																{
+																	"test": "has_equipment",
+																	"domain": "any",
+																	"value": "minecraft:flowing_lava"
+																},
+																{
+																	"test": "has_equipment",
+																	"domain": "any",
+																	"value": "minecraft:item.nether_sprouts"
+																}
+															]
+														},
+														"key": "any_of",
+														"is_minified": true,
+														"children": [
+															{
+																"test": "has_equipment",
+																"value": "minecraft:portal",
+																"domain": "any"
+															},
+															{
+																"test": "has_equipment",
+																"domain": "any",
+																"value": "minecraft:item.soul_campfire"
+															},
+															{
+																"test": "has_equipment",
+																"domain": "any",
+																"value": "minecraft:fire"
+															},
+															{
+																"test": "has_equipment",
+																"domain": "any",
+																"value": "minecraft:item.chain"
+															},
+															{
+																"test": "has_equipment",
+																"domain": "any",
+																"value": "minecraft:item.warped_door"
+															},
+															{
+																"test": "has_equipment",
+																"domain": "any",
+																"value": "minecraft:item.crimson_door"
+															},
+															{
+																"test": "has_equipment",
+																"domain": "any",
+																"value": "minecraft:item.campfire"
+															},
+															{
+																"test": "has_equipment",
+																"domain": "any",
+																"value": "minecraft:item.kelp"
+															},
+															{
+																"test": "has_equipment",
+																"domain": "any",
+																"value": "minecraft:bee_nest"
+															},
+															{
+																"test": "has_equipment",
+																"domain": "any",
+																"value": "minecraft:beehive"
+															},
+															{
+																"test": "has_equipment",
+																"domain": "any",
+																"value": "minecraft:item.wooden_door"
+															},
+															{
+																"test": "has_equipment",
+																"domain": "any",
+																"value": "minecraft:item.iron_door"
+															},
+															{
+																"test": "has_equipment",
+																"domain": "any",
+																"value": "minecraft:item.cake"
+															},
+															{
+																"test": "has_equipment",
+																"domain": "any",
+																"value": "minecraft:item.reeds"
+															},
+															{
+																"test": "has_equipment",
+																"domain": "any",
+																"value": "minecraft:item.camera"
+															},
+															{
+																"test": "has_equipment",
+																"domain": "any",
+																"value": "minecraft:item.frame"
+															},
+															{
+																"test": "has_equipment",
+																"domain": "any",
+																"value": "minecraft:pistonarmcollision"
+															},
+															{
+																"test": "has_equipment",
+																"domain": "any",
+																"value": "minecraft:movingBlock"
+															},
+															{
+																"test": "has_equipment",
+																"domain": "any",
+																"value": "minecraft:item.cake"
+															},
+															{
+																"test": "has_equipment",
+																"domain": "any",
+																"value": "minecraft:item.flower_pot"
+															},
+															{
+																"test": "has_equipment",
+																"domain": "any",
+																"value": "minecraft:info_update2"
+															},
+															{
+																"test": "has_equipment",
+																"domain": "any",
+																"value": "minecraft:stickyPistonArmCollision"
+															},
+															{
+																"test": "has_equipment",
+																"domain": "any",
+																"value": "minecraft:end_portal"
+															},
+															{
+																"test": "has_equipment",
+																"domain": "any",
+																"value": "minecraft:invisiblebedrock"
+															},
+															{
+																"test": "has_equipment",
+																"domain": "any",
+																"value": "minecraft:movingblock"
+															},
+															{
+																"test": "has_equipment",
+																"domain": "any",
+																"value": "minecraft:bucket:2"
+															},
+															{
+																"test": "has_equipment",
+																"domain": "any",
+																"value": "minecraft:bucket:3"
+															},
+															{
+																"test": "has_equipment",
+																"domain": "any",
+																"value": "minecraft:bucket:4"
+															},
+															{
+																"test": "has_equipment",
+																"domain": "any",
+																"value": "minecraft:bucket:5"
+															},
+															{
+																"test": "has_equipment",
+																"domain": "any",
+																"value": "minecraft:glowingobsidian"
+															},
+															{
+																"test": "has_equipment",
+																"domain": "any",
+																"value": "minecraft:flowing_water"
+															},
+															{
+																"test": "has_equipment",
+																"domain": "any",
+																"value": "minecraft:flowing_lava"
+															},
+															{
+																"test": "has_equipment",
+																"domain": "any",
+																"value": "minecraft:item.nether_sprouts"
+															}
+														]
 													}
 												]
 											},
-											"event": "hydra:item"
-										}
+											{
+												"data": "hydra:item",
+												"key": "event"
+											}
+										]
 									}
 								]
 							}
@@ -3677,15 +3478,7 @@
 								"identifier": "minecraft:player",
 								"is_spawnable": false,
 								"is_summonable": true,
-								"is_experimental": false,
-								"scripts": {
-									"animate": [
-										"walk"
-									]
-								},
-								"animations": {
-									"walk": "controller.animation.walk"
-								}
+								"is_experimental": false
 							},
 							"component_groups": {
 								"minecraft:add_bad_omen": {
@@ -3731,7 +3524,13 @@
 												"on_damage": {
 													"event": "minecraft:kadetected"
 												},
-												"cause": "entity_attack"
+												"cause": "entity_attack",
+												"deals_damage": false
+											},
+											{
+												"on_damage": {},
+												"deals_damage": false,
+												"cause": "suffocation"
 											}
 										]
 									},
@@ -3749,6 +3548,10 @@
 									},
 									"minecraft:push_through": {
 										"value": 999999999999
+									},
+									"minecraft:nameable": {
+										"always_show": false,
+										"allow_name_tag_renaming": true
 									}
 								}
 							},
@@ -3853,49 +3656,6 @@
 									]
 								},
 								"minecraft:scaffolding_climber": {},
-								"minecraft:environment_sensor": {
-									"triggers": [
-										{
-											"filters": {
-												"all_of": [
-													{
-														"test": "has_ability",
-														"subject": "self",
-														"value": "flying"
-													}
-												]
-											},
-											"event": "hydra:flying",
-											"target": "self"
-										},
-										{
-											"filters": {
-												"all_of": [
-													{
-														"test": "has_ability",
-														"subject": "self",
-														"value": "mayfly"
-													}
-												]
-											},
-											"event": "hydra:flying",
-											"target": "self"
-										},
-										{
-											"filters": {
-												"all_of": [
-													{
-														"test": "has_ability",
-														"subject": "self",
-														"value": "noclip"
-													}
-												]
-											},
-											"event": "hydra:flying",
-											"target": "self"
-										}
-									]
-								},
 								"minecraft:timer": {
 									"looping": true,
 									"time": 0.1,
@@ -4020,11 +3780,6 @@
 												{
 													"test": "has_equipment",
 													"domain": "any",
-													"value": "minecraft:bedrock"
-												},
-												{
-													"test": "has_equipment",
-													"domain": "any",
 													"value": "minecraft:invisiblebedrock"
 												},
 												{
@@ -4105,13 +3860,6 @@
 										]
 									}
 								},
-								"hydra:flying": {
-									"execute": {
-										"commands": [
-											"/function hy/packages/flying"
-										]
-									}
-								},
 								"hydra:item": {
 									"execute": {
 										"commands": [
@@ -4130,8 +3878,8 @@
 								"minecraft:kadetected": {
 									"execute": {
 										"commands": [
-											"/execute @s ~ ~-10 ~ scoreboard players add @p killaura 1",
-											"/execute @s ~ ~-10 ~ /w @a[tag=staff] §c @p is using killaura",
+											"/execute @s ~ ~5 ~ scoreboard players add @p killaura 1",
+											"/execute @s ~ ~5 ~ /w @a[tag=staff] §c @p is using killaura",
 											"/tp 0 0 0",
 											"/kill @s"
 										]
@@ -4180,35 +3928,6 @@
 								}
 							},
 							{
-								"key": "hydra:flying",
-								"children": [
-									{
-										"open": {
-											"execute": {
-												"commands": [
-													"/function hy/packages/flying"
-												]
-											}
-										},
-										"key": "execute",
-										"children": [
-											{
-												"open": {
-													"commands": [
-														"/function hy/packages/flying"
-													]
-												},
-												"key": "commands",
-												"is_minified": true,
-												"children": [
-													"/function hy/packages/flying"
-												]
-											}
-										]
-									}
-								]
-							},
-							{
 								"key": "hydra:item",
 								"children": [
 									{
@@ -4241,66 +3960,6 @@
 								]
 							},
 							{
-								"open": {
-									"minecraft:gain_bad_omen": {
-										"add": {
-											"component_groups": [
-												"minecraft:add_bad_omen"
-											]
-										}
-									},
-									"minecraft:clear_add_bad_omen": {
-										"remove": {
-											"component_groups": [
-												"minecraft:add_bad_omen"
-											]
-										},
-										"add": {
-											"component_groups": [
-												"minecraft:clear_bad_omen_spell_effect"
-											]
-										}
-									},
-									"minecraft:remove_raid_trigger": {
-										"remove": {
-											"component_groups": [
-												"minecraft:raid_trigger"
-											]
-										}
-									},
-									"hydra:flying": {
-										"execute": {
-											"commands": [
-												"/function hy/packages/flying"
-											]
-										}
-									},
-									"hydra:item": {
-										"execute": {
-											"commands": [
-												"/replaceitem entity @p slot.weapon.mainhand 0 air",
-												"/scoreboard players set @p tempkick 1"
-											]
-										}
-									},
-									"minecraft:ka": {
-										"add": {
-											"component_groups": [
-												"minecraft:ka"
-											]
-										}
-									},
-									"minecraft:kadetected": {
-										"execute": {
-											"commands": [
-												"/execute @s ~ ~-10 ~ scoreboard players add @p killaura 1",
-												"/execute @s ~ ~-10 ~ /w @a[tag=staff] §c @p is using killaura",
-												"/tp 0 0 0",
-												"/kill @s"
-											]
-										}
-									}
-								},
 								"key": "minecraft:ka",
 								"children": [
 									{
@@ -4357,13 +4016,6 @@
 											]
 										}
 									},
-									"hydra:flying": {
-										"execute": {
-											"commands": [
-												"/function hy/packages/flying"
-											]
-										}
-									},
 									"hydra:item": {
 										"execute": {
 											"commands": [
@@ -4382,8 +4034,8 @@
 									"minecraft:kadetected": {
 										"execute": {
 											"commands": [
-												"/execute @s ~ ~-10 ~ scoreboard players add @p killaura 1",
-												"/execute @s ~ ~-10 ~ /w @a[tag=staff] §c @p is using killaura",
+												"/execute @s ~ ~5 ~ scoreboard players add @p killaura 1",
+												"/execute @s ~ ~5 ~ /w @a[tag=staff] §c @p is using killaura",
 												"/tp 0 0 0",
 												"/kill @s"
 											]
@@ -4396,8 +4048,8 @@
 										"open": {
 											"execute": {
 												"commands": [
-													"/execute @s ~ ~-10 ~ scoreboard players add @p killaura 1",
-													"/execute @s ~ ~-10 ~ /w @a[tag=staff] §c @p is using killaura",
+													"/execute @s ~ ~5 ~ scoreboard players add @p killaura 1",
+													"/execute @s ~ ~5 ~ /w @a[tag=staff] §c @p is using killaura",
 													"/tp 0 0 0",
 													"/kill @s"
 												]
@@ -4408,8 +4060,8 @@
 											{
 												"open": {
 													"commands": [
-														"/execute @s ~ ~-10 ~ scoreboard players add @p killaura 1",
-														"/execute @s ~ ~-10 ~ /w @a[tag=staff] §c @p is using killaura",
+														"/execute @s ~ ~5 ~ scoreboard players add @p killaura 1",
+														"/execute @s ~ ~5 ~ /w @a[tag=staff] §c @p is using killaura",
 														"/tp 0 0 0",
 														"/kill @s"
 													]
@@ -4417,8 +4069,8 @@
 												"key": "commands",
 												"is_minified": true,
 												"children": [
-													"/execute @s ~ ~-10 ~ scoreboard players add @p killaura 1",
-													"/execute @s ~ ~-10 ~ /w @a[tag=staff] §c @p is using killaura",
+													"/execute @s ~ ~5 ~ scoreboard players add @p killaura 1",
+													"/execute @s ~ ~5 ~ /w @a[tag=staff] §c @p is using killaura",
 													"/tp 0 0 0",
 													"/kill @s"
 												]

@@ -1,4 +1,4 @@
-#bridge-file-version: #12
+#bridge-file-version: #13
 hide 
 scoreboard objectives add credit dummy
 scoreboard objectives add counter dummy
@@ -14,3 +14,4 @@ scoreboard objectives add katimer dummy
 scoreboard objectives add katimer2 dummy
 scoreboard objectives add katimer3 dummy
 scoreboard objectives add player dummy
+scoreboard objectives add bancount dummy
