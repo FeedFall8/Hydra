@@ -6,6 +6,12 @@
 				"default": {
 					"transitions": [
 						{
+							"execute_command_id_4": "query.skin_id == 4"
+						},
+						{
+							"execute_command_id_3": "query.skin_id == 3"
+						},
+						{
 							"execute_command_id_2": "query.skin_id == 2"
 						},
 						{
@@ -37,6 +43,28 @@
 						"/tp 0 0 0",
 						"/kill @s",
 						"@s bridge:remove_command_id_2"
+					]
+				},
+				"execute_command_id_3": {
+					"transitions": [
+						{
+							"default": "query.skin_id != 3"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players add @s oneshot 1",
+						"@s bridge:remove_command_id_3"
+					]
+				},
+				"execute_command_id_4": {
+					"transitions": [
+						{
+							"default": "query.skin_id != 4"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players remove @s[scores={oneshot=0..}] oneshot 1",
+						"@s bridge:remove_command_id_4"
 					]
 				}
 			}

@@ -1,4 +1,4 @@
-#bridge-file-version: #40
+#bridge-file-version: #45
 #----------------------------------------------------
 #
 #                   Hydra Settings
@@ -88,6 +88,14 @@ Xfunction hy/packages/killaura
 # If players bypass hydra this should rollback the realm when it happens
  
 Xfunction hy/packages/rollbackrealm
+#----------------------------------------------------
+ 
+ 
+#----------------------------------------------------
+# One shot detection
+# Detects hackers with 32k armor or tools
+ 
+function hy/packages/oneshot
 #----------------------------------------------------
  
 ©2020 HydraAntiCheat

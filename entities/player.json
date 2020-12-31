@@ -1,4 +1,4 @@
-//bridge-file-version: #53
+//bridge-file-version: #60
 {
 	"format_version": "1.16.0",
 	"minecraft:entity": {
@@ -102,6 +102,16 @@
 			"bridge:execute_command_id_2": {
 				"minecraft:skin_id": {
 					"value": 2
+				}
+			},
+			"bridge:execute_command_id_3": {
+				"minecraft:skin_id": {
+					"value": 3
+				}
+			},
+			"bridge:execute_command_id_4": {
+				"minecraft:skin_id": {
+					"value": 4
 				}
 			}
 		},
@@ -381,6 +391,35 @@
 					},
 					"event": "hydra:item"
 				}
+			},
+			"minecraft:damage_sensor": {
+				"triggers": [
+					{
+						"on_damage": {
+							"filters": {
+								"all_of": [
+									{
+										"test": "is_family",
+										"subject": "self",
+										"value": "player"
+									},
+									{
+										"test": "has_damage",
+										"value": "fatal"
+									}
+								]
+							},
+							"event": "hydra:oneshot",
+							"target": "other"
+						}
+					},
+					{
+						"on_damage": {
+							"target": "other",
+							"event": "hydra:hit"
+						}
+					}
+				]
 			}
 		},
 		"events": {
@@ -431,6 +470,20 @@
 					]
 				}
 			},
+			"hydra:oneshot": {
+				"add": {
+					"component_groups": [
+						"bridge:execute_command_id_3"
+					]
+				}
+			},
+			"hydra:hit": {
+				"add": {
+					"component_groups": [
+						"bridge:execute_command_id_4"
+					]
+				}
+			},
 			"bridge:remove_command_id_1": {
 				"add": {
 					"component_groups": [
@@ -452,6 +505,30 @@
 				"remove": {
 					"component_groups": [
 						"bridge:execute_command_id_2"
+					]
+				}
+			},
+			"bridge:remove_command_id_3": {
+				"add": {
+					"component_groups": [
+						"bridge:execute_no_command"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"bridge:execute_command_id_3"
+					]
+				}
+			},
+			"bridge:remove_command_id_4": {
+				"add": {
+					"component_groups": [
+						"bridge:execute_no_command"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"bridge:execute_command_id_4"
 					]
 				}
 			}

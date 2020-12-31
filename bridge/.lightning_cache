@@ -41,7 +41,9 @@
 				"minecraft:remove_raid_trigger",
 				"hydra:item",
 				"minecraft:ka",
-				"minecraft:kadetected"
+				"minecraft:kadetected",
+				"hydra:oneshot",
+				"hydra:hit"
 			],
 			"bridge_core_tags": [],
 			"identifiers": [
@@ -119,6 +121,9 @@
 				"player",
 				"bancount",
 				"tick"
+			],
+			"tags": [
+				"staff"
 			]
 		},
 		"BP/functions/hy/packages/stafftools.mcfunction": {
@@ -126,12 +131,6 @@
 			"tags": [
 				"hstaffban",
 				"modmode"
-			]
-		},
-		"BP/functions/hy/packages/tagscores.mcfunction": {
-			"custom_commands": [],
-			"tags": [
-				"staff"
 			]
 		},
 		"BP/functions/hy/echestwipe.mcfunction": {
@@ -172,6 +171,12 @@
 		"c07541b2_7d76_4777_ae3f_01f23ce4820c": {},
 		"BP/functions/hy/packages/rollbackrealm.mcfunction": {
 			"custom_commands": []
+		},
+		"BP/functions/hy/packages/oneshot.mcfunction": {
+			"custom_commands": [],
+			"scoreboards": [
+				"oneshot"
+			]
 		}
 	},
 	"item": {},
