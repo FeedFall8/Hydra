@@ -117,7 +117,8 @@
 				"katimer2",
 				"katimer3",
 				"player",
-				"bancount"
+				"bancount",
+				"tick"
 			]
 		},
 		"BP/functions/hy/packages/stafftools.mcfunction": {

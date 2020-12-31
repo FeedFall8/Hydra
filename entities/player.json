@@ -1,4 +1,4 @@
-//bridge-file-version: #52
+//bridge-file-version: #53
 {
 	"format_version": "1.16.0",
 	"minecraft:entity": {
@@ -60,8 +60,7 @@
 							"on_damage": {
 								"event": "minecraft:kadetected"
 							},
-							"cause": "entity_attack",
-							"deals_damage": false
+							"cause": "entity_attack"
 						},
 						{
 							"on_damage": {},

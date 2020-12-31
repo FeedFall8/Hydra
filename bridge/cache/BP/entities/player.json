@@ -3,7 +3,7 @@
 	"file_type": "entity",
 	"format_version": 1,
 	"file_uuid": "e8691f27_9425_4f08_b47c_1399d10d5aca",
-	"file_version": 52,
+	"file_version": 53,
 	"cache_content": {
 		"children": [
 			{
@@ -64,8 +64,7 @@
 											"on_damage": {
 												"event": "minecraft:kadetected"
 											},
-											"cause": "entity_attack",
-											"deals_damage": false
+											"cause": "entity_attack"
 										},
 										{
 											"on_damage": {},
@@ -482,8 +481,7 @@
 												"on_damage": {
 													"event": "minecraft:kadetected"
 												},
-												"cause": "entity_attack",
-												"deals_damage": false
+												"cause": "entity_attack"
 											},
 											{
 												"on_damage": {},
@@ -906,8 +904,7 @@
 												"on_damage": {
 													"event": "minecraft:kadetected"
 												},
-												"cause": "entity_attack",
-												"deals_damage": false
+												"cause": "entity_attack"
 											},
 											{
 												"on_damage": {},
@@ -1364,8 +1361,7 @@
 													"on_damage": {
 														"event": "minecraft:kadetected"
 													},
-													"cause": "entity_attack",
-													"deals_damage": false
+													"cause": "entity_attack"
 												},
 												{
 													"on_damage": {},
@@ -1405,8 +1401,7 @@
 														"on_damage": {
 															"event": "minecraft:kadetected"
 														},
-														"cause": "entity_attack",
-														"deals_damage": false
+														"cause": "entity_attack"
 													},
 													{
 														"on_damage": {},
@@ -1444,8 +1439,7 @@
 															"on_damage": {
 																"event": "minecraft:kadetected"
 															},
-															"cause": "entity_attack",
-															"deals_damage": false
+															"cause": "entity_attack"
 														},
 														{
 															"on_damage": {},
@@ -1462,8 +1456,7 @@
 																"on_damage": {
 																	"event": "minecraft:kadetected"
 																},
-																"cause": "entity_attack",
-																"deals_damage": false
+																"cause": "entity_attack"
 															},
 															{
 																"on_damage": {},
@@ -1477,8 +1470,7 @@
 																	"on_damage": {
 																		"event": "minecraft:kadetected"
 																	},
-																	"cause": "entity_attack",
-																	"deals_damage": false
+																	"cause": "entity_attack"
 																},
 																"key": "on_damage",
 																"is_minified": true,
@@ -1489,10 +1481,6 @@
 															{
 																"data": "entity_attack",
 																"key": "cause"
-															},
-															{
-																"data": "false",
-																"key": "deals_damage"
 															}
 														]
 													},
@@ -1502,8 +1490,7 @@
 																"on_damage": {
 																	"event": "minecraft:kadetected"
 																},
-																"cause": "entity_attack",
-																"deals_damage": false
+																"cause": "entity_attack"
 															},
 															{
 																"on_damage": {},
@@ -1561,8 +1548,7 @@
 														"on_damage": {
 															"event": "minecraft:kadetected"
 														},
-														"cause": "entity_attack",
-														"deals_damage": false
+														"cause": "entity_attack"
 													},
 													{
 														"on_damage": {},
@@ -1654,8 +1640,7 @@
 												"on_damage": {
 													"event": "minecraft:kadetected"
 												},
-												"cause": "entity_attack",
-												"deals_damage": false
+												"cause": "entity_attack"
 											},
 											{
 												"on_damage": {},
@@ -3524,8 +3509,7 @@
 												"on_damage": {
 													"event": "minecraft:kadetected"
 												},
-												"cause": "entity_attack",
-												"deals_damage": false
+												"cause": "entity_attack"
 											},
 											{
 												"on_damage": {},
