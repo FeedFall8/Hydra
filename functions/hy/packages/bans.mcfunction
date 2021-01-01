@@ -1,4 +1,4 @@
-#bridge-file-version: #104
+#bridge-file-version: #106
 hide 
 tag @a[tag=staff] remove hban
 tag @a[tag=staff] remove hnbtban
@@ -34,6 +34,7 @@ execute @a[scores={warn=1}] ~ ~ ~ execute @s[scores={tempkick=2}] ~ ~ ~ tellraw 
 execute @a[scores={warn=1}] ~ ~ ~ execute @s[scores={tempkick=3}] ~ ~ ~ tellraw @a {"rawtext":[{"text":"§¶§cHydra ► [1/3] Kicked "},{"selector":"@s"},{"text":" For using Gamemodes"}]}
 execute @a[scores={warn=1}] ~ ~ ~ execute @s[scores={tempkick=4}] ~ ~ ~ tellraw @a {"rawtext":[{"text":"§¶§cHydra ► [1/3] Kicked "},{"selector":"@s"},{"text":" For using Killaura"}]}
 execute @a[scores={warn=1}] ~ ~ ~ execute @s[scores={tempkick=4}] ~ ~ ~ scoreboard players reset @s Killaura
+execute @a[scores={warn=1}] ~ ~ ~ execute @s[scores={tempkick=1}] ~ ~ ~ scoreboard players reset @s oneshot
  
 execute @a[scores={warn=1}] ~ ~ ~ kick @s[scores={tempkick=1}] §¶§cYou Have Been Kicked By Hydra Anticheat, Reason: NBT expoits §4[1/3]
 execute @a[scores={warn=1}] ~ ~ ~ kick @s[scores={tempkick=2}] §¶§cYou Have Been Kicked By Hydra Anticheat, Reason: Flying §4[1/3]
@@ -45,6 +46,7 @@ execute @a[scores={warn=2}] ~ ~ ~ execute @s[scores={tempkick=2}] ~ ~ ~ tellraw 
 execute @a[scores={warn=2}] ~ ~ ~ execute @s[scores={tempkick=3}] ~ ~ ~ tellraw @a {"rawtext":[{"text":"§¶§cHydra ► [3/3] Kicked "},{"selector":"@s"},{"text":" For using Gamemodes"}]}
 execute @a[scores={warn=2}] ~ ~ ~ execute @s[scores={tempkick=4}] ~ ~ ~ tellraw @a {"rawtext":[{"text":"§¶§cHydra ► [3/3] Kicked "},{"selector":"@s"},{"text":" For using Killaura"}]}
 execute @a[scores={warn=2}] ~ ~ ~ execute @s[scores={tempkick=4}] ~ ~ ~ scoreboard players reset @s Killaura
+execute @a[scores={warn=2}] ~ ~ ~ execute @s[scores={tempkick=1}] ~ ~ ~ scoreboard players reset @s oneshot
  
 execute @a[scores={warn=2}] ~ ~ ~ kick @s[scores={tempkick=1}] §¶§cYou Have Been Kicked By Hydra Anticheat, Reason: NBT expoits §4[2/3]
 execute @a[scores={warn=2}] ~ ~ ~ kick @s[scores={tempkick=2}] §¶§cYou Have Been Kicked By Hydra Anticheat, Reason: Flying §4[2/3]
@@ -56,6 +58,7 @@ execute @a[scores={warn=3}] ~ ~ ~ execute @s[scores={tempkick=2}] ~ ~ ~ tellraw 
 execute @a[scores={warn=3}] ~ ~ ~ execute @s[scores={tempkick=3}] ~ ~ ~ tellraw @a {"rawtext":[{"text":"§¶§cHydra ► [3/3] Banned "},{"selector":"@s"},{"text":" For Changing Gamemode"}]}
 execute @a[scores={warn=3}] ~ ~ ~ execute @s[scores={tempkick=4}] ~ ~ ~ tellraw @a {"rawtext":[{"text":"§¶§cHydra ► [3/3] Banned "},{"selector":"@s"},{"text":" For using Killaura"}]}
 execute @a[scores={warn=3}] ~ ~ ~ execute @s[scores={tempkick=4}] ~ ~ ~ scoreboard players reset @s Killaura
+execute @a[scores={warn=3}] ~ ~ ~ execute @s[scores={tempkick=1}] ~ ~ ~ scoreboard players reset @s oneshot
  
 execute @a[scores={warn=3}] ~ ~ ~ scoreboard players add "bancount" bancount 1
  
