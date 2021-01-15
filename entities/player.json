@@ -1,4 +1,4 @@
-//bridge-file-version: #60
+//bridge-file-version: #61
 {
 	"format_version": "1.16.0",
 	"minecraft:entity": {
@@ -346,26 +346,6 @@
 								"test": "has_equipment",
 								"domain": "any",
 								"value": "minecraft:movingblock"
-							},
-							{
-								"test": "has_equipment",
-								"domain": "any",
-								"value": "minecraft:bucket:2"
-							},
-							{
-								"test": "has_equipment",
-								"domain": "any",
-								"value": "minecraft:bucket:3"
-							},
-							{
-								"test": "has_equipment",
-								"domain": "any",
-								"value": "minecraft:bucket:4"
-							},
-							{
-								"test": "has_equipment",
-								"domain": "any",
-								"value": "minecraft:bucket:5"
 							},
 							{
 								"test": "has_equipment",

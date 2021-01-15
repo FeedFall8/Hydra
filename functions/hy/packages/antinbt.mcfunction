@@ -1,4 +1,4 @@
-#bridge-file-version: #16
+#bridge-file-version: #17
 hide 
  
 scoreboard players add @a tick 1
@@ -7,10 +7,6 @@ scoreboard players reset @a[scores={tick=19}] tick
 execute @e[type=command_block_minecart] ~ ~ ~ scoreboard players set @p tempkick 1
 kill @e[type=command_block_minecart]
  
-clear @a bucket 2
-clear @a bucket 3
-clear @a bucket 4
-clear @a bucket 5
 clear @a dispenser
 clear @s shulker_box -1
 clear @s undyed_shulker_box -1

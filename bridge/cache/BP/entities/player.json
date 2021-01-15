@@ -3,7 +3,7 @@
 	"file_type": "entity",
 	"format_version": 1,
 	"file_uuid": "e8691f27_9425_4f08_b47c_1399d10d5aca",
-	"file_version": 60,
+	"file_version": 61,
 	"cache_content": {
 		"children": [
 			{
@@ -325,26 +325,6 @@
 												"test": "has_equipment",
 												"domain": "any",
 												"value": "minecraft:movingblock"
-											},
-											{
-												"test": "has_equipment",
-												"domain": "any",
-												"value": "minecraft:bucket:2"
-											},
-											{
-												"test": "has_equipment",
-												"domain": "any",
-												"value": "minecraft:bucket:3"
-											},
-											{
-												"test": "has_equipment",
-												"domain": "any",
-												"value": "minecraft:bucket:4"
-											},
-											{
-												"test": "has_equipment",
-												"domain": "any",
-												"value": "minecraft:bucket:5"
 											},
 											{
 												"test": "has_equipment",
@@ -785,26 +765,6 @@
 													"test": "has_equipment",
 													"domain": "any",
 													"value": "minecraft:movingblock"
-												},
-												{
-													"test": "has_equipment",
-													"domain": "any",
-													"value": "minecraft:bucket:2"
-												},
-												{
-													"test": "has_equipment",
-													"domain": "any",
-													"value": "minecraft:bucket:3"
-												},
-												{
-													"test": "has_equipment",
-													"domain": "any",
-													"value": "minecraft:bucket:4"
-												},
-												{
-													"test": "has_equipment",
-													"domain": "any",
-													"value": "minecraft:bucket:5"
 												},
 												{
 													"test": "has_equipment",
@@ -1251,26 +1211,6 @@
 													"test": "has_equipment",
 													"domain": "any",
 													"value": "minecraft:movingblock"
-												},
-												{
-													"test": "has_equipment",
-													"domain": "any",
-													"value": "minecraft:bucket:2"
-												},
-												{
-													"test": "has_equipment",
-													"domain": "any",
-													"value": "minecraft:bucket:3"
-												},
-												{
-													"test": "has_equipment",
-													"domain": "any",
-													"value": "minecraft:bucket:4"
-												},
-												{
-													"test": "has_equipment",
-													"domain": "any",
-													"value": "minecraft:bucket:5"
 												},
 												{
 													"test": "has_equipment",
@@ -1888,26 +1828,6 @@
 												{
 													"test": "has_equipment",
 													"domain": "any",
-													"value": "minecraft:bucket:2"
-												},
-												{
-													"test": "has_equipment",
-													"domain": "any",
-													"value": "minecraft:bucket:3"
-												},
-												{
-													"test": "has_equipment",
-													"domain": "any",
-													"value": "minecraft:bucket:4"
-												},
-												{
-													"test": "has_equipment",
-													"domain": "any",
-													"value": "minecraft:bucket:5"
-												},
-												{
-													"test": "has_equipment",
-													"domain": "any",
 													"value": "minecraft:glowingobsidian"
 												},
 												{
@@ -2211,721 +2131,6 @@
 								"children": {}
 							},
 							{
-								"key": "minecraft:timer",
-								"children": [
-									{
-										"data": "true",
-										"key": "looping"
-									},
-									{
-										"data": "0.1",
-										"key": "time"
-									},
-									{
-										"open": {
-											"looping": true,
-											"time": 0.1,
-											"time_down_event": {
-												"filters": {
-													"any_of": [
-														{
-															"test": "has_equipment",
-															"value": "minecraft:portal",
-															"domain": "any"
-														},
-														{
-															"test": "has_equipment",
-															"domain": "any",
-															"value": "minecraft:item.soul_campfire"
-														},
-														{
-															"test": "has_equipment",
-															"domain": "any",
-															"value": "minecraft:fire"
-														},
-														{
-															"test": "has_equipment",
-															"domain": "any",
-															"value": "minecraft:item.chain"
-														},
-														{
-															"test": "has_equipment",
-															"domain": "any",
-															"value": "minecraft:item.warped_door"
-														},
-														{
-															"test": "has_equipment",
-															"domain": "any",
-															"value": "minecraft:item.crimson_door"
-														},
-														{
-															"test": "has_equipment",
-															"domain": "any",
-															"value": "minecraft:item.campfire"
-														},
-														{
-															"test": "has_equipment",
-															"domain": "any",
-															"value": "minecraft:item.kelp"
-														},
-														{
-															"test": "has_equipment",
-															"domain": "any",
-															"value": "minecraft:bee_nest"
-														},
-														{
-															"test": "has_equipment",
-															"domain": "any",
-															"value": "minecraft:beehive"
-														},
-														{
-															"test": "has_equipment",
-															"domain": "any",
-															"value": "minecraft:item.wooden_door"
-														},
-														{
-															"test": "has_equipment",
-															"domain": "any",
-															"value": "minecraft:item.iron_door"
-														},
-														{
-															"test": "has_equipment",
-															"domain": "any",
-															"value": "minecraft:item.cake"
-														},
-														{
-															"test": "has_equipment",
-															"domain": "any",
-															"value": "minecraft:item.reeds"
-														},
-														{
-															"test": "has_equipment",
-															"domain": "any",
-															"value": "minecraft:item.camera"
-														},
-														{
-															"test": "has_equipment",
-															"domain": "any",
-															"value": "minecraft:item.frame"
-														},
-														{
-															"test": "has_equipment",
-															"domain": "any",
-															"value": "minecraft:pistonarmcollision"
-														},
-														{
-															"test": "has_equipment",
-															"domain": "any",
-															"value": "minecraft:movingBlock"
-														},
-														{
-															"test": "has_equipment",
-															"domain": "any",
-															"value": "minecraft:item.cake"
-														},
-														{
-															"test": "has_equipment",
-															"domain": "any",
-															"value": "minecraft:item.flower_pot"
-														},
-														{
-															"test": "has_equipment",
-															"domain": "any",
-															"value": "minecraft:info_update2"
-														},
-														{
-															"test": "has_equipment",
-															"domain": "any",
-															"value": "minecraft:stickyPistonArmCollision"
-														},
-														{
-															"test": "has_equipment",
-															"domain": "any",
-															"value": "minecraft:end_portal"
-														},
-														{
-															"test": "has_equipment",
-															"domain": "any",
-															"value": "minecraft:invisiblebedrock"
-														},
-														{
-															"test": "has_equipment",
-															"domain": "any",
-															"value": "minecraft:movingblock"
-														},
-														{
-															"test": "has_equipment",
-															"domain": "any",
-															"value": "minecraft:bucket:2"
-														},
-														{
-															"test": "has_equipment",
-															"domain": "any",
-															"value": "minecraft:bucket:3"
-														},
-														{
-															"test": "has_equipment",
-															"domain": "any",
-															"value": "minecraft:bucket:4"
-														},
-														{
-															"test": "has_equipment",
-															"domain": "any",
-															"value": "minecraft:bucket:5"
-														},
-														{
-															"test": "has_equipment",
-															"domain": "any",
-															"value": "minecraft:glowingobsidian"
-														},
-														{
-															"test": "has_equipment",
-															"domain": "any",
-															"value": "minecraft:flowing_water"
-														},
-														{
-															"test": "has_equipment",
-															"domain": "any",
-															"value": "minecraft:flowing_lava"
-														},
-														{
-															"test": "has_equipment",
-															"domain": "any",
-															"value": "minecraft:item.nether_sprouts"
-														}
-													]
-												},
-												"event": "hydra:item"
-											}
-										},
-										"key": "time_down_event",
-										"children": [
-											{
-												"open": {
-													"filters": {
-														"any_of": [
-															{
-																"test": "has_equipment",
-																"value": "minecraft:portal",
-																"domain": "any"
-															},
-															{
-																"test": "has_equipment",
-																"domain": "any",
-																"value": "minecraft:item.soul_campfire"
-															},
-															{
-																"test": "has_equipment",
-																"domain": "any",
-																"value": "minecraft:fire"
-															},
-															{
-																"test": "has_equipment",
-																"domain": "any",
-																"value": "minecraft:item.chain"
-															},
-															{
-																"test": "has_equipment",
-																"domain": "any",
-																"value": "minecraft:item.warped_door"
-															},
-															{
-																"test": "has_equipment",
-																"domain": "any",
-																"value": "minecraft:item.crimson_door"
-															},
-															{
-																"test": "has_equipment",
-																"domain": "any",
-																"value": "minecraft:item.campfire"
-															},
-															{
-																"test": "has_equipment",
-																"domain": "any",
-																"value": "minecraft:item.kelp"
-															},
-															{
-																"test": "has_equipment",
-																"domain": "any",
-																"value": "minecraft:bee_nest"
-															},
-															{
-																"test": "has_equipment",
-																"domain": "any",
-																"value": "minecraft:beehive"
-															},
-															{
-																"test": "has_equipment",
-																"domain": "any",
-																"value": "minecraft:item.wooden_door"
-															},
-															{
-																"test": "has_equipment",
-																"domain": "any",
-																"value": "minecraft:item.iron_door"
-															},
-															{
-																"test": "has_equipment",
-																"domain": "any",
-																"value": "minecraft:item.cake"
-															},
-															{
-																"test": "has_equipment",
-																"domain": "any",
-																"value": "minecraft:item.reeds"
-															},
-															{
-																"test": "has_equipment",
-																"domain": "any",
-																"value": "minecraft:item.camera"
-															},
-															{
-																"test": "has_equipment",
-																"domain": "any",
-																"value": "minecraft:item.frame"
-															},
-															{
-																"test": "has_equipment",
-																"domain": "any",
-																"value": "minecraft:pistonarmcollision"
-															},
-															{
-																"test": "has_equipment",
-																"domain": "any",
-																"value": "minecraft:movingBlock"
-															},
-															{
-																"test": "has_equipment",
-																"domain": "any",
-																"value": "minecraft:item.cake"
-															},
-															{
-																"test": "has_equipment",
-																"domain": "any",
-																"value": "minecraft:item.flower_pot"
-															},
-															{
-																"test": "has_equipment",
-																"domain": "any",
-																"value": "minecraft:info_update2"
-															},
-															{
-																"test": "has_equipment",
-																"domain": "any",
-																"value": "minecraft:stickyPistonArmCollision"
-															},
-															{
-																"test": "has_equipment",
-																"domain": "any",
-																"value": "minecraft:end_portal"
-															},
-															{
-																"test": "has_equipment",
-																"domain": "any",
-																"value": "minecraft:invisiblebedrock"
-															},
-															{
-																"test": "has_equipment",
-																"domain": "any",
-																"value": "minecraft:movingblock"
-															},
-															{
-																"test": "has_equipment",
-																"domain": "any",
-																"value": "minecraft:bucket:2"
-															},
-															{
-																"test": "has_equipment",
-																"domain": "any",
-																"value": "minecraft:bucket:3"
-															},
-															{
-																"test": "has_equipment",
-																"domain": "any",
-																"value": "minecraft:bucket:4"
-															},
-															{
-																"test": "has_equipment",
-																"domain": "any",
-																"value": "minecraft:bucket:5"
-															},
-															{
-																"test": "has_equipment",
-																"domain": "any",
-																"value": "minecraft:glowingobsidian"
-															},
-															{
-																"test": "has_equipment",
-																"domain": "any",
-																"value": "minecraft:flowing_water"
-															},
-															{
-																"test": "has_equipment",
-																"domain": "any",
-																"value": "minecraft:flowing_lava"
-															},
-															{
-																"test": "has_equipment",
-																"domain": "any",
-																"value": "minecraft:item.nether_sprouts"
-															}
-														]
-													},
-													"event": "hydra:item"
-												},
-												"key": "filters",
-												"children": [
-													{
-														"open": {
-															"any_of": [
-																{
-																	"test": "has_equipment",
-																	"value": "minecraft:portal",
-																	"domain": "any"
-																},
-																{
-																	"test": "has_equipment",
-																	"domain": "any",
-																	"value": "minecraft:item.soul_campfire"
-																},
-																{
-																	"test": "has_equipment",
-																	"domain": "any",
-																	"value": "minecraft:fire"
-																},
-																{
-																	"test": "has_equipment",
-																	"domain": "any",
-																	"value": "minecraft:item.chain"
-																},
-																{
-																	"test": "has_equipment",
-																	"domain": "any",
-																	"value": "minecraft:item.warped_door"
-																},
-																{
-																	"test": "has_equipment",
-																	"domain": "any",
-																	"value": "minecraft:item.crimson_door"
-																},
-																{
-																	"test": "has_equipment",
-																	"domain": "any",
-																	"value": "minecraft:item.campfire"
-																},
-																{
-																	"test": "has_equipment",
-																	"domain": "any",
-																	"value": "minecraft:item.kelp"
-																},
-																{
-																	"test": "has_equipment",
-																	"domain": "any",
-																	"value": "minecraft:bee_nest"
-																},
-																{
-																	"test": "has_equipment",
-																	"domain": "any",
-																	"value": "minecraft:beehive"
-																},
-																{
-																	"test": "has_equipment",
-																	"domain": "any",
-																	"value": "minecraft:item.wooden_door"
-																},
-																{
-																	"test": "has_equipment",
-																	"domain": "any",
-																	"value": "minecraft:item.iron_door"
-																},
-																{
-																	"test": "has_equipment",
-																	"domain": "any",
-																	"value": "minecraft:item.cake"
-																},
-																{
-																	"test": "has_equipment",
-																	"domain": "any",
-																	"value": "minecraft:item.reeds"
-																},
-																{
-																	"test": "has_equipment",
-																	"domain": "any",
-																	"value": "minecraft:item.camera"
-																},
-																{
-																	"test": "has_equipment",
-																	"domain": "any",
-																	"value": "minecraft:item.frame"
-																},
-																{
-																	"test": "has_equipment",
-																	"domain": "any",
-																	"value": "minecraft:pistonarmcollision"
-																},
-																{
-																	"test": "has_equipment",
-																	"domain": "any",
-																	"value": "minecraft:movingBlock"
-																},
-																{
-																	"test": "has_equipment",
-																	"domain": "any",
-																	"value": "minecraft:item.cake"
-																},
-																{
-																	"test": "has_equipment",
-																	"domain": "any",
-																	"value": "minecraft:item.flower_pot"
-																},
-																{
-																	"test": "has_equipment",
-																	"domain": "any",
-																	"value": "minecraft:info_update2"
-																},
-																{
-																	"test": "has_equipment",
-																	"domain": "any",
-																	"value": "minecraft:stickyPistonArmCollision"
-																},
-																{
-																	"test": "has_equipment",
-																	"domain": "any",
-																	"value": "minecraft:end_portal"
-																},
-																{
-																	"test": "has_equipment",
-																	"domain": "any",
-																	"value": "minecraft:invisiblebedrock"
-																},
-																{
-																	"test": "has_equipment",
-																	"domain": "any",
-																	"value": "minecraft:movingblock"
-																},
-																{
-																	"test": "has_equipment",
-																	"domain": "any",
-																	"value": "minecraft:bucket:2"
-																},
-																{
-																	"test": "has_equipment",
-																	"domain": "any",
-																	"value": "minecraft:bucket:3"
-																},
-																{
-																	"test": "has_equipment",
-																	"domain": "any",
-																	"value": "minecraft:bucket:4"
-																},
-																{
-																	"test": "has_equipment",
-																	"domain": "any",
-																	"value": "minecraft:bucket:5"
-																},
-																{
-																	"test": "has_equipment",
-																	"domain": "any",
-																	"value": "minecraft:glowingobsidian"
-																},
-																{
-																	"test": "has_equipment",
-																	"domain": "any",
-																	"value": "minecraft:flowing_water"
-																},
-																{
-																	"test": "has_equipment",
-																	"domain": "any",
-																	"value": "minecraft:flowing_lava"
-																},
-																{
-																	"test": "has_equipment",
-																	"domain": "any",
-																	"value": "minecraft:item.nether_sprouts"
-																}
-															]
-														},
-														"key": "any_of",
-														"is_minified": true,
-														"children": [
-															{
-																"test": "has_equipment",
-																"value": "minecraft:portal",
-																"domain": "any"
-															},
-															{
-																"test": "has_equipment",
-																"domain": "any",
-																"value": "minecraft:item.soul_campfire"
-															},
-															{
-																"test": "has_equipment",
-																"domain": "any",
-																"value": "minecraft:fire"
-															},
-															{
-																"test": "has_equipment",
-																"domain": "any",
-																"value": "minecraft:item.chain"
-															},
-															{
-																"test": "has_equipment",
-																"domain": "any",
-																"value": "minecraft:item.warped_door"
-															},
-															{
-																"test": "has_equipment",
-																"domain": "any",
-																"value": "minecraft:item.crimson_door"
-															},
-															{
-																"test": "has_equipment",
-																"domain": "any",
-																"value": "minecraft:item.campfire"
-															},
-															{
-																"test": "has_equipment",
-																"domain": "any",
-																"value": "minecraft:item.kelp"
-															},
-															{
-																"test": "has_equipment",
-																"domain": "any",
-																"value": "minecraft:bee_nest"
-															},
-															{
-																"test": "has_equipment",
-																"domain": "any",
-																"value": "minecraft:beehive"
-															},
-															{
-																"test": "has_equipment",
-																"domain": "any",
-																"value": "minecraft:item.wooden_door"
-															},
-															{
-																"test": "has_equipment",
-																"domain": "any",
-																"value": "minecraft:item.iron_door"
-															},
-															{
-																"test": "has_equipment",
-																"domain": "any",
-																"value": "minecraft:item.cake"
-															},
-															{
-																"test": "has_equipment",
-																"domain": "any",
-																"value": "minecraft:item.reeds"
-															},
-															{
-																"test": "has_equipment",
-																"domain": "any",
-																"value": "minecraft:item.camera"
-															},
-															{
-																"test": "has_equipment",
-																"domain": "any",
-																"value": "minecraft:item.frame"
-															},
-															{
-																"test": "has_equipment",
-																"domain": "any",
-																"value": "minecraft:pistonarmcollision"
-															},
-															{
-																"test": "has_equipment",
-																"domain": "any",
-																"value": "minecraft:movingBlock"
-															},
-															{
-																"test": "has_equipment",
-																"domain": "any",
-																"value": "minecraft:item.cake"
-															},
-															{
-																"test": "has_equipment",
-																"domain": "any",
-																"value": "minecraft:item.flower_pot"
-															},
-															{
-																"test": "has_equipment",
-																"domain": "any",
-																"value": "minecraft:info_update2"
-															},
-															{
-																"test": "has_equipment",
-																"domain": "any",
-																"value": "minecraft:stickyPistonArmCollision"
-															},
-															{
-																"test": "has_equipment",
-																"domain": "any",
-																"value": "minecraft:end_portal"
-															},
-															{
-																"test": "has_equipment",
-																"domain": "any",
-																"value": "minecraft:invisiblebedrock"
-															},
-															{
-																"test": "has_equipment",
-																"domain": "any",
-																"value": "minecraft:movingblock"
-															},
-															{
-																"test": "has_equipment",
-																"domain": "any",
-																"value": "minecraft:bucket:2"
-															},
-															{
-																"test": "has_equipment",
-																"domain": "any",
-																"value": "minecraft:bucket:3"
-															},
-															{
-																"test": "has_equipment",
-																"domain": "any",
-																"value": "minecraft:bucket:4"
-															},
-															{
-																"test": "has_equipment",
-																"domain": "any",
-																"value": "minecraft:bucket:5"
-															},
-															{
-																"test": "has_equipment",
-																"domain": "any",
-																"value": "minecraft:glowingobsidian"
-															},
-															{
-																"test": "has_equipment",
-																"domain": "any",
-																"value": "minecraft:flowing_water"
-															},
-															{
-																"test": "has_equipment",
-																"domain": "any",
-																"value": "minecraft:flowing_lava"
-															},
-															{
-																"test": "has_equipment",
-																"domain": "any",
-																"value": "minecraft:item.nether_sprouts"
-															}
-														]
-													}
-												]
-											},
-											{
-												"data": "hydra:item",
-												"key": "event"
-											}
-										]
-									}
-								]
-							},
-							{
 								"open": {
 									"minecraft:experience_reward": {
 										"on_death": "Math.Min(query.player_level * 7, 100)"
@@ -3161,26 +2366,6 @@
 													{
 														"test": "has_equipment",
 														"domain": "any",
-														"value": "minecraft:bucket:2"
-													},
-													{
-														"test": "has_equipment",
-														"domain": "any",
-														"value": "minecraft:bucket:3"
-													},
-													{
-														"test": "has_equipment",
-														"domain": "any",
-														"value": "minecraft:bucket:4"
-													},
-													{
-														"test": "has_equipment",
-														"domain": "any",
-														"value": "minecraft:bucket:5"
-													},
-													{
-														"test": "has_equipment",
-														"domain": "any",
 														"value": "minecraft:glowingobsidian"
 													},
 													{
@@ -3233,6 +2418,641 @@
 										]
 									}
 								},
+								"key": "minecraft:timer",
+								"children": [
+									{
+										"data": "true",
+										"key": "looping"
+									},
+									{
+										"data": "0.1",
+										"key": "time"
+									},
+									{
+										"open": {
+											"looping": true,
+											"time": 0.1,
+											"time_down_event": {
+												"filters": {
+													"any_of": [
+														{
+															"test": "has_equipment",
+															"value": "minecraft:portal",
+															"domain": "any"
+														},
+														{
+															"test": "has_equipment",
+															"domain": "any",
+															"value": "minecraft:item.soul_campfire"
+														},
+														{
+															"test": "has_equipment",
+															"domain": "any",
+															"value": "minecraft:fire"
+														},
+														{
+															"test": "has_equipment",
+															"domain": "any",
+															"value": "minecraft:item.chain"
+														},
+														{
+															"test": "has_equipment",
+															"domain": "any",
+															"value": "minecraft:item.warped_door"
+														},
+														{
+															"test": "has_equipment",
+															"domain": "any",
+															"value": "minecraft:item.crimson_door"
+														},
+														{
+															"test": "has_equipment",
+															"domain": "any",
+															"value": "minecraft:item.campfire"
+														},
+														{
+															"test": "has_equipment",
+															"domain": "any",
+															"value": "minecraft:item.kelp"
+														},
+														{
+															"test": "has_equipment",
+															"domain": "any",
+															"value": "minecraft:bee_nest"
+														},
+														{
+															"test": "has_equipment",
+															"domain": "any",
+															"value": "minecraft:beehive"
+														},
+														{
+															"test": "has_equipment",
+															"domain": "any",
+															"value": "minecraft:item.wooden_door"
+														},
+														{
+															"test": "has_equipment",
+															"domain": "any",
+															"value": "minecraft:item.iron_door"
+														},
+														{
+															"test": "has_equipment",
+															"domain": "any",
+															"value": "minecraft:item.cake"
+														},
+														{
+															"test": "has_equipment",
+															"domain": "any",
+															"value": "minecraft:item.reeds"
+														},
+														{
+															"test": "has_equipment",
+															"domain": "any",
+															"value": "minecraft:item.camera"
+														},
+														{
+															"test": "has_equipment",
+															"domain": "any",
+															"value": "minecraft:item.frame"
+														},
+														{
+															"test": "has_equipment",
+															"domain": "any",
+															"value": "minecraft:pistonarmcollision"
+														},
+														{
+															"test": "has_equipment",
+															"domain": "any",
+															"value": "minecraft:movingBlock"
+														},
+														{
+															"test": "has_equipment",
+															"domain": "any",
+															"value": "minecraft:item.cake"
+														},
+														{
+															"test": "has_equipment",
+															"domain": "any",
+															"value": "minecraft:item.flower_pot"
+														},
+														{
+															"test": "has_equipment",
+															"domain": "any",
+															"value": "minecraft:info_update2"
+														},
+														{
+															"test": "has_equipment",
+															"domain": "any",
+															"value": "minecraft:stickyPistonArmCollision"
+														},
+														{
+															"test": "has_equipment",
+															"domain": "any",
+															"value": "minecraft:end_portal"
+														},
+														{
+															"test": "has_equipment",
+															"domain": "any",
+															"value": "minecraft:invisiblebedrock"
+														},
+														{
+															"test": "has_equipment",
+															"domain": "any",
+															"value": "minecraft:movingblock"
+														},
+														{
+															"test": "has_equipment",
+															"domain": "any",
+															"value": "minecraft:glowingobsidian"
+														},
+														{
+															"test": "has_equipment",
+															"domain": "any",
+															"value": "minecraft:flowing_water"
+														},
+														{
+															"test": "has_equipment",
+															"domain": "any",
+															"value": "minecraft:flowing_lava"
+														},
+														{
+															"test": "has_equipment",
+															"domain": "any",
+															"value": "minecraft:item.nether_sprouts"
+														}
+													]
+												},
+												"event": "hydra:item"
+											}
+										},
+										"key": "time_down_event",
+										"children": [
+											{
+												"open": {
+													"filters": {
+														"any_of": [
+															{
+																"test": "has_equipment",
+																"value": "minecraft:portal",
+																"domain": "any"
+															},
+															{
+																"test": "has_equipment",
+																"domain": "any",
+																"value": "minecraft:item.soul_campfire"
+															},
+															{
+																"test": "has_equipment",
+																"domain": "any",
+																"value": "minecraft:fire"
+															},
+															{
+																"test": "has_equipment",
+																"domain": "any",
+																"value": "minecraft:item.chain"
+															},
+															{
+																"test": "has_equipment",
+																"domain": "any",
+																"value": "minecraft:item.warped_door"
+															},
+															{
+																"test": "has_equipment",
+																"domain": "any",
+																"value": "minecraft:item.crimson_door"
+															},
+															{
+																"test": "has_equipment",
+																"domain": "any",
+																"value": "minecraft:item.campfire"
+															},
+															{
+																"test": "has_equipment",
+																"domain": "any",
+																"value": "minecraft:item.kelp"
+															},
+															{
+																"test": "has_equipment",
+																"domain": "any",
+																"value": "minecraft:bee_nest"
+															},
+															{
+																"test": "has_equipment",
+																"domain": "any",
+																"value": "minecraft:beehive"
+															},
+															{
+																"test": "has_equipment",
+																"domain": "any",
+																"value": "minecraft:item.wooden_door"
+															},
+															{
+																"test": "has_equipment",
+																"domain": "any",
+																"value": "minecraft:item.iron_door"
+															},
+															{
+																"test": "has_equipment",
+																"domain": "any",
+																"value": "minecraft:item.cake"
+															},
+															{
+																"test": "has_equipment",
+																"domain": "any",
+																"value": "minecraft:item.reeds"
+															},
+															{
+																"test": "has_equipment",
+																"domain": "any",
+																"value": "minecraft:item.camera"
+															},
+															{
+																"test": "has_equipment",
+																"domain": "any",
+																"value": "minecraft:item.frame"
+															},
+															{
+																"test": "has_equipment",
+																"domain": "any",
+																"value": "minecraft:pistonarmcollision"
+															},
+															{
+																"test": "has_equipment",
+																"domain": "any",
+																"value": "minecraft:movingBlock"
+															},
+															{
+																"test": "has_equipment",
+																"domain": "any",
+																"value": "minecraft:item.cake"
+															},
+															{
+																"test": "has_equipment",
+																"domain": "any",
+																"value": "minecraft:item.flower_pot"
+															},
+															{
+																"test": "has_equipment",
+																"domain": "any",
+																"value": "minecraft:info_update2"
+															},
+															{
+																"test": "has_equipment",
+																"domain": "any",
+																"value": "minecraft:stickyPistonArmCollision"
+															},
+															{
+																"test": "has_equipment",
+																"domain": "any",
+																"value": "minecraft:end_portal"
+															},
+															{
+																"test": "has_equipment",
+																"domain": "any",
+																"value": "minecraft:invisiblebedrock"
+															},
+															{
+																"test": "has_equipment",
+																"domain": "any",
+																"value": "minecraft:movingblock"
+															},
+															{
+																"test": "has_equipment",
+																"domain": "any",
+																"value": "minecraft:glowingobsidian"
+															},
+															{
+																"test": "has_equipment",
+																"domain": "any",
+																"value": "minecraft:flowing_water"
+															},
+															{
+																"test": "has_equipment",
+																"domain": "any",
+																"value": "minecraft:flowing_lava"
+															},
+															{
+																"test": "has_equipment",
+																"domain": "any",
+																"value": "minecraft:item.nether_sprouts"
+															}
+														]
+													},
+													"event": "hydra:item"
+												},
+												"key": "filters",
+												"children": [
+													{
+														"open": {
+															"any_of": [
+																{
+																	"test": "has_equipment",
+																	"value": "minecraft:portal",
+																	"domain": "any"
+																},
+																{
+																	"test": "has_equipment",
+																	"domain": "any",
+																	"value": "minecraft:item.soul_campfire"
+																},
+																{
+																	"test": "has_equipment",
+																	"domain": "any",
+																	"value": "minecraft:fire"
+																},
+																{
+																	"test": "has_equipment",
+																	"domain": "any",
+																	"value": "minecraft:item.chain"
+																},
+																{
+																	"test": "has_equipment",
+																	"domain": "any",
+																	"value": "minecraft:item.warped_door"
+																},
+																{
+																	"test": "has_equipment",
+																	"domain": "any",
+																	"value": "minecraft:item.crimson_door"
+																},
+																{
+																	"test": "has_equipment",
+																	"domain": "any",
+																	"value": "minecraft:item.campfire"
+																},
+																{
+																	"test": "has_equipment",
+																	"domain": "any",
+																	"value": "minecraft:item.kelp"
+																},
+																{
+																	"test": "has_equipment",
+																	"domain": "any",
+																	"value": "minecraft:bee_nest"
+																},
+																{
+																	"test": "has_equipment",
+																	"domain": "any",
+																	"value": "minecraft:beehive"
+																},
+																{
+																	"test": "has_equipment",
+																	"domain": "any",
+																	"value": "minecraft:item.wooden_door"
+																},
+																{
+																	"test": "has_equipment",
+																	"domain": "any",
+																	"value": "minecraft:item.iron_door"
+																},
+																{
+																	"test": "has_equipment",
+																	"domain": "any",
+																	"value": "minecraft:item.cake"
+																},
+																{
+																	"test": "has_equipment",
+																	"domain": "any",
+																	"value": "minecraft:item.reeds"
+																},
+																{
+																	"test": "has_equipment",
+																	"domain": "any",
+																	"value": "minecraft:item.camera"
+																},
+																{
+																	"test": "has_equipment",
+																	"domain": "any",
+																	"value": "minecraft:item.frame"
+																},
+																{
+																	"test": "has_equipment",
+																	"domain": "any",
+																	"value": "minecraft:pistonarmcollision"
+																},
+																{
+																	"test": "has_equipment",
+																	"domain": "any",
+																	"value": "minecraft:movingBlock"
+																},
+																{
+																	"test": "has_equipment",
+																	"domain": "any",
+																	"value": "minecraft:item.cake"
+																},
+																{
+																	"test": "has_equipment",
+																	"domain": "any",
+																	"value": "minecraft:item.flower_pot"
+																},
+																{
+																	"test": "has_equipment",
+																	"domain": "any",
+																	"value": "minecraft:info_update2"
+																},
+																{
+																	"test": "has_equipment",
+																	"domain": "any",
+																	"value": "minecraft:stickyPistonArmCollision"
+																},
+																{
+																	"test": "has_equipment",
+																	"domain": "any",
+																	"value": "minecraft:end_portal"
+																},
+																{
+																	"test": "has_equipment",
+																	"domain": "any",
+																	"value": "minecraft:invisiblebedrock"
+																},
+																{
+																	"test": "has_equipment",
+																	"domain": "any",
+																	"value": "minecraft:movingblock"
+																},
+																{
+																	"test": "has_equipment",
+																	"domain": "any",
+																	"value": "minecraft:glowingobsidian"
+																},
+																{
+																	"test": "has_equipment",
+																	"domain": "any",
+																	"value": "minecraft:flowing_water"
+																},
+																{
+																	"test": "has_equipment",
+																	"domain": "any",
+																	"value": "minecraft:flowing_lava"
+																},
+																{
+																	"test": "has_equipment",
+																	"domain": "any",
+																	"value": "minecraft:item.nether_sprouts"
+																}
+															]
+														},
+														"key": "any_of",
+														"is_minified": true,
+														"children": [
+															{
+																"test": "has_equipment",
+																"value": "minecraft:portal",
+																"domain": "any"
+															},
+															{
+																"test": "has_equipment",
+																"domain": "any",
+																"value": "minecraft:item.soul_campfire"
+															},
+															{
+																"test": "has_equipment",
+																"domain": "any",
+																"value": "minecraft:fire"
+															},
+															{
+																"test": "has_equipment",
+																"domain": "any",
+																"value": "minecraft:item.chain"
+															},
+															{
+																"test": "has_equipment",
+																"domain": "any",
+																"value": "minecraft:item.warped_door"
+															},
+															{
+																"test": "has_equipment",
+																"domain": "any",
+																"value": "minecraft:item.crimson_door"
+															},
+															{
+																"test": "has_equipment",
+																"domain": "any",
+																"value": "minecraft:item.campfire"
+															},
+															{
+																"test": "has_equipment",
+																"domain": "any",
+																"value": "minecraft:item.kelp"
+															},
+															{
+																"test": "has_equipment",
+																"domain": "any",
+																"value": "minecraft:bee_nest"
+															},
+															{
+																"test": "has_equipment",
+																"domain": "any",
+																"value": "minecraft:beehive"
+															},
+															{
+																"test": "has_equipment",
+																"domain": "any",
+																"value": "minecraft:item.wooden_door"
+															},
+															{
+																"test": "has_equipment",
+																"domain": "any",
+																"value": "minecraft:item.iron_door"
+															},
+															{
+																"test": "has_equipment",
+																"domain": "any",
+																"value": "minecraft:item.cake"
+															},
+															{
+																"test": "has_equipment",
+																"domain": "any",
+																"value": "minecraft:item.reeds"
+															},
+															{
+																"test": "has_equipment",
+																"domain": "any",
+																"value": "minecraft:item.camera"
+															},
+															{
+																"test": "has_equipment",
+																"domain": "any",
+																"value": "minecraft:item.frame"
+															},
+															{
+																"test": "has_equipment",
+																"domain": "any",
+																"value": "minecraft:pistonarmcollision"
+															},
+															{
+																"test": "has_equipment",
+																"domain": "any",
+																"value": "minecraft:movingBlock"
+															},
+															{
+																"test": "has_equipment",
+																"domain": "any",
+																"value": "minecraft:item.cake"
+															},
+															{
+																"test": "has_equipment",
+																"domain": "any",
+																"value": "minecraft:item.flower_pot"
+															},
+															{
+																"test": "has_equipment",
+																"domain": "any",
+																"value": "minecraft:info_update2"
+															},
+															{
+																"test": "has_equipment",
+																"domain": "any",
+																"value": "minecraft:stickyPistonArmCollision"
+															},
+															{
+																"test": "has_equipment",
+																"domain": "any",
+																"value": "minecraft:end_portal"
+															},
+															{
+																"test": "has_equipment",
+																"domain": "any",
+																"value": "minecraft:invisiblebedrock"
+															},
+															{
+																"test": "has_equipment",
+																"domain": "any",
+																"value": "minecraft:movingblock"
+															},
+															{
+																"test": "has_equipment",
+																"domain": "any",
+																"value": "minecraft:glowingobsidian"
+															},
+															{
+																"test": "has_equipment",
+																"domain": "any",
+																"value": "minecraft:flowing_water"
+															},
+															{
+																"test": "has_equipment",
+																"domain": "any",
+																"value": "minecraft:flowing_lava"
+															},
+															{
+																"test": "has_equipment",
+																"domain": "any",
+																"value": "minecraft:item.nether_sprouts"
+															}
+														]
+													}
+												]
+											},
+											{
+												"data": "hydra:item",
+												"key": "event"
+											}
+										]
+									}
+								]
+							},
+							{
 								"key": "minecraft:damage_sensor",
 								"children": [
 									{
@@ -3760,26 +3580,6 @@
 													"test": "has_equipment",
 													"domain": "any",
 													"value": "minecraft:movingblock"
-												},
-												{
-													"test": "has_equipment",
-													"domain": "any",
-													"value": "minecraft:bucket:2"
-												},
-												{
-													"test": "has_equipment",
-													"domain": "any",
-													"value": "minecraft:bucket:3"
-												},
-												{
-													"test": "has_equipment",
-													"domain": "any",
-													"value": "minecraft:bucket:4"
-												},
-												{
-													"test": "has_equipment",
-													"domain": "any",
-													"value": "minecraft:bucket:5"
 												},
 												{
 													"test": "has_equipment",
