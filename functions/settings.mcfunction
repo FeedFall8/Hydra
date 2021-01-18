@@ -98,4 +98,8 @@ Xfunction hy/packages/rollbackrealm
 function hy/packages/oneshot
 #----------------------------------------------------
  
+#-------------------
+#this MUST always be turned on or antinbt will not work!
+function hy/packages/delete
+#------------------
 ©2020 HydraAntiCheat

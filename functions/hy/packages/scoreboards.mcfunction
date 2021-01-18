@@ -16,6 +16,7 @@ scoreboard objectives add katimer3 dummy
 scoreboard objectives add player dummy
 scoreboard objectives add bancount dummy
 scoreboard objectives add tick dummy
+scoreboard objectives add delete dummy
  
 tag @a[scores{staffrank=0}] remove staff
 tag @a[scores{staffrank=1}] add staff
