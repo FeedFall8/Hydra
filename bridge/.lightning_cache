@@ -49,7 +49,9 @@
 			"identifiers": [
 				"minecraft:player"
 			],
-			"animation_references": [],
+			"animation_references": [
+				"a"
+			],
 			"families": [
 				"player"
 			],
@@ -177,7 +179,8 @@
 			"scoreboards": [
 				"oneshot"
 			]
-		}
+		},
+		"01524c65_03a6_4566_b15b_801cf52b2d30": {}
 	},
 	"item": {},
 	"animation": {

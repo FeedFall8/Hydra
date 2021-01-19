@@ -1,4 +1,4 @@
-//bridge-file-version: #61
+//bridge-file-version: #70
 {
 	"format_version": "1.16.0",
 	"minecraft:entity": {
@@ -7,13 +7,15 @@
 			"is_spawnable": false,
 			"is_summonable": true,
 			"is_experimental": false,
+			"animations": {
+				"a": "controller.animation.walk",
+				"bridge_execute_commands": "controller.animation.bridge_player.execute_commands"
+			},
 			"scripts": {
 				"animate": [
+					"a",
 					"bridge_execute_commands"
 				]
-			},
-			"animations": {
-				"bridge_execute_commands": "controller.animation.bridge_player.execute_commands"
 			}
 		},
 		"component_groups": {

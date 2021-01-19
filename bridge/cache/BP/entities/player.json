@@ -3,7 +3,7 @@
 	"file_type": "entity",
 	"format_version": 1,
 	"file_uuid": "e8691f27_9425_4f08_b47c_1399d10d5aca",
-	"file_version": 61,
+	"file_version": 70,
 	"cache_content": {
 		"children": [
 			{
@@ -18,7 +18,15 @@
 							"identifier": "minecraft:player",
 							"is_spawnable": false,
 							"is_summonable": true,
-							"is_experimental": false
+							"is_experimental": false,
+							"animations": {
+								"a": "controller.animation.walk"
+							},
+							"scripts": {
+								"animate": [
+									"a"
+								]
+							}
 						},
 						"component_groups": {
 							"minecraft:add_bad_omen": {
@@ -458,7 +466,15 @@
 								"identifier": "minecraft:player",
 								"is_spawnable": false,
 								"is_summonable": true,
-								"is_experimental": false
+								"is_experimental": false,
+								"animations": {
+									"a": "controller.animation.walk"
+								},
+								"scripts": {
+									"animate": [
+										"a"
+									]
+								}
 							},
 							"component_groups": {
 								"minecraft:add_bad_omen": {
@@ -890,13 +906,76 @@
 							}
 						},
 						"key": "description",
-						"is_minified": true,
-						"children": {
-							"identifier": "minecraft:player",
-							"is_spawnable": false,
-							"is_summonable": true,
-							"is_experimental": false
-						}
+						"children": [
+							{
+								"data": "minecraft:player",
+								"key": "identifier"
+							},
+							{
+								"data": "false",
+								"key": "is_spawnable"
+							},
+							{
+								"data": "true",
+								"key": "is_summonable"
+							},
+							{
+								"data": "false",
+								"key": "is_experimental"
+							},
+							{
+								"open": {
+									"identifier": "minecraft:player",
+									"is_spawnable": false,
+									"is_summonable": true,
+									"is_experimental": false,
+									"animations": {
+										"a": "controller.animation.walk"
+									},
+									"scripts": {
+										"animate": [
+											"a"
+										]
+									}
+								},
+								"key": "animations",
+								"is_minified": true,
+								"children": {
+									"a": "controller.animation.walk"
+								}
+							},
+							{
+								"open": {
+									"identifier": "minecraft:player",
+									"is_spawnable": false,
+									"is_summonable": true,
+									"is_experimental": false,
+									"animations": {
+										"a": "controller.animation.walk"
+									},
+									"scripts": {
+										"animate": [
+											"a"
+										]
+									}
+								},
+								"key": "scripts",
+								"children": [
+									{
+										"open": {
+											"animate": [
+												"a"
+											]
+										},
+										"key": "animate",
+										"is_minified": true,
+										"children": [
+											"a"
+										]
+									}
+								]
+							}
+						]
 					},
 					{
 						"open": {
@@ -904,7 +983,15 @@
 								"identifier": "minecraft:player",
 								"is_spawnable": false,
 								"is_summonable": true,
-								"is_experimental": false
+								"is_experimental": false,
+								"animations": {
+									"a": "controller.animation.walk"
+								},
+								"scripts": {
+									"animate": [
+										"a"
+									]
+								}
 							},
 							"component_groups": {
 								"minecraft:add_bad_omen": {
@@ -1517,7 +1604,15 @@
 								"identifier": "minecraft:player",
 								"is_spawnable": false,
 								"is_summonable": true,
-								"is_experimental": false
+								"is_experimental": false,
+								"animations": {
+									"a": "controller.animation.walk"
+								},
+								"scripts": {
+									"animate": [
+										"a"
+									]
+								}
 							},
 							"component_groups": {
 								"minecraft:add_bad_omen": {
@@ -3273,7 +3368,15 @@
 								"identifier": "minecraft:player",
 								"is_spawnable": false,
 								"is_summonable": true,
-								"is_experimental": false
+								"is_experimental": false,
+								"animations": {
+									"a": "controller.animation.walk"
+								},
+								"scripts": {
+									"animate": [
+										"a"
+									]
+								}
 							},
 							"component_groups": {
 								"minecraft:add_bad_omen": {

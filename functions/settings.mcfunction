@@ -1,4 +1,4 @@
-#bridge-file-version: #45
+#bridge-file-version: #49
 #----------------------------------------------------
 #
 #                   Hydra Settings
@@ -71,7 +71,7 @@ function hy/packages/gamemodeban
 # Anti Nuker (BETA)
 # Bans players who use nuker, tnt may kick you when using
  
-Xfunction hy/packages/antinuker
+function hy/packages/antinuker
 #----------------------------------------------------
  
  
@@ -79,7 +79,7 @@ Xfunction hy/packages/antinuker
 # Killaura Detection (STABLE)
 # Bans players who use killaura 
  
-Xfunction hy/packages/killaura
+function hy/packages/killaura
 #----------------------------------------------------
  
  
@@ -92,14 +92,10 @@ Xfunction hy/packages/rollbackrealm
  
  
 #----------------------------------------------------
-# One shot detection
+# One shot detection (Bugs for servival mode only use in pvp realms)
 # Detects hackers with 32k armor or tools
  
-function hy/packages/oneshot
+Xfunction hy/packages/oneshot
 #----------------------------------------------------
  
-#-------------------
-#this MUST always be turned on or antinbt will not work!
-function hy/packages/delete
-#------------------
 ©2020 HydraAntiCheat

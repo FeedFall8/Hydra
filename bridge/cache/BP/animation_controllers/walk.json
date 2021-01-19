@@ -1,9 +1,9 @@
 {
-	"file_path": "C:\\Users\\James\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\HydraAntiCheat Easy Mode\\animation_controllers\\walk.json",
+	"file_path": "C:\\Users\\James\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Hydra AntiCheat v2\\animation_controllers\\walk.json",
 	"file_type": "animation_controller",
 	"format_version": 1,
 	"file_uuid": "01524c65_03a6_4566_b15b_801cf52b2d30",
-	"file_version": 5,
+	"file_version": 11,
 	"cache_content": {
 		"children": [
 			{
