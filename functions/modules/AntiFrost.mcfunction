@@ -1,1 +1,0 @@
-replaceitem entity @a slot.armor.feet 1 air

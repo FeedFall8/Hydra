@@ -1,32 +1,30 @@
-//bridge-file-version: #21
+//bridge-file-version: #5
 {
-    "format_version": 1,
-    "header": {
-        "name": "§¶§c⋰         Hydra Anticheat | v1.3.0 | Easy Setup           ⋱",
-        "description": "§¶§c⋮             Most secure bedrock Anticheat               ⋮
-§¶§c⋮                    discord.gg/yfcmFz                    ⋮
-§¶§c⋱                github.com/FeedFall8/Hydra             ⋰",
-        "uuid": "958b8370-72b0-4a78-91e2-b3b719084de7",
-        "version": [
-            1,
-            2,
-            0
-        ],
-        "min_engine_version": [
-            1,
-            8,
-            0
-        ]
-    },
-    "modules": [
-        {
-            "type": "data",
-            "uuid": "f4c7fd43-5678-4bb5-83b3-82e2a5f7a3c3",
-            "version": [
-                1,
-                0,
-                0
-            ]
-        }
-    ]
+	"format_version": 2,
+	"header": {
+		"name": "§4Hydra Anticheat v3.0.0",
+		"description": "§cHydra Discord: https://discord.gg/8eaEKNqPKD",
+		"uuid": "6fbb8617-2087-4457-82fd-199bd93a1de1",
+		"version": [
+			1,
+			0,
+			0
+		],
+		"min_engine_version": [
+			1,
+			13,
+			0
+		]
+	},
+	"modules": [
+		{
+			"type": "data",
+			"uuid": "114e2eb8-ed5e-48d6-8784-f0384f0fddaf",
+			"version": [
+				1,
+				0,
+				0
+			]
+		}
+	]
 }
