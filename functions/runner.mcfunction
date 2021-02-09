@@ -1,4 +1,4 @@
-#bridge-file-version: #58
+#bridge-file-version: #59
 HIDDEN 
 #=====================
 scoreboard players reset @s hydrasettings
@@ -36,6 +36,10 @@ execute @s[scores={hydrasettings=1},tag=!staff] ~ ~ ~ function modules/speedchec
 scoreboard players reset @s hydrasettings
 scoreboard players operation @s hydrasettings = "antijesus" hydrasettings
 execute @s[scores={hydrasettings=1},tag=!staff] ~ ~ ~ function modules/antijesus
+#=====================
+scoreboard players reset @s hydrasettings
+scoreboard players operation @s hydrasettings = "antinbt2" hydrasettings
+execute @s[scores={hydrasettings=1},tag=!staff] ~ ~ ~ function modules/antinbt2
 #=====================
 #=====================
 scoreboard players add @a credit 0

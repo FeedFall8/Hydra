@@ -1,4 +1,4 @@
-#bridge-file-version: #43
+#bridge-file-version: #46
 scoreboard objectives add hydrasettings dummy
 scoreboard objectives add credit dummy
 scoreboard objectives add ofgrounftimer dummy
@@ -17,11 +17,14 @@ scoreboard objectives add speedreset dummy
  
 scoreboard players set "antinpc" hydrasettings 1
 scoreboard players set "antinbt" hydrasettings 1
+scoreboard players set "antinbt2" hydrasettings 0
 scoreboard players set "antigamemode" hydrasettings 1
 scoreboard players set "noblocks" hydrasettings 0
 scoreboard players set "antiphase" hydrasettings 1
 scoreboard players set "noredstone" hydrasettings 0
 scoreboard players set "antispeed" hydrasettings 0
+scoreboard players set "antifly" hydrasettings 0
+scoreboard players set "antijesus" hydrasettings 0
  
 tellraw @s {"rawtext":[{"text":"§a\n§4Hydra§r > §aPlease Re open world/leave realm to finish setup!\n§r§a"}]}
 function info

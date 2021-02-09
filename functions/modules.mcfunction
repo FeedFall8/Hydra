@@ -1,10 +1,13 @@
-#bridge-file-version: #43
+#bridge-file-version: #44
 scoreboard players reset @s hydrasettings
 tellraw @s {"rawtext":[{"text":"§4Hydra §r> Running version §lv3.0.0§r\n§4Hydra §r> §4Current bugs in speed check and phase with using §lportals§r\n§4Hydra §r> Currently enabled modules are listed below"}]}
  
 scoreboard players operation @s hydrasettings = "antinbt" hydrasettings
 execute @s[scores={hydrasettings=1}] ~ ~ ~ tellraw @s {"rawtext":[{"text":">§r AntiNBT [§2ENABLED§r]"}]}
 execute @s[scores={hydrasettings=0}] ~ ~ ~ tellraw @s {"rawtext":[{"text":">§r AntiNBT [§4DISABLED§r]"}]}
+scoreboard players operation @s hydrasettings = "antinbt2" hydrasettings
+execute @s[scores={hydrasettings=1}] ~ ~ ~ tellraw @s {"rawtext":[{"text":">§r AntiNBT2 [§2ENABLED§r]"}]}
+execute @s[scores={hydrasettings=0}] ~ ~ ~ tellraw @s {"rawtext":[{"text":">§r AntiNBT2 [§4DISABLED§r]"}]}
 scoreboard players operation @s hydrasettings = "antinpc" hydrasettings
 execute @s[scores={hydrasettings=1}] ~ ~ ~ tellraw @s {"rawtext":[{"text":">§r AntiNPC [§2ENABLED§r]"}]}
 execute @s[scores={hydrasettings=0}] ~ ~ ~ tellraw @s {"rawtext":[{"text":">§r AntiNPC [§4DISABLED§r]"}]}
