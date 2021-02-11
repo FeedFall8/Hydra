@@ -1,4 +1,4 @@
-#bridge-file-version: #59
+#bridge-file-version: #64
 HIDDEN 
 #=====================
 scoreboard players reset @s hydrasettings
@@ -12,6 +12,7 @@ execute @s[scores={hydrasettings=1},tag=!staff] ~ ~ ~ function modules/antigamem
 scoreboard players reset @s hydrasettings
 scoreboard players operation @s hydrasettings = "antinpc" hydrasettings
 execute @s[scores={hydrasettings=1},tag=!staff] ~ ~ ~ function modules/antinpc
+execute @s[scores={hydrasettings=0}] ~ ~ ~ tag @e[type=npc] add server
 #=====================
 scoreboard players reset @s hydrasettings
 scoreboard players operation @s hydrasettings = "noredstone" hydrasettings
@@ -46,6 +47,7 @@ scoreboard players add @a credit 0
 tellraw @a[scores={credit=0}] {"rawtext":[{"text":"§cServer Protected By Hydra Anticheat\nhttps://discord.gg/8eaEKNqPKD"}]}
 scoreboard players set @a[scores={credit=0}] credit 1
 #=====================
-#execute @a[tag=!staff] ~ ~ ~ kick @a[tag=hban] §4Hydra §r> §cReason: Hydra Cheat Detection
+ 
+execute @a[tag=!staff] ~ ~ ~ kick @a[tag=hban] §4Hydra §r> §cReason: Hydra Cheat Detection
  
 #notifaction sound /playsound note.snare @s ~ ~ ~ 1 2
