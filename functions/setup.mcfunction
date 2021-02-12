@@ -1,4 +1,4 @@
-#bridge-file-version: #46
+#bridge-file-version: #47
 scoreboard objectives add hydrasettings dummy
 scoreboard objectives add credit dummy
 scoreboard objectives add ofgrounftimer dummy
@@ -25,6 +25,7 @@ scoreboard players set "noredstone" hydrasettings 0
 scoreboard players set "antispeed" hydrasettings 0
 scoreboard players set "antifly" hydrasettings 0
 scoreboard players set "antijesus" hydrasettings 0
+scoreboard players set "nospawneggs" hydrasettings 0
  
 tellraw @s {"rawtext":[{"text":"§a\n§4Hydra§r > §aPlease Re open world/leave realm to finish setup!\n§r§a"}]}
 function info

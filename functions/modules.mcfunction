@@ -1,6 +1,6 @@
-#bridge-file-version: #44
+#bridge-file-version: #46
 scoreboard players reset @s hydrasettings
-tellraw @s {"rawtext":[{"text":"§4Hydra §r> Running version §lv3.0.0§r\n§4Hydra §r> §4Current bugs in speed check and phase with using §lportals§r\n§4Hydra §r> Currently enabled modules are listed below"}]}
+tellraw @s {"rawtext":[{"text":"§4Hydra §r> Running version §lv3.0.0§r\n§4Hydra §r> §4Bugs in speed check and phase with using §lportals§r\n§4Hydra §r> Currently enabled modules are listed below"}]}
  
 scoreboard players operation @s hydrasettings = "antinbt" hydrasettings
 execute @s[scores={hydrasettings=1}] ~ ~ ~ tellraw @s {"rawtext":[{"text":">§r AntiNBT [§2ENABLED§r]"}]}
@@ -32,6 +32,9 @@ execute @s[scores={hydrasettings=0}] ~ ~ ~ tellraw @s {"rawtext":[{"text":">§r 
 scoreboard players operation @s hydrasettings = "antijesus" hydrasettings
 execute @s[scores={hydrasettings=1}] ~ ~ ~ tellraw @s {"rawtext":[{"text":">§r AntiJesus [§2ENABLED§r]"}]}
 execute @s[scores={hydrasettings=0}] ~ ~ ~ tellraw @s {"rawtext":[{"text":">§r AntiJesus [§4DISABLED§r]"}]}
+scoreboard players operation @s hydrasettings = "nospawneggs" hydrasettings
+execute @s[scores={hydrasettings=1}] ~ ~ ~ tellraw @s {"rawtext":[{"text":">§r NoSpawnEggs [§2ENABLED§r]"}]}
+execute @s[scores={hydrasettings=0}] ~ ~ ~ tellraw @s {"rawtext":[{"text":">§r NoSpawnEggs [§4DISABLED§r]"}]}
  
  
 scoreboard players reset @s hydrasettings

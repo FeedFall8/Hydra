@@ -1,4 +1,4 @@
-#bridge-file-version: #64
+#bridge-file-version: #67
 HIDDEN 
 #=====================
 scoreboard players reset @s hydrasettings
@@ -42,12 +42,17 @@ scoreboard players reset @s hydrasettings
 scoreboard players operation @s hydrasettings = "antinbt2" hydrasettings
 execute @s[scores={hydrasettings=1},tag=!staff] ~ ~ ~ function modules/antinbt2
 #=====================
+scoreboard players reset @s hydrasettings
+scoreboard players operation @s hydrasettings = "nospawneggs" hydrasettings
+execute @s[scores={hydrasettings=1},tag=!staff] ~ ~ ~ function modules/nospawneggs
+#=====================
+ 
 #=====================
 scoreboard players add @a credit 0
 tellraw @a[scores={credit=0}] {"rawtext":[{"text":"§cServer Protected By Hydra Anticheat\nhttps://discord.gg/8eaEKNqPKD"}]}
 scoreboard players set @a[scores={credit=0}] credit 1
 #=====================
  
-execute @a[tag=!staff] ~ ~ ~ kick @a[tag=hban] §4Hydra §r> §cReason: Hydra Cheat Detection
+execute @a[tag=!staff] ~ ~ ~ kick @s[tag=hban] §4Hydra §r> §cReason: Hydra Cheat Detection
  
 #notifaction sound /playsound note.snare @s ~ ~ ~ 1 2
