@@ -1,68 +1,64 @@
-#bridge-file-version: #0
 HIDDEN 
-#credit: *๖̶̶̶ζ͜͡𝑵𝒊𝒈𝒉𝒕𝒘𝒂𝒍𝒌𝒆𝒓𝑳𝒐𝒕𝒔꧂#2877 (NightwalkerLots)
-clear @a spawn_egg
-clear @a bat_spawn_egg
-clear @a bee_spawn_egg
-clear @a blaze_spawn_egg
-clear @a cat_spawn_egg
-clear @a cave_spider_spawn_egg
-clear @a chicken_spawn_egg
-clear @a cod_spawn_egg
-clear @a cow_spawn_egg
-clear @a creeper_spawn_egg
-clear @a dolphin_spawn_egg
-clear @a donkey_spawn_egg
-clear @a drowned_spawn_egg
-clear @a elder_guardian_spawn_egg
-clear @a enderman_spawn_egg
-clear @a endermite_spawn_egg
-clear @a evoker_spawn_egg
-clear @a fox_spawn_egg
-clear @a ghast_spawn_egg
-clear @a guardian_spawn_egg
-clear @a hoglin_spawn_egg
-clear @a horse_spawn_egg
-clear @a husk_spawn_egg
-clear @a llama_spawn_egg
-clear @a magma_cube_spawn_egg
-clear @a mooshroom_spawn_egg
-clear @a mule_spawn_egg
-clear @a npc_spawn_egg
-clear @a ocelot_spawn_egg
-clear @a panda_spawn_egg
-clear @a parrot_spawn_egg
-clear @a phantom_spawn_egg
-clear @a pig_spawn_egg
-clear @a piglin_brute_spawn_egg
-clear @a piglin_spawn_egg
-clear @a pillager_spawn_egg
-clear @a polar_bear_spawn_egg
-clear @a pufferfish_spawn_egg
-clear @a rabbit_spawn_egg
-clear @a ravager_spawn_egg
-clear @a salmon_spawn_egg
-clear @a sheep_spawn_egg
-clear @a shulker_spawn_egg
-clear @a silverfish_spawn_egg
-clear @a skeleton_horse_spawn_egg
-clear @a skeleton_spawn_egg
-clear @a slime_spawn_egg
-clear @a spider_spawn_egg
-clear @a squid_spawn_egg
-clear @a stray_spawn_egg
-clear @a strider_spawn_egg
-clear @a tropical_fish_spawn_egg
-clear @a turtle_spawn_egg
-clear @a vex_spawn_egg
-clear @a vindicator_spawn_egg
-clear @a villager_spawn_egg
-clear @a wandering_trader_spawn_egg
-clear @a witch_spawn_egg
-clear @a wither_skeleton_spawn_egg
-clear @a wolf_spawn_egg
-clear @a zoglin_spawn_egg
-clear @a zombie_horse_spawn_egg
-clear @a zombie_pigman_spawn_egg
-clear @a zombie_spawn_egg
-clear @a zombie_villager_spawn_egg
+clear @s spawn_egg 0
+clear @s spawn_egg 1
+clear @s spawn_egg 2
+clear @s spawn_egg 3
+clear @s spawn_egg 4
+clear @s spawn_egg 5
+clear @s spawn_egg 6
+clear @s spawn_egg 7
+clear @s spawn_egg 8
+clear @s spawn_egg 9
+clear @s spawn_egg 10
+clear @s spawn_egg 11
+clear @s spawn_egg 12
+clear @s spawn_egg 13
+clear @s spawn_egg 14
+clear @s spawn_egg 15
+clear @s spawn_egg 16
+clear @s spawn_egg 17
+clear @s spawn_egg 18
+clear @s spawn_egg 19
+clear @s spawn_egg 20
+clear @s spawn_egg 21
+clear @s spawn_egg 22
+clear @s spawn_egg 23
+clear @s spawn_egg 24
+clear @s spawn_egg 25
+clear @s spawn_egg 26
+clear @s spawn_egg 27
+clear @s spawn_egg 28
+clear @s spawn_egg 29
+clear @s spawn_egg 30
+clear @s spawn_egg 31
+clear @s spawn_egg 30
+clear @s spawn_egg 40
+clear @s spawn_egg 44
+clear @s spawn_egg 42
+clear @s spawn_egg 43
+clear @s spawn_egg 44
+clear @s spawn_egg 45
+clear @s spawn_egg 46
+clear @s spawn_egg 47
+clear @s spawn_egg 48
+clear @s spawn_egg 49
+clear @s spawn_egg 50
+clear @s spawn_egg 55
+clear @s spawn_egg 52
+clear @s spawn_egg 53
+clear @s spawn_egg 54
+clear @s spawn_egg 55
+clear @s spawn_egg 56
+clear @s spawn_egg 57
+clear @s spawn_egg 58
+clear @s spawn_egg 59
+clear @s spawn_egg 60
+clear @s spawn_egg 66
+clear @s spawn_egg 62
+clear @s spawn_egg 63
+clear @s spawn_egg 64
+clear @s spawn_egg 65
+clear @s spawn_egg 66
+clear @s spawn_egg 67
+clear @s spawn_egg 68
+clear @s spawn_egg 69
