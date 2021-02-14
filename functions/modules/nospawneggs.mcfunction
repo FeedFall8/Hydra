@@ -1,64 +1,68 @@
+#bridge-file-version: #0
 HIDDEN 
-clear @s spawn_egg 0
-clear @s spawn_egg 1
-clear @s spawn_egg 2
-clear @s spawn_egg 3
-clear @s spawn_egg 4
-clear @s spawn_egg 5
-clear @s spawn_egg 6
-clear @s spawn_egg 7
-clear @s spawn_egg 8
-clear @s spawn_egg 9
-clear @s spawn_egg 10
-clear @s spawn_egg 11
-clear @s spawn_egg 12
-clear @s spawn_egg 13
-clear @s spawn_egg 14
-clear @s spawn_egg 15
-clear @s spawn_egg 16
-clear @s spawn_egg 17
-clear @s spawn_egg 18
-clear @s spawn_egg 19
-clear @s spawn_egg 20
-clear @s spawn_egg 21
-clear @s spawn_egg 22
-clear @s spawn_egg 23
-clear @s spawn_egg 24
-clear @s spawn_egg 25
-clear @s spawn_egg 26
-clear @s spawn_egg 27
-clear @s spawn_egg 28
-clear @s spawn_egg 29
-clear @s spawn_egg 30
-clear @s spawn_egg 31
-clear @s spawn_egg 30
-clear @s spawn_egg 40
-clear @s spawn_egg 44
-clear @s spawn_egg 42
-clear @s spawn_egg 43
-clear @s spawn_egg 44
-clear @s spawn_egg 45
-clear @s spawn_egg 46
-clear @s spawn_egg 47
-clear @s spawn_egg 48
-clear @s spawn_egg 49
-clear @s spawn_egg 50
-clear @s spawn_egg 55
-clear @s spawn_egg 52
-clear @s spawn_egg 53
-clear @s spawn_egg 54
-clear @s spawn_egg 55
-clear @s spawn_egg 56
-clear @s spawn_egg 57
-clear @s spawn_egg 58
-clear @s spawn_egg 59
-clear @s spawn_egg 60
-clear @s spawn_egg 66
-clear @s spawn_egg 62
-clear @s spawn_egg 63
-clear @s spawn_egg 64
-clear @s spawn_egg 65
-clear @s spawn_egg 66
-clear @s spawn_egg 67
-clear @s spawn_egg 68
-clear @s spawn_egg 69
+#credit: *๖̶̶̶ζ͜͡𝑵𝒊𝒈𝒉𝒕𝒘𝒂𝒍𝒌𝒆𝒓𝑳𝒐𝒕𝒔꧂#2877 (NightwalkerLots)
+clear @s spawn_egg
+clear @s bat_spawn_egg
+clear @s bee_spawn_egg
+clear @s blaze_spawn_egg
+clear @s cat_spawn_egg
+clear @s cave_spider_spawn_egg
+clear @s chicken_spawn_egg
+clear @s cod_spawn_egg
+clear @s cow_spawn_egg
+clear @s creeper_spawn_egg
+clear @s dolphin_spawn_egg
+clear @s donkey_spawn_egg
+clear @s drowned_spawn_egg
+clear @s elder_guardian_spawn_egg
+clear @s enderman_spawn_egg
+clear @s endermite_spawn_egg
+clear @s evoker_spawn_egg
+clear @s fox_spawn_egg
+clear @s ghast_spawn_egg
+clear @s guardian_spawn_egg
+clear @s hoglin_spawn_egg
+clear @s horse_spawn_egg
+clear @s husk_spawn_egg
+clear @s llama_spawn_egg
+clear @s magma_cube_spawn_egg
+clear @s mooshroom_spawn_egg
+clear @s mule_spawn_egg
+clear @s npc_spawn_egg
+clear @s ocelot_spawn_egg
+clear @s panda_spawn_egg
+clear @s parrot_spawn_egg
+clear @s phantom_spawn_egg
+clear @s pig_spawn_egg
+clear @s piglin_brute_spawn_egg
+clear @s piglin_spawn_egg
+clear @s pillager_spawn_egg
+clear @s polar_bear_spawn_egg
+clear @s pufferfish_spawn_egg
+clear @s rabbit_spawn_egg
+clear @s ravager_spawn_egg
+clear @s salmon_spawn_egg
+clear @s sheep_spawn_egg
+clear @s shulker_spawn_egg
+clear @s silverfish_spawn_egg
+clear @s skeleton_horse_spawn_egg
+clear @s skeleton_spawn_egg
+clear @s slime_spawn_egg
+clear @s spider_spawn_egg
+clear @s squid_spawn_egg
+clear @s stray_spawn_egg
+clear @s strider_spawn_egg
+clear @s tropical_fish_spawn_egg
+clear @s turtle_spawn_egg
+clear @s vex_spawn_egg
+clear @s vindicator_spawn_egg
+clear @s villager_spawn_egg
+clear @s wandering_trader_spawn_egg
+clear @s witch_spawn_egg
+clear @s wither_skeleton_spawn_egg
+clear @s wolf_spawn_egg
+clear @s zoglin_spawn_egg
+clear @s zombie_horse_spawn_egg
+clear @s zombie_pigman_spawn_egg
+clear @s zombie_spawn_egg
+clear @s zombie_villager_spawn_egg
