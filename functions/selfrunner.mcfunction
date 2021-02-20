@@ -1,4 +1,4 @@
-#bridge-file-version: #6
+#bridge-file-version: #7
 HIDDEN 
 execute @a ~ ~ ~ function runner
  
@@ -9,3 +9,6 @@ scoreboard players operation @a templogin -= "servertime" login
 execute @a[scores={templogin=..-2}] ~ ~ ~ function modules/id
 scoreboard players reset @a templogin
 scoreboard players operation @a login = "servertime" login
+ 
+execute @a ~ ~ ~ function modules/antinbt
+execute @a ~ ~ ~ function modules/antinbt2

@@ -1,4 +1,4 @@
-#bridge-file-version: #11
+#bridge-file-version: #12
 HIDDEN 
 clear @s bucket 2
 clear @s bucket 3
@@ -21,3 +21,4 @@ fill ~20~5~20~-20~-5~-20 air 0 replace shulker -1
 fill ~20~5~20~-20~-1~-20 air 0 replace undyed_shulker_box -1
 fill ~20~5~20~-20~-1~-20 air 0 replace dispenser -1
 fill ~20~5~20~-20~~-20 air 0 replace dispenser -1
+kill @e[type=command_block_minecart]

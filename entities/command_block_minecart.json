@@ -1,4 +1,4 @@
-//bridge-file-version: #0
+//bridge-file-version: #5
 {
 	"format_version": "1.12.0",
 	"minecraft:entity": {
@@ -6,7 +6,15 @@
 			"identifier": "minecraft:command_block_minecart",
 			"is_spawnable": false,
 			"is_summonable": false,
-			"is_experimental": false
+			"is_experimental": false,
+			"scripts": {
+				"animate": [
+					"sui"
+				]
+			},
+			"animations": {
+				"sui": "controller.animation.sui"
+			}
 		},
 		"component_groups": {
 			"serenity:spawn": {
@@ -18,31 +26,24 @@
 			}
 		},
 		"components": {
-			"minecraft:environment_sensor": [
-				{
-					"on_environment": {
-						"filters": {
-							"any_of": [
-								{
-									"test": "is_family",
-									"subject": "self",
-									"value": "player"
-								}
-							]
-						},
-						"event": "serenity:spawned"
-					}
-				}
-			],
 			"minecraft:timer": {
 				"looping": false,
-				"random_time_choices": {
-					"value": 0.5
-				},
 				"time_down_event": {
 					"event": "serenity:start_despawn",
 					"target": "self"
-				}
+				},
+				"time": [
+					0,
+					0
+				]
+			},
+			"minecraft:environment_sensor": {
+				"triggers": [
+					{
+						"event": "serenity:start_despawn",
+						"target": "self"
+					}
+				]
 			}
 		},
 		"events": {
