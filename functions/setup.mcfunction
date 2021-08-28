@@ -20,7 +20,7 @@ scoreboard players set "antinbt" hydrasettings 1
 scoreboard players set "antinbt2" hydrasettings 0
 scoreboard players set "antigamemode" hydrasettings 1
 scoreboard players set "noblocks" hydrasettings 0
-scoreboard players set "antiphase" hydrasettings 1
+scoreboard players set "antiphase" hydrasettings 0
 scoreboard players set "noredstone" hydrasettings 0
 scoreboard players set "antispeed" hydrasettings 0
 scoreboard players set "antifly" hydrasettings 0
