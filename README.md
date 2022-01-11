@@ -8,4 +8,4 @@ if you are using hydra, and/or its foundation code please follow the terms:
 - we ask you credit us via ingame chat with hydra(this means dont cut out code that is for crediting!)
 - we will punish you if you violate any of these terms
 - again do not monetize hydra!!
-©2020, FeedFall8, All Rights Reserved.
+©2022, FeedFall8, All Rights Reserved.
