@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@types/mojang-gametest": "^0.1.1",
+    "@types/mojang-minecraft": "^0.1.1"
+  }
+}
