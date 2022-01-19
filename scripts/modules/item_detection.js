@@ -44,8 +44,8 @@ const ItemChecker = () => {
             }
             inv_items.forEach(item => {
                 if (items.includes(item)) {
-                    try { Commands.run(`clear "${player.nameTag || player.name}"`, World.getDimension('overworld')) } catch (e) { }
-                    try { Commands.run(`kick "${player.nameTag || player.name}" Invalid Player Data`, World.getDimension('overworld')) } catch (e) { }
+                    try { Commands.run(`clear "${player.nameTag.replace(/"/g, '') || player.name.replace(/"/g, '')}"`, World.getDimension('overworld')) } catch (e) { }
+                    player.triggerEvent('hydra:kick')
                 }
             })
             items.forEach(item => {
