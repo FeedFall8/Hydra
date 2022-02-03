@@ -1,4 +1,4 @@
-import { Commands, World } from "mojang-minecraft"
+import { world } from "mojang-minecraft"
 
 const items = [
     'minecraft:portal',
@@ -32,8 +32,9 @@ const items = [
 ]
 
 const ItemChecker = () => {
-    World.events.tick.subscribe(() => {
-        World.getPlayers().forEach(player => {
+    world.events.tick.subscribe(() => {
+        var players = world.getPlayers()
+        for (const player of players) {
             let inv = player.getComponent('minecraft:inventory').container
             let inv_items = []
             for (let i = 0; i < inv.size; i++) {
@@ -44,14 +45,14 @@ const ItemChecker = () => {
             }
             inv_items.forEach(item => {
                 if (items.includes(item)) {
-                    try { Commands.run(`clear "${player.nameTag.replace(/"/g, '') || player.name.replace(/"/g, '')}"`, World.getDimension('overworld')) } catch (e) { }
+                    try { world.getDimension("overworld").runCommand(`clear "${player.nameTag.replace(/"/g, '') || player.name.replace(/"/g, '')}"`, world.getDimension('overworld')) } catch (e) { }
                     player.triggerEvent('hydra:kick')
                 }
             })
             items.forEach(item => {
-                try { Commands.run(`clear @a ${item.split(':')[1]}`, World.getDimension('overworld')) } catch (e) { }
+                try { world.getDimension("overworld").runCommand(`clear @a ${item.split(':')[1]}`, world.getDimension('overworld')) } catch (e) { }
             })
-        })
+        }
     })
 }
 

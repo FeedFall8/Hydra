@@ -1,11 +1,12 @@
-import { Commands, World } from "mojang-minecraft"
+import { world } from "mojang-minecraft"
 
 const SpeedDetection = () => {
-    World.events.tick.subscribe(() => {
-        World.getPlayers().forEach(player => {
+    world.events.tick.subscribe(() => {
+        var players = world.getPlayers()
+        for (const player of players) {
             const comp = player.getComponent('minecraft:movement')
             comp.setCurrent(comp.current)
-        })
+        }
     })
 }
 
