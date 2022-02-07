@@ -28,7 +28,7 @@ const Enchant_Detection = () => {
 					if (!enchantmentData.level > enchantmentData.type.maxLevel) continue
 
 					itemEnchantments.removeEnchantment(enchantment)
-					inventory.setItem(i, new ItemStack(MinecraftItemTypes['air'], 1, 0))
+					inventory.setItem(i, new ItemStack(MinecraftItemTypes['air'], 0, 0))
 					player.triggerEvent('hydra:kick')
 
 				}
