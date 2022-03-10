@@ -1,29 +1,40 @@
 {
-  "format_version": 2,
-  "header": {
-    "description": "Databse",
-    "name": "§eHydra V5",
-    "uuid": "e1b10cb8-bc92-47c2-9321-e09eb173ff99",
-    "version": [0, 0, 1],
-    "min_engine_version": [1, 14, 0]
-  },
-  "modules": [
-    {
-      "description": "F8 TESTS AND SCRIPTS TO RUN",
-      "type": "javascript",
-      "uuid": "3c09ecb9-a090-41be-8cf0-1174d89b3b1d",
-      "version": [0, 0, 1],
-      "entry": "scripts/main.js"
-    }
-  ],
-  "dependencies": [
-    {
-      "uuid": "b26a4d4c-afdf-4690-88f8-931846312678",
-      "version": [0, 1, 0]
+    "format_version": 2,
+    "header": {
+        "name": "Hydra Anticheat",
+        "description": "A general purpose/nbt anticheat",
+        "uuid": "8961fe27-8677-4e1c-b2c6-96a9a57db4d3",
+        "version": [2, 0, 9],
+        "min_engine_version": [1, 16, 210]
     },
-    {
-      "uuid": "6f4b6893-1bb6-42fd-b458-7fa3d0c89616",
-      "version": [0, 1, 0]
-    }
-  ]
+    "metadata": {
+        "authors": ["Feed/Roman/Balloon"],
+        "url": "https://github.com/FeedFall8/Hydra"
+    },
+    "modules": [{
+            "type": "data",
+            "uuid": "e0bd5c5d-6b48-482e-aebc-1634d5d5b511",
+            "version": [
+                1,
+                0,
+                0
+            ]
+        },
+        {
+            "description": "Hydra",
+            "type": "javascript",
+            "uuid": "77421f33-2cc9-4387-9d6e-7dd2f7c43c12",
+            "version": [0, 0, 1],
+            "entry": "scripts/main.js"
+        }
+    ],
+    "dependencies": [{
+            "uuid": "b26a4d4c-afdf-4690-88f8-931846312678",
+            "version": [0, 1, 0]
+        },
+        {
+            "uuid": "6f4b6893-1bb6-42fd-b458-7fa3d0c89616",
+            "version": [0, 1, 0]
+        }
+    ]
 }
