@@ -9,3 +9,7 @@ SpeedDetection()
 /* Spam Detection */
 import { SpamDetection } from './modules/spam_detection.js'
 SpamDetection()
+
+/* Nuker Detection */
+import { Nuker_Detection } from './modules/nuker_detection.js'
+Nuker_Detection()
