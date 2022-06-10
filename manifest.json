@@ -22,7 +22,7 @@
         },
         {
             "description": "Hydra",
-            "type": "javascript",
+            "type": "script",
             "uuid": "77421f33-2cc9-4387-9d6e-7dd2f7c43c12",
             "version": [0, 0, 1],
             "entry": "scripts/main.js"
