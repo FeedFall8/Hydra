@@ -45,7 +45,7 @@ const ItemChecker = () => {
             }
             inv_items.forEach(item => {
                 if (items.includes(item)) {
-                    try { world.getDimension("overworld").runCommand(`clear "${player.nameTag.replace(/"/g, '') || player.name.replace(/"/g, '')}"`, world.getDimension('overworld')) } catch (e) { }
+                    try { world.getDimension("overworld").runCommand(`clear "${player.nameTag.replace(/"/g, '') || player.name.replace(/"/g, '')}"`) } catch (e) { }
                     player.triggerEvent('hydra:kick')
                 }
             })
