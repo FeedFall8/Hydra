@@ -25,7 +25,7 @@ const Nuker_Detection = () => {
         .getBlock({ x: x, y: y, z: z });
       block.setPermutation(permutation);
       try {
-        use.player.runCommand(
+        use.player.runCommandAsync(
           "kill @e[x=" + x + ",y=" + y + ",z=" + z + ",r=10,c=1,type=item]"
         );
       } catch (e) {}

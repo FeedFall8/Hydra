@@ -49,7 +49,7 @@ const ItemChecker = () => {
           try {
             world
               .getDimension("overworld")
-              .runCommand(
+              .runCommandAsync(
                 `clear "${
                   player.nameTag.replace(/"/g, "") ||
                   player.name.replace(/"/g, "")
@@ -63,7 +63,7 @@ const ItemChecker = () => {
         try {
           world
             .getDimension("overworld")
-            .runCommand(`clear @a ${item.split(":")[1]}`);
+            .runCommandAsync(`clear @a ${item.split(":")[1]}`);
         } catch (e) {}
       });
     }
