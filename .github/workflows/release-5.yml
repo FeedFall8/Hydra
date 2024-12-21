@@ -1,0 +1,52 @@
+name: Release Action
+
+on:
+  release:
+    types:
+      - created
+
+jobs:
+  package-release:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Install Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: "20"
+
+      #   - name: Install TypeScript globally
+      #     run: npm install -g typescript
+
+      #   - name: Install dependencies
+      #     run: npm install
+
+      #   - name: Build TypeScript
+      #     run: tsc
+
+      - name: Create ZIP file
+        run: |
+          zip -r ../release.zip *
+
+      - name: Upload Release as ZIP
+        uses: actions/upload-release-asset@v1
+        with:
+          upload_url: ${{ github.event.release.upload_url }}
+          asset_path: ./release.zip
+          asset_name: release.zip
+          asset_content_type: application/zip
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Upload Release as MCPACK
+        uses: actions/upload-release-asset@v1
+        with:
+          upload_url: ${{ github.event.release.upload_url }}
+          asset_path: ./release.zip
+          asset_name: release.mcpack
+          asset_content_type: application/zip
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
