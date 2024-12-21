@@ -1,18 +1,21 @@
-import { world } from "mojang-minecraft"
+import { world, system } from "@minecraft/server";
 
 const Crasher_Detection = () => {
-    world.events.tick.subscribe(tick => {
-        const players = [...world.getPlayers()]
+  system.run((tick) => {
+    const players = [...world.getPlayers()];
 
-        players.forEach(player => {
+    players.forEach((player) => {
+      const { x, y, z } = player.location;
 
-            const { x, y, z } = player.location
+      if (
+        Math.abs(x) > 30000000 ||
+        Math.abs(y) > 30000000 ||
+        Math.abs(z) > 30000000
+      ) {
+        player.triggerEvent("hydra:kick");
+      }
+    });
+  });
+};
 
-            if (Math.abs(x) > 30000000 || Math.abs(y) > 30000000 || Math.abs(z) > 30000000) {
-                player.triggerEvent('hydra:kick')
-            }
-        })
-    })
-}
-
-export { Crasher_Detection }
+export { Crasher_Detection };
