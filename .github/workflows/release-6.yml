@@ -29,8 +29,8 @@ jobs:
           major=$(echo "$release_version" | cut -d. -f1)
           minor=$(echo "$release_version" | cut -d. -f2)
           patch=$(echo "$release_version" | cut -d. -f3)
-          jq ".header.version = [$major, $minor, $patch]" package.json > package.json.new
-          mv package.json.new package.json
+          jq ".header.version = [$major, $minor, $patch]" manifest.json > manifest.json.new
+          mv manifest.json.new manifest.json
 
       - name: Create ZIP file
         run: |
