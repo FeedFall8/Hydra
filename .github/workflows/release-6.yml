@@ -32,14 +32,6 @@ jobs:
           jq ".header.version = [$major, $minor, $patch]" package.json > package.json.new
           mv package.json.new package.json
 
-      # - name: Install Dependencies
-      #   run: |
-      #     npm install
-
-      # - name: Build Package
-      #   run: |
-      #     npm run build
-
       - name: Create ZIP file
         run: |
           zip -r release.zip *
