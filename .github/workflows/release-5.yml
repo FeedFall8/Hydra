@@ -18,35 +18,52 @@ jobs:
         with:
           node-version: "20"
 
-      #   - name: Install TypeScript globally
-      #     run: npm install -g typescript
+      - name: Install jq
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y jq
 
-      #   - name: Install dependencies
-      #     run: npm install
+      - name: Update Manifest Version
+        run: |
+          release_version="${GITHUB_REF#refs/tags/}"
+          major=$(echo "$release_version" | cut -d. -f1)
+          minor=$(echo "$release_version" | cut -d. -f2)
+          patch=$(echo "$release_version" | cut -d. -f3)
+          jq ".header.version = [$major, $minor, $patch]" package.json > package.json.new
+          mv package.json.new package.json
 
-      #   - name: Build TypeScript
-      #     run: tsc
+      - name: Install Dependencies
+        run: |
+          npm install
+
+      - name: Build Package
+        run: |
+          npm run build
 
       - name: Create ZIP file
         run: |
-          zip -r ../release.zip *
+          zip -r release.zip *
 
       - name: Upload Release as ZIP
         uses: actions/upload-release-asset@v1
         with:
           upload_url: ${{ github.event.release.upload_url }}
           asset_path: ./release.zip
-          asset_name: release.zip
+          asset_name: release${{ github.ref_name }}.zip
           asset_content_type: application/zip
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Create MCPACK file
+        run: |
+          cp release.zip release.mcpack
 
       - name: Upload Release as MCPACK
         uses: actions/upload-release-asset@v1
         with:
           upload_url: ${{ github.event.release.upload_url }}
-          asset_path: ./release.zip
-          asset_name: release.mcpack
+          asset_path: ./release.mcpack
+          asset_name: release${{ github.ref_name }}.mcpack
           asset_content_type: application/zip
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
